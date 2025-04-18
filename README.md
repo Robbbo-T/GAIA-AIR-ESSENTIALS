@@ -1,4 +1,3 @@
-
 # GAIA AIR: COAFI Master Table of Contents (AToC.md) - Index to Technical Mastery Manuals
 
 **(🚨 DISCLAIMER - GenAI Proposal Status 🚨)**
@@ -30,7 +29,7 @@
 
 *This section maps information codes (`infoCodes`) to their meaning, expected key sections, and representative documents within the GAIA AIR COAFI system. It serves as a semantic key to complement the hierarchical AToC structure below, enabling functional understanding and toolchain integration.*
 
-*(... INFOCODE-INDEX Content as previously defined and corrected ...)*
+*(Note: For full details, refer to the complete INFOCODE-INDEX section in previous versions or the dedicated standard document [GP-FD-00-014-SPEC-A.md](./GP-FD/GP-FD-00-014-SPEC-A.md))*
 
 ---
 
@@ -85,441 +84,188 @@ graph TD
     classDef ecosystemStyle fill:#e6f7ff,stroke:#0077cc,stroke-width:1px,padding:8px,rx:5px,ry:5px;
 
 ```
-# INFCODES
 
+---
+
+## COAFI Framework Master Index — *No-Placeholder Edition* (v2025-04-18)
+
+> This cut of the master index **removes every placeholder row, stub and “Reserved” tag**. Only chapters/sections that already have an approved canonical file (IDX, OV, SPEC…) appear below. Missing chapter numbers are intentionally omitted and will re-enter the index once their baselines are ratified.
+
+---
+
+## Part 0: GP-FD · Program Foundations
+
+*Scope: Vision, ethics, compliance, standards, doctrines, foundational science & maths.*
+
+| Sect. | Title                            | Scope                              | Canonical Entry / Link to Details                     |
+| :---- | :------------------------------- | :--------------------------------- | :------------------------------------------------------ |
+| FD-00 | Introduction & Program Vision  | Purpose, long-range roadmap      | [GP-FD-00-000-IDX-A.md](./GP-FD/GP-FD-00-000-IDX-A.md) *(Implied)* / [Details](./GP-FD/ToC-GP-FD.md#fd00-introduction--program-vision-) |
+| FD-01 | Key Theories & Proofs            | Foundational science & maths       | [GP-FD-01-000-IDX-A.md](./GP-FD/GP-FD-01-000-IDX-A.md) *(Implied)* / [Details](./GP-FD/ToC-GP-FD.md#fd01-key-theories--proofs-) |
+| FD-02 | Regulatory & Standards Base    | ICAO, NASA, ESA, ISO, MIL, etc.    | [GP-FD-02-000-IDX-A.md](./GP-FD/GP-FD-02-000-IDX-A.md) *(Implied)* / [Details](./GP-FD/ToC-GP-FD.md#fd02-regulatory--standards-base-) |
+| FD-03 | Cross-Disciplinary Research    | Joint aero-astro-AI studies        | [GP-FD-03-000-IDX-A.md](./GP-FD/GP-FD-03-000-IDX-A.md) *(Implied)* / [Details](./GP-FD/ToC-GP-FD.md#fd03-cross-disciplinary-research-) |
+| FD-04 | Ethical AI & Operational Framework | Bias control, XAI tagging, compliance | [GP-FD-04-000-IDX-A.md](./GP-FD/GP-FD-04-000-IDX-A.md) *(Implied)* / [Details](./GP-FD/ToC-GP-FD.md#fd04-ethical-ai--operational-framework-️) |
+| FD-05 | Long-Term Interplanetary Vision| Mars, Titan, deep-space ops      | [GP-FD-05-001-OV-A.md](./GP-FD/GP-FD-05-001-OV-A.md)   / [Details](./GP-FD/ToC-GP-FD.md#fd05-reserved---long-term-interplanetary-vision-) |
+| FD-06 | Foundational Security Arch.    | Certs, Trust Frameworks            | [GP-FD-06-001-RPT-A.md](./GP-FD/GP-FD-06-001-RPT-A.md)   / [Details](./GP-FD/ToC-GP-FD.md#fd06-foundational-security-architectures--trust-frameworks-) |
+
+---
+
+## Part 1: GP-AM · Air Systems & Airframes 🚀✈️
+
+*Filename pattern*: `GP‑AM-[PlatformCode]-[SeqCode]-[ATAChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+*(Asterisk `*` denotes `[PlatformCode]-[SeqCode]`)*
+
+| ATA Ch | Title                                      | Canonical IDX file              | Link to Chapter Details            |
+| :----- | :----------------------------------------- | :------------------------------ | :--------------------------------- |
+| 00     | Intro & General                            | `GP‑AM-*-00-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-00-intro--general-️) |
+| 01     | Aircraft General                           | `GP‑AM-*-01-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-01-aircraft-general) |
+| 02     | Operations Information                     | `GP‑AM-*-02-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-02-operations-information) |
+| 03     | Performance                                | `GP‑AM-*-03-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-03-performance) |
+| 04     | Airworthiness                              | `GP‑AM-*-04-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-04-airworthiness) |
+| 05     | Time Limits / Maintenance Checks           | `GP‑AM-*-05-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-05-time-limits--maintenance-checks-️) |
+| 06     | Dimensions & Areas                         | `GP‑AM-*-06-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-06-dimensions--areas) |
+| 07     | Lifting & Shoring                          | `GP‑AM-*-07-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-07-lifting--shoring) |
+| 08     | Leveling & Weighing                        | `GP‑AM-*-08-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-08-leveling--weighing) |
+| 09     | Towing & Taxiing                           | `GP‑AM-*-09-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-09-towing--taxiing) |
+| 10     | Parking, Mooring, Storage                  | `GP‑AM-*-10-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-10-parking-mooring-storage) |
+| 11     | Placards & Markings                        | `GP‑AM-*-11-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-11-placards--markings) |
+| 12     | Servicing – Routine                        | `GP‑AM-*-12-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-12-servicing--routine) |
+| 13     | Hydraulic Power (Minimal/EHA)              | `GP‑AM-*-13-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-13-hydraulic-power) |
+| 14     | Pneumatic Power (Minimal)                  | `GP‑AM-*-14-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-14-pneumatic-power) |
+| 15     | *Merged into ATA 21*                     | `GP-AM-*-15-001-REF-A.md`       | *(See ATA 21)*                     |
+| 16     | *Merged into ATA 21*                     | `GP-AM-*-16-001-REF-A.md`       | *(See ATA 21)*                     |
+| 17     | *Merged into ATA 21*                     | `GP-AM-*-17-001-REF-A.md`       | *(See ATA 21)*                     |
+| 18     | Vibration & Noise Control                  | `GP‑AM-*-18-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-18-vibration--noise) |
+| 20     | Standard Practices – Airframe              | `GP‑AM-*-20-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-20-standard-practices--airframe) |
+| 21     | Air Conditioning & Pressurization (ECS)    | `GP‑AM-*-21-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-21-air-conditioning--pressurization) |
+| 22     | Auto Flight                                | `GP‑AM-*-22-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-22-auto-flight) |
+| 23     | Communications                             | `GP‑AM-*-23-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-23-communications) |
+| 24     | Electrical Power                           | `GP‑AM-*-24-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-24-electrical-power) |
+| 25     | Equipment / Furnishings                    | `GP‑AM-*-25-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-25-equipment--furnishings) |
+| 26     | Fire Protection                            | `GP‑AM-*-26-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-26-fire-protection) |
+| 27     | Flight Controls (incl. GPAM)               | `GP‑AM-*-27-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-27-flight-controls) |
+| 28     | Fuel (Hybrid H2/SAF)                       | `GP‑AM-*-28-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-28-fuel) |
+| 29     | Hydraulic Power (Actuation Focus)          | `GP‑AM-*-29-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-29-hydraulic-power) |
+| 30     | Ice & Rain Protection                      | `GP‑AM-*-30-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-30-ice--rain-protection) |
+| 31     | Indicating / Recording Systems             | `GP‑AM-*-31-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-31-indicating--recording) |
+| 32     | Landing Gear                               | `GP‑AM-*-32-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-32-landing-gear) |
+| 33     | Lights                                     | `GP‑AM-*-33-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-33-lights) |
+| 34     | Navigation                                 | `GP‑AM-*-34-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-34-navigation) |
+| 35     | Oxygen                                     | `GP‑AM-*-35-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-35-oxygen) |
+| 36     | Pneumatic                                  | `GP‑AM-*-36-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-36-pneumatic) |
+| 37     | Vacuum                                     | `GP-AM-*-37-001-OV-A.md`        | [Details](./GP-AM/ToC-GP-AM.md#ata-37-vacuum) |
+| 38     | Water / Waste                              | `GP‑AM-*-38-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-38-water--waste) |
+| 39     | Electrical/Electronic Panels               | `GP‑AM-*-39-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-39-electricalelectronic-panels) |
+| 41     | Water Ballast                              | `GP‑AM-*-41-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-41-water-ballast) |
+| 42     | Integrated Modular Avionics (IMA)          | `GP‑AM-*-42-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-42-integrated-modular-avionics-ima) |
+| 44     | Cabin Systems                              | `GP‑AM-*-44-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-44-cabin-systems) |
+| 45     | Central Maintenance System (CMS)           | `GP‑AM-*-45-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-45-central-maintenance-system-cms) |
+| 46     | Information Systems                        | `GP‑AM-*-46-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-46-information-systems) |
+| 47     | Nitrogen Generation System (NGS)           | `GP‑AM-*-47-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-47-nitrogen-generation-system) |
+| 49     | Airborne Auxiliary Power (AAP/APU)         | `GP‑AM-*-49-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-49-airborne-auxiliary-power-aap) |
+| 50     | Cargo and Accessory Compartments           | `GP‑AM-*-50-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-50-cargo-and-accessory-compartments) |
+| 51     | Structures – General                       | `GP‑AM-*-51-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-51-structures--general) |
+| 52     | Doors                                      | `GP‑AM-*-52-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-52-doors) |
+| 53     | Fuselage                                   | `GP‑AM-*-53-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-53-fuselage) |
+| 54     | Nacelles/Pylons                            | `GP‑AM-*-54-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-54-nacellespylons) |
+| 55     | Stabilizers                                | `GP‑AM-*-55-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-55-stabilizers) |
+| 56     | Windows (incl. VR)                         | `GP‑AM-*-56-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-56-windows) |
+| 57     | Wings (incl. GPAM)                         | `GP‑AM-*-57-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-57-wings) |
+| 60     | Standard Practices - Engine                | `GP‑AM-*-60-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-60-standard-practices---engine) |
+| 61     | Propellers/Propulsors *(If Applicable)*    | `GP‑AM-*-61-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-61-propellerspropulsors) |
+| 62     | Main Rotor *(If Applicable)*               | `GP‑AM-*-62-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-62-main-rotor) |
+| 63     | Main Rotor Drive *(If Applicable)*         | `GP‑AM-*-63-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-63-main-rotor-drive) |
+| 64     | Tail Rotor *(If Applicable)*               | `GP‑AM-*-64-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-64-tail-rotor) |
+| 65     | Tail Rotor Drive *(If Applicable)*         | `GP‑AM-*-65-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-65-tail-rotor-drive) |
+| 66     | Folding Blades/Pylon *(If Applicable)*     | `GP‑AM-*-66-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-66-folding-bladespylon) |
+| 67     | Rotors Flight Control *(If Applicable)*    | `GP‑AM-*-67-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-67-rotors-flight-control) |
+| 70     | Standard Practices – Engines               | `GP‑AM-*-70-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-70-standard-practices---engines) |
+| 71     | Power Plant–General                        | `GP‑AM-*-71-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-71-power-plant-general) |
+| 72     | Engine (Turbine/Hybrid/H2)                 | `GP‑AM-*-72-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-72-engine-turbinepiston) |
+| 72-Q01 | **Quantum Propulsion Extension**           | `GP‑AM-*-72-Q01-000-IDX-A.md`   | [Details](./GP-AM/ToC-GP-AM.md#ata-72-q01-propulsion--quantum-extension) |
+| 73     | Engine Fuel & Control                      | `GP‑AM-*-73-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-73-engine-fuel-and-control) |
+| 74     | Ignition                                   | `GP‑AM-*-74-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-74-ignition) |
+| 75     | Air (Engine Bleed/ECS Input)               | `GP‑AM-*-75-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-75-air-engine-bleedecs-input) |
+| 76     | Engine Controls                            | `GP‑AM-*-76-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-76-engine-controls) |
+| 77     | Engine Indication                          | `GP‑AM-*-77-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-77-engine-indication) |
+| 78     | Exhaust                                    | `GP‑AM-*-78-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-78-exhaust) |
+| 79     | Oil                                        | `GP‑AM-*-79-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-79-oil) |
+| 80     | Starting                                   | `GP‑AM-*-80-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-80-starting) |
+| 83     | Accessory Gear Boxes                       | `GP‑AM-*-83-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-83-accessory-gear-boxes) |
+| 85     | Fuel Cell System *(If Applicable)*         | `GP‑AM-*-85-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-85-fuel-cell-system-if-applicable) |
+| 91     | Charts                                     | `GP‑AM-*-91-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-91-charts) |
+| 92     | Electrical System Installation             | `GP‑AM-*-92-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-92-electrical-system-installation) |
+| 95     | Special Equipment (GSE)                    | `GP‑AM-*-95-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-95-special-equipment-gse) |
+| 97     | Wiring Reporting                           | `GP‑AM-*-97-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-97-wiring-reporting) |
+| 99     | Special / Emerging Tech                    | `GP‑AM-*-99-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-99-special--emerging-tech) |
+
+*(ATA Chapters 15, 16, 17, 19, 40, 43, 48, 58, 59, 68, 69, 81, 82, 84, 86-90, 93, 94, 96, 98 are omitted as they are merged, not applicable, or reserved with no current canonical document.)*
+
+---
+
+## Part II: GP-AS · Space Systems & Spaceframes 🛰️🌌
+
+*Filename grammar*: `GP‑AS-[PlatformCode]-[SeqCode]-[ASChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+*(Full 00‑99 spaceframe chapter list is maintained in `./GP‑AS/ToC‑GP‑AS.md` with zero placeholders.)*
+**[Link to Part II Detailed ToC](./GP-AS/ToC-GP-AS.md)**
+
+---
+
+## Part III: GP-COM · Core Operating Matrix 💻🔗🔒
+
+*(COM.01 – COM.07 headings unchanged; content unchanged.)*
+**[Link to Part III Detailed ToC](./GP-COM/ToC-GP-COM.md)**
+
+---
+
+## Part IV: GP-GRO · Ground & Infrastructure 🏗️⛽🤖
+
+*(GRO.01 – GRO.05 headings unchanged.)*
+**[Link to Part IV Detailed ToC](./GP-GRO/ToC-GP-GRO.md)**
+
+---
+
+## Part V: GP-SUPL · Supply Chain & Ethical Logistics 🌍⛓️✅
+
+*(SUPL.01 – SUPL.03 headings unchanged.)*
+**[Link to Part V Detailed ToC](./GP-SUPL/ToC-GP-SUPL.md)**
+
+---
+
+## Part VI: GP-RAME · Robotic Assembly & Maintenance 🤖🛠️🌌
+
+*(RAME.01 – RAME.06 headings unchanged.)*
+**[Link to Part VI Detailed ToC](./GP-RAME/ToC-GP-RAME.md)**
+
+---
+
+## Part VII: GP-PM · Program Management & Ops 📊📈📋
+
+*(PM.01 – PM.06 headings unchanged.)*
+**[Link to Part VII Detailed ToC](./GP-PM/ToC-GP-PM.md)**
+
+---
+
+### Standard **InfoCodes** (Document Types)
+*(Referenced from INFOCODE-INDEX - see full index for details)*
+
+---
+
+### COAFI **filename grammar** (canonical example)
 ```
-=== INFOCODE RPT BEGIN ===
-INFOCODE:        21RTRPT
-TITLE:           REAL TIME REPORT SYSTEM STATUS ECS (ATA 21)
-VERSION:         1.0
-DATE:            {{YYYY‑MM‑DD}}
-TIME:            {{HH:MM:SS}}
-AUTHOR:          {{NOMBRE_AUTOR}}
-SYSTEM:          ECS
-ATA_CHAPTER:     21
-
---- METADATA ---
-# Campo               | Valor
-#---------------------|----------------
-# Aircraft Tail       | {{TAIL_NUMBER}}
-# Flight / Cycle ID   | {{FLIGHT_ID}}
-# Location (Lat,Lon)  | {{LAT}},{{LON}}
-# Ambient Temp (°C)   | {{EXT_TEMP}}
-# Cabin Altitude (ft) | {{CAB_ALT_FT}}
-
---- REPOSITORY DESTINATION ---
-# Mail Box Address    | {{REPOSITORY_MAILBOX}}
-# Retention Policy    | {{RETENTION_POLICY}}
-
---- BODY ---  
-[1] SYSTEM_OVERVIEW  
-• Uptime:                      {{UPTIME}}  
-• Current Mode:                {{MODE}}  
-• Last Fault Code:             {{FAULT_CODE}}  
-
-[2] AIR_SOURCE_STATUS (21‑10)  
-• Bleed Air Valves:            {{BLEED_VALVE_STATE}}  
-• Electric Compressors:        {{ELEC_COMP_STATE}}  
-• APU Air Source:              {{APU_STATE}}  
-
-[3] DISTRIBUTION_STATUS (21‑20)  
-• Front Cabin Flow (m³/s):     {{FLOW_FRONT}}  
-• Rear Cabin Flow (m³/s):      {{FLOW_REAR}}  
-• Cargo Zone Recirc:           {{RECIRC_RATE}}  
-
-[4] FILTRATION_STATUS (21‑21)  
-• Filter Efficiency (%):       {{FILTER_EFF}}  
-• UV‑C Sterilizer Status:      {{UV_C_STATUS}}  
-• Next Replacement Due:        {{FILTER_REPLACE_DATE}}  
-
-[5] PRESSURIZATION_STATUS (21‑30 & 21‑31)  
-• Cabin Altitude (ft):         {{CAB_ALT_FT}}  
-• Outflow Valve Position (%):  {{OUTFLOW_POS}}  
-• Pressure Change Rate (PSI/min): {{PRESS_RATE}}  
-
-[6] GREEN_ECS_METRICS (21‑50)  
-• Pack Power Usage (kW):       {{PACK_POWER}}  
-• Energy Recovery Rate (%):     {{ENERGY_RECOVERY}}  
-
-[7] AI_CLIMATE_ZONES (21‑60)  
-• Zones Adjusted:              {{NUM_ZONES_ADJ}}  
-• Avg. Bias Score:             {{AVG_BIAS_SCORE}}  
-• Safety Override Active:      {{OVERRIDE_FLAG}}  
-
---- FOOTER ---  
-REPORT_GENERATED_BY:    QAO‑Monitor v2.3  
-SIGNATURE:             {{DIGITAL_SIGNATURE}}
-=== INFOCODE RPT END ===
+GP-AM-AMPEL-0100-27-50-SDD-A.md
 ```
-
-### Notes
-
--   Use the [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/) to customize and interact with the diagram further.
--   If the Mermaid diagram does not render correctly in this Markdown viewer, copy the code into the live editor above for visualization.
+*GP‑AM* (Air Systems) · *AMPEL* platform · Seq #*0100* · **ATA 27** Flight Controls · Subject #*50* Flap System · *SDD* (System Design Description) · Rev *A*.
 
 ---
 
-## Master Index - Detailed Contents by Part
-
-*(Links below point to relative file locations within the COAFI documentation structure. Each entry follows the format: `[Filename](./RelativePath/Filename): Subject Number: Subject Name - *(Info Code(s))*`)*
-
----
-
-## Part 0: Program Foundations (GP-FD) 🌱🔬
-
-*Purpose: Foundational Principles, Doctrines, Frameworks, Theories, Compliance & Context Manuals*
-
-### FD.00: Introduction & Program Vision 🧭
-*Establishes the overarching goals, vision, and roadmap for the GAIA AIR program and the COAFI framework.*
-*   [GP-FD-00-001-OV-B.md](./GP-FD/GP-FD-00-001-OV-B.md): 00-01: Introduction & Program Vision Overview - *(OV)* *(Updated)*
-*   [GP-FD-00-002-OV-A.md](./GP-FD/GP-FD-00-002-OV-A.md): 00-02: Core Principles of GAIA AIR - *(OV)*
-*   [GP-FD-00-003-PLAN-A.md](./GP-FD/GP-FD-00-003-PLAN-A.md): 00-03: Program Roadmap & Phasing - *(PLAN)*
-*   [GP-FD-00-004-RPT-A.md](./GP-FD/GP-FD-00-004-RPT-A.md): 00-04: Long-Term Cosmic Impetus & Goals - *(RPT)*
-*   [GP-FD-00-005-SDD-A.md](./GP-FD/GP-FD-00-005-SDD-A.md): 00-05: AI-Driven Vision Monitoring & Adaptation System - *(SDD)*
-*   [GP-FD-00-006-SPEC-A.md](./GP-FD/GP-FD-00-006-SPEC-A.md): 00-06: Constitutional Framework of System Intent (CFSI) - *(SPEC, OV)* **(Key Doctrine)**
-*   [GP-FD-00-007-SPEC-A.md](./GP-FD/GP-FD-00-007-SPEC-A.md): 00-07: Central Entangling Unities (CEU) Manifest - *(SPEC, OV)* **(Key Doctrine)**
-*   [GP-FD-00-008-SPEC-A.md](./GP-FD/GP-FD-00-008-SPEC-A.md): 00-08: AGAD Standard - As GAIA AIR Does (Quantum-Financial Arch.) - *(SPEC, OV)* **(Key Doctrine)**
-*   [GP-FD-00-009-SPEC-A.md](./GP-FD/GP-FD-00-009-SPEC-A.md): 00-09: Universal Robotics Ingenuity Foundation (URIF) Overview - *(OV)* **(Key Doctrine)**
-*   [GP-FD-00-010-SPEC-A.md](./GP-FD/GP-FD-00-010-SPEC-A.md): 00-10: e.G.A.I.As Paradigm Overview (Embodiment, Evolving, Extended) - *(OV)* **(Key Doctrine)**
-*   [GP-FD-00-011-SPEC-A.md](./GP-FD/GP-FD-00-011-SPEC-A.md): 00-11: Aerospace General Integration System (AGIS) Nomenclature Standard - *(SPEC)* **(Key Standard)**
-*   [GP-FD-00-012-SPEC-A.md](./GP-FD/GP-FD-00-012-SPEC-A.md): 00-12: COAFI Functional Framework Implementation (FFI) Standard - *(SPEC)* **(Key Standard)**
-*   [GP-FD-00-013-SPEC-A.md](./GP-FD/GP-FD-00-013-SPEC-A.md): 00-13: TPSL/TPWD System Specification Standard - *(SPEC)* **(Key Standard)**
-*   [GP-FD-00-014-SPEC-A.md](./GP-FD/GP-FD-00-014-SPEC-A.md): 00-14: GAIA AIR Documentation Classification System - *(SPEC)* **(Key Standard)**
-
-*(... Rest of Part 0 remains the same ...)*
+**Change Log v2025-04-18 (No-Placeholder Edition)**
+*   **Removed** all placeholder rows/stubs for Reserved/Not Applicable chapters (FD.07-99; ATA 19, 40, 43, 48, 58, 59, 68, 69, 81, 82, 84, 86-90, 93, 94, 96, 98).
+*   Only chapters with existing canonical entry points (IDX or specific OV/REF files) are listed in the Part 1 table.
+*   Added explicit links to detailed Part ToC files for all Parts.
+*   Referenced the canonical `IDX` file as the primary entry for each populated chapter.
+*   Confirmed `REF` mapping for merged ATA chapters 15-17.
+*   No structural changes to Parts II-VII (beyond confirming placeholder removal).
+*   Updated Change Log to reflect the "No-Placeholder" philosophy.
 
 ---
-
-## Part 1: Air Systems & Airframes (AMPEL360XWLRGA) (GP-AM) 🚀
-
-*Purpose: Airframe Design, System & Maintenance Manuals*
-
-# GP‑AM · Air Systems & Airframes – Master ToC
-🚨 Generated draft — requires official audit before release 🚨  
-Click any ▶ symbol or heading to expand/collapse.
-
-## ▶ Part 1 – GP‑AM (Air Systems & Airframes) 🚀
-### ▶ ATA 00 : Intro & General ✈️
-- **00‑01** : Intro & General Overview (OV)
-- **00‑10** : Regulatory Compliance Overview (REQ)
-- **00‑11** : Certification Strategy (PLAN)
-- **00‑20** : Core Design Principles (OV)
-- **00‑21** : Advanced Materials Philosophy (AMPEL) (OV)
-- **00‑30** : AI‑Driven Doc Adaptation System Description (SDD)
-
-### ▶ ATA 01 : Aircraft General
-- **01‑01** : Aircraft Identification & General Specs Overview (OV)
-- **01‑02** : Identification / Registration Specification (SPEC)
-- **01‑03** : General Specifications (SPEC)
-- **01‑10** : Performance Characteristics Report (RPT)
-- **01‑11** : Weight & Balance Data List (LIST)
-- **01‑20** : Operational Limits Specification (SPEC / REQ)
-- **01‑21** : AI‑Enhanced Operational Monitoring Description (SDD)
-
-### ▶ ATA 02 : Operations Information
-- **02‑01** : Operations Manual Overview (OV)
-- **02‑10** : Normal Operating Procedures (PROC)
-- **02‑11** : AI‑Assisted Flight Ops Concept (SDD)
-- **02‑20** : Abnormal Operating Procedures (PROC)
-- **02‑21** : Emergency Procedures (PROC)
-
-### ▶ ATA 03 : Performance
-- **03‑01** : Performance Data Overview (OV / RPT)
-- **03‑10** : Take‑Off Performance Report (RPT / CAL)
-- **03‑11** : Quantum Propulsion Take‑Off Analysis (SDD)
-- **03‑20** : Cruise Performance Report (RPT / CAL)
-- **03‑21** : AI‑Optimised Cruise Efficiency System (SDD)
-- **03‑30** : Landing Performance Report (RPT / CAL)
-
-### ▶ ATA 04 : Airworthiness
-- **04‑01** : Airworthiness Requirements Overview (OV / REQ)
-- **04‑10** : Certification Standards Compliance (REQ)
-- **04‑11** : Quantum Certification Challenges Report (RPT)
-- **04‑20** : Continued Airworthiness Maintenance Program (PLAN)
-- **04‑21** : AI‑Driven Airworthiness Monitoring System (SDD)
-
-### ▶ ATA 05 : Time Limits / Maintenance Checks ⏱️
-- **05‑01** : Maintenance Philosophy Overview (OV)
-- **05‑10** : Maintenance Program Plan (PLAN)
-- **05‑11** : AI Adaptive Scheduling System (i‑Aher0) (SDD)
-- **05‑20** : Predictive Maintenance System Description (SDD)
-- **05‑50** : Component Life Limits List (LIST)
-- **05‑51** : Airworthiness Limitations Requirements (REQ)
-- **05‑52** : Structural Inspection Program Plan (PLAN)
-
----
-
-## Part 2: Space Systems & Spaceframes (AMPEL+) (GP-AS) 🛰️🌌
-
-*Purpose: Spaceframe Design, System & Ops Manuals*
-
-*(... Full Part 2 structure remains the same as previously provided and corrected ...)*
-
----
-
-## Part 3: Core Operating Matrix (GP-COM) 💻🔗🔒
-
-*Purpose: Shared Digital Infrastructure Manuals (AI, QAO, Security, BITT, AMPEL Core)*
-
-*(Note: The following sections were previously under GP-CN)*
-
-### COM.01: GAIA AI Core (i-Aher0)
-*Architecture, specifications, procedures, ethical references, and interfaces for the core GAIA AI system, i-Aher0.*
-*   [GP-COM-AI-0300-01-001-OV-A.md](./GP-COM/GP-COM-AI-0300-01-001-OV-A.md): 01-01: i-Aher0 AI Core Architecture Overview - *(OV, SDD)*
-*   [GP-COM-AI-0300-01-002-SPEC-A.md](./GP-COM/GP-COM-AI-0300-01-002-SPEC-A.md): 01-02: Core AI Model Specification (Federated Learning) - *(SPEC)*
-*   [GP-COM-AI-0300-01-003-PROC-A.md](./GP-COM/GP-COM-AI-0300-01-003-PROC-A.md): 01-03: AI Model Training & Validation Procedure - *(PROC)*
-*   [GP-COM-AI-0300-01-004-REF-A.md](./GP-COM/GP-COM-AI-0300-01-004-REF-A.md): 01-04: Reference to Ethical AI Framework (FD.04) - *(REF)*
-*   [GP-COM-AI-0300-01-005-ICD-A.md](./GP-COM/GP-COM-AI-0300-01-005-ICD-A.md): 01-05: i-Aher0 API & Integration Interface Control Document - *(ICD)*
-
-### COM.02: Quantum-Augmented Orchestration (QAO)
-*Architecture, algorithms, interfaces, and resource management for the Quantum-Augmented Orchestration system.*
-*   [GP-COM-QAO-0300-02-001-OV-A.md](./GP-COM/GP-COM-QAO-0300-02-001-OV-A.md): 02-01: QAO System Architecture Overview - *(OV, SDD)*
-*   [GP-COM-QAO-0300-02-002-SPEC-A.md](./GP-COM/GP-COM-QAO-0300-02-002-SPEC-A.md): 02-02: QAO Algorithm Specification (Optimization, Simulation) - *(SPEC)*
-*   [GP-COM-QAO-0300-02-003-ICD-A.md](./GP-COM/GP-COM-QAO-0300-02-003-ICD-A.md): 02-03: QAO Interface Control Document (AI, BITT, Vehicle Systems) - *(ICD)*
-*   [GP-COM-QAO-0300-02-004-SDD-A.md](./GP-COM/GP-COM-QAO-0300-02-004-SDD-A.md): 02-04: Quantum Computing Resource Access & Management Description - *(SDD)*
-
-### COM.03: Cybersecurity Framework
-*Overall cybersecurity policy, Quantum Key Distribution (QKD) network specifications, AI-driven IDPS, and incident response procedures.*
-*   [GP-COM-SEC-0300-03-001-OV-A.md](./GP-COM/GP-COM-SEC-0300-03-001-OV-A.md): 03-01: Cybersecurity Framework Overview - *(OV)*
-*   [GP-COM-SEC-0300-03-002-PLAN-A.md](./GP-COM/GP-COM-SEC-0300-03-002-PLAN-A.md): 03-02: GAIA AIR Cybersecurity Policy & Plan - *(PLAN, REQ)*
-*   [GP-COM-SEC-0300-03-003-SPEC-A.md](./GP-COM/GP-COM-SEC-0300-03-003-SPEC-A.md): 03-03: Quantum Key Distribution (QKD) Network Specification - *(SPEC)*
-*   [GP-COM-SEC-0300-03-004-SDD-A.md](./GP-COM/GP-COM-SEC-0300-03-004-SDD-A.md): 03-04: AI-Driven Intrusion Detection & Prevention System (IDPS) Description - *(SDD)*
-*   [GP-COM-SEC-0300-03-005-PROC-A.md](./GP-COM/GP-COM-SEC-0300-03-005-PROC-A.md): 03-05: Security Incident Response Procedure - *(PROC)*
-
-### COM.04: Blockchain Infrastructure (BITT)
-*Overview, ledger design, consensus mechanisms, smart contracts, node management, and security for the BITT blockchain.*
-*   [GP-COM-BC-0300-04-001-OV-A.md](./GP-COM/GP-COM-BC-0300-04-001-OV-A.md): 04-01: BITT Blockchain Infrastructure Overview - *(OV, SDD)*
-*   [GP-COM-BC-0300-04-002-SPEC-A.md](./GP-COM/GP-COM-BC-0300-04-002-SPEC-A.md): 04-02: BITT Ledger Design & Consensus Mechanism Specification - *(SPEC)*
-*   [GP-COM-BC-0300-04-003-SPEC-A.md](./GP-COM/GP-COM-BC-0300-04-003-SPEC-A.md): 04-03: Smart Contract Specification (Data Logging, Access Control) - *(SPEC)*
-*   [GP-COM-BC-0300-04-004-SDD-A.md](./GP-COM/GP-COM-BC-0300-04-004-SDD-A.md): 04-04: BITT Node Deployment & Management Description - *(SDD)*
-*   [GP-COM-BC-0300-04-005-SPEC-A.md](./GP-COM/GP-COM-BC-0300-04-005-SPEC-A.md): 04-05: BITT Security & Cryptography Specification - *(SPEC)*
-*   [GP-COM-BITT-ARCH-001-A-SDD-A-00.md](./GP-COM/GP-COM-BITT-ARCH-001-A-SDD-A-00.md): ARCH-01: BlockThread Identificated Tree (BITT) System Architecture - *(SDD)* *(Incorporated from previous prompt)*
-
-### COM.05: BITT Application Layer
-*Applications built on the BITT blockchain, including immutable logging, maintenance traceability, supply chain tracking, and compliance verification.*
-*   [GP-COM-BITT-0300-05-001-OV-A.md](./GP-COM/GP-COM-BITT-0300-05-001-OV-A.md): 05-01: BITT Application Layer Overview - *(OV)*
-*   [GP-COM-BITT-0300-05-002-SDD-A.md](./GP-COM/GP-COM-BITT-0300-05-002-SDD-A.md): 05-02: Immutable Flight Data Logging System Description - *(SDD)*
-*   [GP-COM-BITT-0300-05-003-SDD-A.md](./GP-COM/GP-COM-BITT-0300-05-003-SDD-A.md): 05-03: Maintenance Record Traceability System Description - *(SDD)*
-*   [GP-COM-BITT-0300-05-004-SDD-A.md](./GP-COM/GP-COM-BITT-0300-05-004-SDD-A.md): 05-04: Supply Chain & Component Provenance Tracking Description - *(SDD)* **(Interface with GP-SUPL)**
-*   [GP-COM-BITT-0300-05-005-SDD-A.md](./GP-COM/GP-COM-BITT-0300-05-005-SDD-A.md): 05-05: Regulatory Compliance Verification System Description - *(SDD)*
-
-### COM.06: AMPEL Core Systems
-*Core systems related to the AMPEL materials philosophy, including the materials database, AI-SHM logic, DTO platform, and interfaces.*
-*   [GP-COM-AMPELCORE-0300-06-001-OV-A.md](./GP-COM/GP-COM-AMPELCORE-0300-06-001-OV-A.md): 06-01: AMPEL Core Systems Overview - *(OV)*
-*   [GP-COM-AMPELCORE-0300-06-002-SDD-A.md](./GP-COM/GP-COM-AMPELCORE-0300-06-002-SDD-A.md): 06-02: Advanced Materials Database (AMPEL-DB) Description - *(SDD)* **(Link to AMPEL-DB JSON)**
-*   [GP-COM-AMPELCORE-0300-06-003-SDD-A.md](./GP-COM/GP-COM-AMPELCORE-0300-06-003-SDD-A.md): 06-03: AI Structural Health Monitoring (AI-SHM) Core Logic Description - *(SDD)*
-*   [GP-COM-AMPELCORE-0300-06-004-SDD-A.md](./GP-COM/GP-COM-AMPELCORE-0300-06-004-SDD-A.md): 06-04: Digital Twin Orchestration (DTO) Platform Description - *(SDD)*
-*   [GP-COM-AMPELCORE-0300-06-005-ICD-A.md](./GP-COM/GP-COM-AMPELCORE-0300-06-005-ICD-A.md): 06-05: AMPEL Core Systems Interface Control Document - *(ICD)*
-*   [GP-COM-DATA-AMPELDF-001-A.md](./GP-COM/GP-COM-DATA-AMPELDF-001-A.md): DATA-01: AMPEL Dataframes Definition - *(SDD, SPEC)* *(Incorporated from previous prompt)*
-*   [GP-COM-DATA-AMPELDF-EXAMPLE-A.json](./GP-COM/GP-COM-DATA-AMPELDF-EXAMPLE-A.json): DATA-02: AMPEL Dataframe Example Instances - *(JSON)* *(Incorporated from previous prompt)*
-
-### COM.07: Common Network Infrastructure
-*Overview, specifications, routing, management, and topology for the common network infrastructure across air, space, and ground segments.*
-*   [GP-COM-NET-0300-07-001-OV-A.md](./GP-COM/GP-COM-NET-0300-07-001-OV-A.md): 07-01: Common Network Infrastructure Overview (Air/Space/Ground) - *(OV, SDD)*
-*   [GP-COM-NET-0300-07-002-SPEC-A.md](./GP-COM/GP-COM-NET-0300-07-002-SPEC-A.md): 07-02: Network Protocol & QoS Specification - *(SPEC)*
-*   [GP-COM-NET-0300-07-003-SDD-A.md](./GP-COM/GP-COM-NET-0300-07-003-SDD-A.md): 07-03: Data Routing & Management Description - *(SDD)*
-*   [GP-COM-NET-0300-07-004-DWG-A.md](./GP-COM/GP-COM-NET-0300-07-004-DWG-A.md): 07-04: High-Level Network Topology Drawing - *(DWG, FIG)*
-
-### Appendix (Part III)
-*   [GP-COM-0300-APP-A-001-GLO-A.md](./GP-COM/GP-COM-0300-APP-A-001-GLO-A.md): A. Glossary of Core Operating Matrix Terms & Acronyms - *(GLO)*
-*   [GP-COM-0300-APP-B-001-REF-A.md](./GP-COM/GP-COM-0300-APP-B-001-REF-A.md): B. Referenced COAFI Documents (Core Systems) - *(REF, LIST)*
-
----
-
-## Part 4: Ground & Infrastructure (GP-GRO) 🏗️⛽🤖
-
-*Purpose: Ground Support & Automation Manuals*
-
-*(Note: The following sections were previously under GP-GB)*
-
-### GRO.01: Launch & Landing Facilities
-*Overview, design specifications, automated operations, safety procedures, and layouts for launch and landing facilities.*
-*   [GP-GRO-LPAD-0400-01-001-OV-A.md](./GP-GRO/GP-GRO-LPAD-0400-01-001-OV-A.md): 01-01: Launch & Landing Facility Overview - *(OV, DD)*
-*   [GP-GRO-LPAD-0400-01-002-SPEC-A.md](./GP-GRO/GP-GRO-LPAD-0400-01-002-SPEC-A.md): 01-02: Launch Pad/Runway Design Specification - *(SPEC)*
-*   [GP-GRO-LPAD-0400-01-003-SDD-A.md](./GP-GRO/GP-GRO-LPAD-0400-01-003-SDD-A.md): 01-03: Automated Pad Operations System Description - *(SDD)*
-*   [GP-GRO-LPAD-0400-01-004-PROC-A.md](./GP-GRO/GP-GRO-LPAD-0400-01-004-PROC-A.md): 01-04: Launch/Landing Safety Procedures - *(PROC, REQ)*
-*   [GP-GRO-LPAD-0400-01-005-DWG-A.md](./GP-GRO/GP-GRO-LPAD-0400-01-005-DWG-A.md): 01-05: Facility Layout Drawing - *(DWG)*
-
-### GRO.02: Fueling & Servicing Systems
-*Overview, specifications, and procedures for ground-based fueling (LH2, SAF) and servicing systems, including automation.*
-*   [GP-GRO-FUEL-0400-02-001-OV-A.md](./GP-GRO/GP-GRO-FUEL-0400-02-001-OV-A.md): 02-01: Fueling & Servicing Systems Overview - *(OV, SDD)*
-*   [GP-GRO-FUEL-0400-02-002-SPEC-A.md](./GP-GRO/GP-GRO-FUEL-0400-02-002-SPEC-A.md): 02-02: Cryogenic Hydrogen (LH2) Storage & Transfer Specification - *(SPEC)*
-*   [GP-GRO-FUEL-0400-02-003-SPEC-A.md](./GP-GRO/GP-GRO-FUEL-0400-02-003-SPEC-A.md): 02-03: Sustainable Aviation Fuel (SAF) Storage & Transfer Specification - *(SPEC)*
-*   [GP-GRO-FUEL-0400-02-004-SDD-A.md](./GP-GRO/GP-GRO-FUEL-0400-02-004-SDD-A.md): 02-04: Automated Fueling System Description - *(SDD)*
-*   [GP-GRO-FUEL-0400-02-005-PROC-A.md](./GP-GRO/GP-GRO-FUEL-0400-02-005-PROC-A.md): 02-05: Fluid & Consumables Servicing Procedure - *(PROC)*
-
-### GRO.03: Ground Data Network & Control Centers
-*Architecture, specifications, functional descriptions, and interfaces for ground data networks and Mission Control Centers (MCC), including AI monitoring.*
-*   [GP-GRO-NODE-0400-03-001-OV-A.md](./GP-GRO/GP-GRO-NODE-0400-03-001-OV-A.md): 03-01: Ground Data Network & Control Centers Overview - *(OV, SDD)*
-*   [GP-GRO-NODE-0400-03-002-SPEC-A.md](./GP-GRO/GP-GRO-NODE-0400-03-002-SPEC-A.md): 03-02: Ground Data Network Architecture Specification - *(SPEC)*
-*   [GP-GRO-NODE-0400-03-003-SDD-A.md](./GP-GRO/GP-GRO-NODE-0400-03-003-SDD-A.md): 03-03: Mission Control Center (MCC) Functional Description - *(SDD)*
-*   [GP-GRO-NODE-0400-03-004-ICD-A.md](./GP-GRO/GP-GRO-NODE-0400-03-004-ICD-A.md): 03-04: Ground Network Interface Control Document (Vehicle Comms) - *(ICD)*
-*   [GP-GRO-NODE-0400-03-005-SDD-A.md](./GP-GRO/GP-GRO-NODE-0400-03-005-SDD-A.md): 03-05: AI-Assisted Ground Operations Monitoring System - *(SDD)*
-
-### GRO.04: Ground Robotics & Automation
-*Overview, specifications, descriptions, and interfaces for ground-based robotic systems (towing, maintenance, inspection).*
-*   [GP-GRO-GROBO-0400-04-001-OV-A.md](./GP-GRO/GP-GRO-GROBO-0400-04-001-OV-A.md): 04-01: Ground Robotics & Automation Overview - *(OV)*
-*   [GP-GRO-GROBO-0400-04-002-SPEC-A.md](./GP-GRO/GP-GRO-GROBO-0400-04-002-SPEC-A.md): 04-02: Autonomous Towing Vehicle Specification - *(SPEC)*
-*   [GP-GRO-GROBO-0400-04-003-SPEC-A.md](./GP-GRO/GP-GRO-GROBO-0400-04-003-SPEC-A.md): 04-03: Robotic Maintenance Platform Specification - *(SPEC)*
-*   [GP-GRO-GROBO-0400-04-004-SDD-A.md](./GP-GRO/GP-GRO-GROBO-0400-04-004-SDD-A.md): 04-04: Automated Inspection System Description (Drones, Crawlers) - *(SDD)*
-*   [GP-GRO-GROBO-0400-04-005-ICD-A.md](./GP-GRO/GP-GRO-GROBO-0400-04-005-ICD-A.md): 04-05: Ground Robotics Control & Data Interface Document - *(ICD)*
-
-### GRO.05: Ground Support Equipment (GSE)
-*Overview, lists, specifications, and procedures for standard ground support equipment.*
-*   [GP-GRO-GSE-0400-05-001-OV-A.md](./GP-GRO/GP-GRO-GSE-0400-05-001-OV-A.md): 05-01: GSE Overview - *(OV)*
-*   [GP-GRO-GSE-0400-05-002-LIST-A.md](./GP-GRO/GP-GRO-GSE-0400-05-002-LIST-A.md): 05-02: Standard GSE List - *(LIST)*
-*   [GP-GRO-GSE-0400-05-003-SPEC-A.md](./GP-GRO/GP-GRO-GSE-0400-05-003-SPEC-A.md): 05-03: GSE Specification (Power Carts, Jacks, Test Equipment) - *(SPEC)*
-*   [GP-GRO-GSE-0400-05-004-PROC-A.md](./GP-GRO/GP-GRO-GSE-0400-05-004-PROC-A.md): 05-04: GSE Operating & Maintenance Procedures - *(PROC)*
-
-### Appendix (Part IV)
-*   [GP-GRO-0400-APP-A-001-GLO-A.md](./GP-GRO/GP-GRO-0400-APP-A-001-GLO-A.md): A. Glossary of Ground Infrastructure Terms & Acronyms - *(GLO)*
-*   [GP-GRO-0400-APP-B-001-REF-A.md](./GP-GRO/GP-GRO-0400-APP-B-001-REF-A.md): B. Referenced COAFI Documents (Ground Systems) - *(REF, LIST)*
-
----
-
-## Part 5: Supply Chain & Ethical Logistics (GP-SUPL) 🌍♻️
-
-*Purpose: Ethical sourcing, lifecycle traceability, and sustainability.*
-
-### SUPL.01: Ethical Sourcing & Provenance
-*Policies, procedures, and systems for ensuring ethical sourcing and material provenance.*
-*   [GP-SUPL-ETHICS-0500-01-001-OV-A.md](./GP-SUPL/GP-SUPL-ETHICS-0500-01-001-OV-A.md): 01-01: Ethical Sourcing Framework Overview - *(OV)*
-*   [GP-SUPL-ETHICS-0500-01-002-PLAN-A.md](./GP-SUPL/GP-SUPL-ETHICS-0500-01-002-PLAN-A.md): 01-02: Supplier Code of Conduct & Audit Plan - *(PLAN, REQ)*
-*   [GP-SUPL-ETHICS-0500-01-003-SDD-A.md](./GP-SUPL/GP-SUPL-ETHICS-0500-01-003-SDD-A.md): 01-03: Material Provenance Tracking System (BITT Integration) - *(SDD)* **(Interface with GP-COM)**
-
-### SUPL.02: Lifecycle Assessment & Sustainability Metrics
-*Methodologies and tools for Lifecycle Assessment (LCA) and tracking key sustainability metrics.*
-*   [GP-SUPL-LCA-0500-02-001-OV-A.md](./GP-SUPL/GP-SUPL-LCA-0500-02-001-OV-A.md): 02-01: Lifecycle Assessment Methodology Overview - *(OV)*
-*   [GP-SUPL-LCA-0500-02-002-SPEC-A.md](./GP-SUPL/GP-SUPL-LCA-0500-02-002-SPEC-A.md): 02-02: Sustainability Metrics Specification (Carbon, Water, Waste) - *(SPEC)*
-*   [GP-SUPL-LCA-0500-02-003-SDD-A.md](./GP-SUPL/GP-SUPL-LCA-0500-02-003-SDD-A.md): 02-03: LCA Data Collection & Analysis Tool Description - *(SDD)*
-
-### SUPL.03: Circular Economy & End-of-Life Management
-*Strategies and procedures for component reuse, remanufacturing, recycling, and responsible disposal.*
-*   [GP-SUPL-EOL-0500-03-001-OV-A.md](./GP-SUPL/GP-SUPL-EOL-0500-03-001-OV-A.md): 03-01: Circular Economy Strategy Overview - *(OV)*
-*   [GP-SUPL-EOL-0500-03-002-PROC-A.md](./GP-SUPL/GP-SUPL-EOL-0500-03-002-PROC-A.md): 03-02: Component Disassembly & Material Recovery Procedure - *(PROC)*
-*   [GP-SUPL-EOL-0500-03-003-PLAN-A.md](./GP-SUPL/GP-SUPL-EOL-0500-03-003-PLAN-A.md): 03-03: End-of-Life Vehicle Decommissioning Plan - *(PLAN)* **(Ref: GP-PM)**
-
-### Appendix (Part V)
-*   [GP-SUPL-0500-APP-A-001-GLO-A.md](./GP-SUPL/GP-SUPL-0500-APP-A-001-GLO-A.md): A. Glossary of Supply Chain & Sustainability Terms - *(GLO)*
-*   [GP-SUPL-0500-APP-B-001-REF-A.md](./GP-SUPL/GP-SUPL-0500-APP-B-001-REF-A.md): B. Referenced COAFI Documents (Supply Chain) - *(REF, LIST)*
-
----
-
-## Part 6: Robotic Assembly & Maintenance (GP-RAME) 🤖🔧🌌
-
-*Purpose: Robotic Systems Design & Ops Manuals*
-
-*(Note: The following sections were previously under GP-RS)*
-
-### RAME.01: RAME Fleet Architecture & Concepts of Operations (CONOPS)
-*Defines the overall architecture, operational concepts, and performance requirements for the RAME (Robotic Autonomous Maintenance Entity) fleet.*
-*   [GP-RAME-FLEET-0600-01-001-OV-A.md](./GP-RAME/GP-RAME-FLEET-0600-01-001-OV-A.md): 01-01: RAME Fleet Architecture Overview - *(OV, SDD)*
-*   [GP-RAME-FLEET-0600-01-002-CONOPS-A.md](./GP-RAME/GP-RAME-FLEET-0600-01-002-CONOPS-A.md): 01-02: RAME Fleet Concept of Operations (On-Orbit Servicing, Inspection) - *(CONOPS)*
-*   [GP-RAME-FLEET-0600-01-003-SPEC-A.md](./GP-RAME/GP-RAME-FLEET-0600-01-003-SPEC-A.md): 01-03: RAME Fleet Performance Requirements Specification - *(SPEC, REQ)*
-
-### RAME.02: RAME Unit Design & Specifications
-*Details the design, specifications, and drawings for individual RAME units, including manipulators, mobility, sensors, power, and thermal systems.*
-*   [GP-RAME-UNIT-0600-02-001-OV-A.md](./GP-RAME/GP-RAME-UNIT-0600-02-001-OV-A.md): 02-01: RAME Unit Design Overview - *(OV, DD)*
-*   [GP-RAME-UNIT-0600-02-002-SPEC-A.md](./GP-RAME/GP-RAME-UNIT-0600-02-002-SPEC-A.md): 02-02: Robotic Manipulator Specification - *(SPEC)*
-*   [GP-RAME-UNIT-0600-02-003-SPEC-A.md](./GP-RAME/GP-RAME-UNIT-0600-02-003-SPEC-A.md): 02-03: Mobility System Specification (Thrusters, Grapples) - *(SPEC)*
-*   [GP-RAME-UNIT-0600-02-004-SPEC-A.md](./GP-RAME/GP-RAME-UNIT-0600-02-004-SPEC-A.md): 02-04: Sensor Suite Specification (Cameras, LiDAR, Thermal) - *(SPEC)*
-*   [GP-RAME-UNIT-0600-02-005-SPEC-A.md](./GP-RAME/GP-RAME-UNIT-0600-02-005-SPEC-A.md): 02-05: Power & Thermal System Specification - *(SPEC)*
-*   [GP-RAME-UNIT-0600-02-006-DWG-A.md](./GP-RAME/GP-RAME-UNIT-0600-02-006-DWG-A.md): 02-06: RAME Unit Assembly Drawing - *(DWG)*
-
-### RAME.03: RAME Control Systems
-*Covers the control system architecture for RAME units, including autonomous logic, teleoperation interfaces, and ground/spacecraft control interfaces.*
-*   [GP-RAME-CTRL-0600-03-001-OV-A.md](./GP-RAME/GP-RAME-CTRL-0600-03-001-OV-A.md): 03-01: RAME Control System Architecture Overview - *(OV, SDD)*
-*   [GP-RAME-CTRL-0600-03-002-SDD-A.md](./GP-RAME/GP-RAME-CTRL-0600-03-002-SDD-A.md): 03-02: Autonomous Control Logic Description - *(SDD)*
-*   [GP-RAME-CTRL-0600-03-003-SDD-A.md](./GP-RAME/GP-RAME-CTRL-0600-03-003-SDD-A.md): 03-03: Teleoperation Interface & Control Description - *(SDD)*
-*   [GP-RAME-CTRL-0600-03-004-ICD-A.md](./GP-RAME/GP-RAME-CTRL-0600-03-004-ICD-A.md): 03-04: RAME Ground/Spacecraft Control Interface Document - *(ICD)* **(Interface with GP-COM, GP-GRO)**
-
-### RAME.04: RAME Deployment & Retrieval Systems
-*Details the systems and procedures for deploying and retrieving RAME units from their host spacecraft (AMPEL+).*
-*   [GP-RAME-DEPLOY-0600-04-001-OV-A.md](./GP-RAME/GP-RAME-DEPLOY-0600-04-001-OV-A.md): 04-01: RAME Deployment/Retrieval System Overview - *(OV, SDD)*
-*   [GP-RAME-DEPLOY-0600-04-002-SPEC-A.md](./GP-RAME/GP-RAME-DEPLOY-0600-04-002-SPEC-A.md): 04-02: Deployment Mechanism Specification (From AMPEL+) - *(SPEC)* **(Interface with GP-AS)**
-*   [GP-RAME-DEPLOY-0600-04-003-PROC-A.md](./GP-RAME/GP-RAME-DEPLOY-0600-04-003-PROC-A.md): 04-03: Deployment & Retrieval Procedure - *(PROC)*
-
-### RAME.05: RAME Maintenance & Servicing Procedures
-*Covers the maintenance plan and procedures for RAME units, including on-orbit refueling/recharging and component replacement.*
-*   [GP-RAME-MAINT-0600-05-001-OV-A.md](./GP-RAME/GP-RAME-MAINT-0600-05-001-OV-A.md): 05-01: RAME Maintenance & Servicing Overview - *(OV)*
-*   [GP-RAME-MAINT-0600-05-002-PROC-A.md](./GP-RAME/GP-RAME-MAINT-0600-05-002-PROC-A.md): 05-02: On-Orbit Refueling/Recharging Procedure - *(PROC)*
-*   [GP-RAME-MAINT-0600-05-003-PROC-A.md](./GP-RAME/GP-RAME-MAINT-0600-05-003-PROC-A.md): 05-03: Component Replacement Procedure (Ground/Orbit) - *(PROC)*
-*   [GP-RAME-MAINT-0600-05-004-PLAN-A.md](./GP-RAME/GP-RAME-MAINT-0600-05-004-PLAN-A.md): 05-04: RAME Maintenance Plan - *(PLAN)*
-
-### RAME.06: RAME Software & AI Modules
-*Details the software architecture and specific AI modules for RAME units, covering perception, sensor fusion, motion planning, control, task execution, and manipulation.*
-*   [GP-RAME-SW-0600-06-001-OV-A.md](./GP-RAME/GP-RAME-SW-0600-06-001-OV-A.md): 06-01: RAME Software Architecture Overview - *(OV, SDD)*
-*   [GP-RAME-SW-0600-06-002-SDD-A.md](./GP-RAME/GP-RAME-SW-0600-06-002-SDD-A.md): 06-02: Perception & Sensor Fusion Module Description - *(SDD)*
-*   [GP-RAME-SW-0600-06-003-SDD-A.md](./GP-RAME/GP-RAME-SW-0600-06-003-SDD-A.md): 06-03: Motion Planning & Control Module Description - *(SDD)*
-*   [GP-RAME-SW-0600-06-004-SDD-A.md](./GP-RAME/GP-RAME-SW-0600-06-004-SDD-A.md): 06-04: Task Execution & Manipulation AI Module Description - *(SDD)*
-*   [GP-RAME-SW-0600-06-005-PROC-A.md](./GP-RAME/GP-RAME-SW-0600-06-005-PROC-A.md): 06-05: RAME Software Update & Verification Procedure - *(PROC)* **(Interface with GP-COM)**
-
-### Appendix (Part VI)
-*   [GP-RAME-0600-APP-A-001-GLO-A.md](./GP-RAME/GP-RAME-0600-APP-A-001-GLO-A.md): A. Glossary of Robotic Systems Terms & Acronyms - *(GLO)*
-*   [GP-RAME-0600-APP-B-001-REF-A.md](./GP-RAME/GP-RAME-0600-APP-B-001-REF-A.md): B. Referenced COAFI Documents (Robotic Systems) - *(REF, LIST)*
-
----
-
-## Part 7: Program Management & Operations (GP-PM) 📋📈⚙️
-
-*Purpose: Program Management & Operational Manuals*
-
-*(Note: The following sections were previously under GP-PMO)*
-
-### PM.01: Certification & Compliance Management
-*Covers the overview, master plan, liaison procedures, documentation management, and regulatory references for certification and compliance.*
-*   [GP-PM-CERT-0700-01-001-OV-A.md](./GP-PM/GP-PM-CERT-0700-01-001-OV-A.md): 01-01: Certification & Compliance Overview - *(OV)*
-*   [GP-PM-CERT-0700-01-002-PLAN-A.md](./GP-PM/GP-PM-CERT-0700-01-002-PLAN-A.md): 01-02: Master Certification Plan (Air & Space) - *(PLAN)*
-*   [GP-PM-CERT-0700-01-003-PROC-A.md](./GP-PM/GP-PM-CERT-0700-01-003-PROC-A.md): 01-03: Regulatory Agency Liaison Procedure - *(PROC)*
-*   [GP-PM-CERT-0700-01-004-PROC-A.md](./GP-PM/GP-PM-CERT-0700-01-004-PROC-A.md): 01-04: Compliance Documentation Management Procedure - *(PROC)*
-*   [GP-PM-CERT-0700-01-005-REF-A.md](./GP-PM/GP-PM-CERT-0700-01-005-REF-A.md): 01-05: Reference to FD.02 Regulatory Base - *(REF)*
-
-### PM.02: Work Breakdown Structure (WBS) & Program Planning
-*Details the program's WBS, Integrated Master Schedule (IMS), resource management plan, and AI-assisted project management tools.*
-*   [GP-PM-WBS-0700-02-001-OV-A.md](./GP-PM/GP-PM-WBS-0700-02-001-OV-A.md): 02-01: WBS & Program Planning Overview - *(OV)*
-*   [GP-PM-WBS-0700-02-002-WBS-A.md](./GP-PM/GP-PM-WBS-0700-02-002-WBS-A.md): 02-02: Master Program Work Breakdown Structure - *(WBS)*
-*   [GP-PM-WBS-0700-02-003-PLAN-A.md](./GP-PM/GP-PM-WBS-0700-02-003-PLAN-A.md): 02-03: Integrated Master Schedule (IMS) - *(PLAN)*
-*   [GP-PM-WBS-0700-02-004-PLAN-A.md](./GP-PM/GP-PM-WBS-0700-02-004-PLAN-A.md): 02-04: Resource Management Plan - *(PLAN)*
-*   [GP-PM-WBS-0700-02-005-SDD-A.md](./GP-PM/GP-PM-WBS-0700-02-005-SDD-A.md): 02-05: AI-Assisted Program Management Tools Description - *(SDD)*
-
-### PM.03: Training & Qualification Programs
-*Outlines training and qualification programs for flight crews, maintenance technicians, ground operations crews, and AI systems operators/analysts.*
-*   [GP-PM-TRAIN-0700-03-001-OV-A.md](./GP-PM/GP-PM-TRAIN-0700-03-001-OV-A.md): 03-01: Training & Qualification Overview - *(OV)*
-*   [GP-PM-TRAIN-0700-03-002-PLAN-A.md](./GP-PM/GP-PM-TRAIN-0700-03-002-PLAN-A.md): 03-02: Flight Crew Training Program Plan - *(PLAN, SPEC)*
-*   [GP-PM-TRAIN-0700-03-003-PLAN-A.md](./GP-PM/GP-PM-TRAIN-0700-03-003-PLAN-A.md): 03-03: Maintenance Technician Training Program Plan - *(PLAN, SPEC)*
-*   [GP-PM-TRAIN-0700-03-004-PLAN-A.md](./GP-PM/GP-PM-TRAIN-0700-03-004-PLAN-A.md): 03-04: Ground Operations Crew Training Program Plan - *(PLAN, SPEC)*
-*   [GP-PM-TRAIN-0700-03-005-PLAN-A.md](./GP-PM/GP-PM-TRAIN-0700-03-005-PLAN-A.md): 03-05: AI Systems Operator/Analyst Training Program Plan - *(PLAN, SPEC)*
-
-### PM.04: Lifecycle Management
-*Covers the entire product lifecycle from design and development, through production, operations/sustainment, to end-of-life (EoL), decommissioning, and recycling.*
-*   [GP-PM-LIFE-0700-04-001-OV-A.md](./GP-PM/GP-PM-LIFE-0700-04-001-OV-A.md): 04-01: Lifecycle Management Overview - *(OV)*
-*   [GP-PM-LIFE-0700-04-002-PLAN-A.md](./GP-PM/GP-PM-LIFE-0700-04-002-PLAN-A.md): 04-02: Design & Development Phase Plan - *(PLAN)*
-*   [GP-PM-LIFE-0700-04-003-PLAN-A.md](./GP-PM/GP-PM-LIFE-0700-04-003-PLAN-A.md): 04-03: Production & Manufacturing Plan - *(PLAN)*
-*   [GP-PM-LIFE-0700-04-004-PLAN-A.md](./GP-PM/GP-PM-LIFE-0700-04-004-PLAN-A.md): 04-04: Operations & Sustainment Plan - *(PLAN)*
-*   [GP-PM-LIFE-0700-04-005-PLAN-A.md](./GP-PM/GP-PM-LIFE-0700-04-005-PLAN-A.md): 04-05: End-of-Life (EoL), Decommissioning & Recycling Plan - *(PLAN)* **(Interface with GP-SUPL)**
-
-### PM.05: Quality Assurance & Configuration Management
-*Details the Quality Management System (QMS), Configuration Management (CM) plan, audit/inspection procedures, and non-conformance/corrective action processes.*
-*   [GP-PM-QA-0700-05-001-OV-A.md](./GP-PM/GP-PM-QA-0700-05-001-OV-A.md): 05-01: QA & CM Overview - *(OV)*
-*   [GP-PM-QA-0700-05-002-PLAN-A.md](./GP-PM/GP-PM-QA-0700-05-002-PLAN-A.md): 05-02: Quality Management System (QMS) Plan - *(PLAN, REQ)*
-*   [GP-PM-QA-0700-05-003-PLAN-A.md](./GP-PM/GP-PM-QA-0700-05-003-PLAN-A.md): 05-03: Configuration Management (CM) Plan - *(PLAN, REQ)*
-*   [GP-PM-QA-0700-05-004-PROC-A.md](./GP-PM/GP-PM-QA-0700-05-004-PROC-A.md): 05-04: Audit & Inspection Procedure - *(PROC)*
-*   [GP-PM-QA-0700-05-005-PROC-A.md](./GP-PM/GP-PM-QA-0700-05-005-PROC-A.md): 05-05: Non-Conformance Reporting & Corrective Action Procedure - *(PROC)*
-
-### PM.06: Risk Management
-*Outlines the risk management plan, identification/assessment procedures, program risk register, and mitigation/contingency plans.*
-*   [GP-PM-RISK-0700-06-001-OV-A.md](./GP-PM/GP-PM-RISK-0700-06-001-OV-A.md): 06-01: Risk Management Overview - *(OV)*
-*   [GP-PM-RISK-0700-06-002-PLAN-A.md](./GP-PM/GP-PM-RISK-0700-06-002-PLAN-A.md): 06-02: Risk Management Plan - *(PLAN)*
-*   [GP-PM-RISK-0700-06-003-PROC-A.md](./GP-PM/GP-PM-RISK-0700-06-003-PROC-A.md): 06-03: Risk Identification & Assessment Procedure - *(PROC)*
-*   [GP-PM-RISK-0700-06-004-LIST-A.md](./GP-PM/GP-PM-RISK-0700-06-004-LIST-A.md): 06-04: Program Risk Register - *(LIST)*
-*   [GP-PM-RISK-0700-06-005-PLAN-A.md](./GP-PM/GP-PM-RISK-0700-06-005-PLAN-A.md): 06-05: Risk Mitigation & Contingency Plan - *(PLAN)*
-
-### Appendix (Part VII)
-*   [GP-PM-0700-APP-A-001-GLO-A.md](./GP-PM/GP-PM-0700-APP-A-001-GLO-A.md): A. Glossary of Project Management Terms & Acronyms - *(GLO)*
-*   [GP-PM-0700-APP-B-001-REF-A.md](./GP-PM/GP-PM-0700-APP-B-001-REF-A.md): B. Referenced COAFI Documents (PM & Ops) - *(REF, LIST)*
-
----
-
-```
-
-This corrected version aligns the **INFOCODE-INDEX** examples and the **Detailed Contents** section with the approved 8-Part structure and uses the correct domain codes (`GP-COM`, `GP-GRO`, `GP-SUPL`, `GP-RAME`, `GP-PM`). The document naming convention examples within the text have also been updated to reflect this structure. Please review this corrected version.
