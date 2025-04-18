@@ -5,24 +5,6 @@
 
 **(Note:** This Master Table of Contents (AToC.md) serves as the central index for the entire **COAFI (Codes and Ontology as Aerospace Foresights Indexed)** technical documentation library, often referred to as the GAIA AIR "Mastery Manuals". It provides a fully enumerated, hierarchical structure linking to specific COAFI Data Modules (documents) identified by their unique Infocode and filename. Document Types (Info Codes) are indicated for each entry. The detailed technical content resides within the linked `.md` files. This document also includes the **INFOCODE-INDEX** defining the purpose and structure of each document type, and references key framework standards like **AGIS**, **TPSL/TPWD**, **CFSI**, **CEU**, **AGAD**, **URIF**, and **e.G.A.I.As** which are detailed in their respective foundational documents within Part 0.)*
 
-[Return to COAFI.MD Main Document](./COAFI.md)
-
----
-
-## Document Parts Overview
-
-| Part    | Domain Code | Title                              | Scope                                           | Key Interfaces                     |
-| :------ | :---------- | :--------------------------------- | :---------------------------------------------- | :--------------------------------- |
-| **0**   | `GP-FD`     | **Program Foundations**            | Vision, ethics, compliance, standards, doctrines. | All domains.                       |
-| **1**   | `GP-AM`     | **Air Systems & Airframes**        | AMPEL materials, aircraft systems (ATA chapters). | `GP-COM`, `GP-GRO`, `GP-RAME`.       |
-| **2**   | `GP-AS`     | **Space Systems & Spaceframes**    | AMPEL+ platforms, orbital logistics (AS chapters). | `GP-COM`, `GP-GRO`, `GP-RAME`.       |
-| **3**   | `GP-COM`    | **Core Operating Matrix**          | AI (`i-Aher0`), QAO, secure networks, BITT.     | All domains.                       |
-| **4**   | `GP-GRO`    | **Ground & Infrastructure**        | Robotics-augmented logistics, launch/landing.   | `GP-AM`, `GP-AS`, `GP-SUPL`.       |
-| **5**   | `GP-SUPL`   | **Supply Chain & Ethical Logistics** | Ethical sourcing, lifecycle traceability.        | `GP-GRO`, `GP-RAME`, `GP-AM`/`GP-AS`. |
-| **6**   | `GP-RAME`   | **Robotic Assembly & Maintenance** | Autonomous assembly, predictive maintenance.    | `GP-AM`, `GP-AS`, `GP-SUPL`.       |
-| **7**   | `GP-PM`     | **Program Management & Ops**       | Certification, risk management, lifecycle QA.   | All domains.                       |
-| *(Note: Further Parts reserved for future expansion)* |
-
 ---
 
 ## COAFI Information Code Index (INFOCODE-INDEX)
@@ -390,6 +372,10 @@ graph TD
 
 ## Document Parts Overview
 
+---
+
+## Document Parts Overview
+
 | Part    | Domain Code | Title                              | Scope                                           | Key Interfaces                     |
 | :------ | :---------- | :--------------------------------- | :---------------------------------------------- | :--------------------------------- |
 | **0**   | `GP-FD`     | **Program Foundations**            | Vision, ethics, compliance, standards, doctrines. | All domains.                       |
@@ -402,6 +388,7 @@ graph TD
 | **7**   | `GP-PM`     | **Program Management & Ops**       | Certification, risk management, lifecycle QA.   | All domains.                       |
 | *(Note: Further Parts reserved for future expansion)* |
 
+---
 ---
 
 ## Part 1: Air Systems & Airframes (AMPEL360XWLRGA) (GP-AM) 🚀✈️
