@@ -200,24 +200,708 @@ graph TD
 | 99     | Special / Emerging Tech                    | `GP‑AM-*-99-000-IDX-A.md`       | [Details](./GP-AM/ToC-GP-AM.md#ata-chapter-99-special--emerging-tech) |
 
 *(Note: Chapters 15-17, 19, 37(OV only), 40, 43, 48, 58-59, 68-69, 81-82, 84, 86-90, 93-94, 96, 98 omitted in this "No-Placeholder" view)*
+---
+
+## Filename Convention (GP-AM Domain)
+
+Files within this domain follow the pattern:
+`GP-AM-[PlatformCode]-[SeqCode]-[ATAChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+*   **GP-AM:** Domain Code (Air Systems & Airframes)
+*   **[PlatformCode]:** Unique identifier for the aircraft platform (e.g., `AMPEL-0100`). Represented by `*` in this ToC where applicable to multiple platforms.
+*   **[SeqCode]:** Sequential identifier within the context (e.g., `001`, `100`).
+*   **[ATAChapterCode]:** Two-digit code corresponding to the ATA 100 Chapter (e.g., `05`, `27`, `53`). Includes extensions like `72-Q01`.
+*   **[SubjectCode]:** Code identifying the specific subject/component within the ATA chapter (e.g., `010` for General, `050` for Flaps).
+*   **[InfoCode]:** Standard COAFI Information Code defining the document type (e.g., `IDX`, `OV`, `SPEC`, `REQ`, `PROC`, `SDD`, `CAL`, `TEST`, `DWG`, `LIST`, `REF`, `PLAN`).
+*   **[Rev]:** Revision indicator (e.g., `A`, `B`, `01`).
+*   **[ext]:** File extension (e.g., `.md`, `.json`, `.yaml`, `.pdf`, `.stp`).
 
 ---
 
-### COAFI filename grammar (canonical example)
-```
-GP-AM-AMPEL-0100-27-50-SDD-A.md
-```
-*GP‑AM* (Air Systems) · *AMPEL* platform · Seq #*0100* · **ATA 27** Flight Controls · Subject #*50* Flap System · *SDD* (System Design Description) · Rev *A*.
+## GP-AM Chapter Index (Based on AToC.md v2025-04-18 - No Placeholder View)
+
+*(Note: The canonical `IDX` file is the primary entry point for each chapter. Bullet points below list **representative examples** of potential documents within that chapter to illustrate the expected structure and granularity. These example files require specific creation and ratification.)*
 
 ---
 
-### Change Log v2025-04-18 (No-Placeholder Edition)
-*   **Removed** all placeholder rows/stubs for Reserved/Not Applicable chapters.
-*   Only chapters with existing canonical entry points (IDX or specific OV/REF files) are listed in the Part 1 table.
-*   Added explicit links to detailed Part ToC files for all Parts (Parts II-VII below).
-*   Confirmed `REF` mapping for merged ATA chapters 15-17.
-*   No structural changes to Parts II-VII (beyond confirming placeholder removal).
-*   Updated Change Log to reflect the "No-Placeholder" philosophy.
+### **ATA Chapter 00: Intro & General**
+*   Canonical Index: [`GP-AM-*-00-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-00-000-IDX-A.md)
+    *   `GP-AM-*-00-001-OV-A.md`: Part 1 Scope and Applicability Overview
+    *   `GP-AM-*-00-005-REF-A.md`: Cross-Reference to Part 0 Foundations (Standards, Ethics)
+    *   `GP-AM-*-00-010-SPEC-A.md`: Platform General Specification (Top Level)
+    *   `GP-AM-*-00-020-LIST-A.md`: Master Acronyms & Abbreviations List (GP-AM Specific)
+
+### **ATA Chapter 01: Aircraft General**
+*   Canonical Index: [`GP-AM-*-01-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-01-000-IDX-A.md)
+    *   `GP-AM-*-01-001-OV-A.md`: Aircraft Identification and Characteristics Overview
+    *   `GP-AM-*-01-010-SPEC-A.md`: Aircraft Type Designation Specification
+    *   `GP-AM-*-01-020-LIST-A.md`: Principal Characteristics List (Dimensions, Weights, Capacities)
+    *   `GP-AM-*-01-030-DWG-A.md`: General Arrangement Drawing
+
+### **ATA Chapter 02: Operations Information**
+*   Canonical Index: [`GP-AM-*-02-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-02-000-IDX-A.md)
+    *   `GP-AM-*-02-001-OV-A.md`: Flight Operations Documentation Overview
+    *   `GP-AM-*-02-010-REF-A.md`: Link to Aircraft Flight Manual (AFM) / Pilot Operating Handbook (POH) Index (May be external or separate COAFI Part)
+    *   `GP-AM-*-02-020-PROC-A.md`: Standard Operating Procedures (SOP) Index/Reference
+    *   `GP-AM-*-02-030-SDD-A.md`: AI-Assisted Flight Planning System Description
+
+### **ATA Chapter 03: Performance**
+*   Canonical Index: [`GP-AM-*-03-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-03-000-IDX-A.md)
+    *   `GP-AM-*-03-001-OV-A.md`: Performance Data Overview
+    *   `GP-AM-*-03-010-CAL-A.md`: Takeoff & Landing Performance Calculations
+    *   `GP-AM-*-03-020-CAL-A.md`: Cruise Performance Calculations (Range, Endurance, Ceiling)
+    *   `GP-AM-*-03-030-RPT-A.md`: Performance Data Report (Compiled Charts & Tables)
+    *   `GP-AM-*-03-040-SDD-A.md`: Performance Monitoring System (Onboard/Ground) Description
+
+### **ATA Chapter 04: Airworthiness**
+*   Canonical Index: [`GP-AM-*-04-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-04-000-IDX-A.md)
+    *   `GP-AM-*-04-001-OV-A.md`: Airworthiness Framework Overview
+    *   `GP-AM-*-04-010-PLAN-A.md`: Certification Plan (Type Certification Basis)
+    *   `GP-AM-*-04-020-LIST-A.md`: Airworthiness Limitations List (Critical Items)
+    *   `GP-AM-*-04-030-REF-A.md`: Master Minimum Equipment List (MMEL) Reference
+    *   `GP-AM-*-04-040-PROC-A.md`: Continued Airworthiness Management Procedure
+
+### **ATA Chapter 05: Time Limits / Maintenance Checks**
+*   Canonical Index: [`GP-AM-*-05-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-05-000-IDX-A.md)
+    *   `GP-AM-*-05-001-OV-A.md`: Maintenance Program Overview
+    *   `GP-AM-*-05-010-SPEC-A.md`: Life Limited Parts Specification
+    *   `GP-AM-*-05-020-PLAN-A.md`: Scheduled Maintenance Check Program Plan (A/B/C/D Checks or equivalent)
+    *   `GP-AM-*-05-030-LIST-A.md`: Maintenance Task List (Intervals & References)
+    *   `GP-AM-*-05-040-SDD-A.md`: AI-Optimized Maintenance Scheduling Logic Description (i-Aher0 Air)
+
+### **ATA Chapter 06: Dimensions & Areas**
+*   Canonical Index: [`GP-AM-*-06-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-06-000-IDX-A.md)
+    *   `GP-AM-*-06-001-OV-A.md`: Aircraft Dimensions & Areas Overview
+    *   `GP-AM-*-06-010-LIST-A.md`: Principal Dimensions List (Span, Length, Height)
+    *   `GP-AM-*-06-020-DWG-A.md`: Station Diagram / Coordinate System Definition Drawing
+    *   `GP-AM-*-06-030-LIST-A.md`: Key Surface Areas List (Wing, Tail, Control Surfaces)
+
+### **ATA Chapter 07: Lifting & Shoring**
+*   Canonical Index: [`GP-AM-*-07-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-07-000-IDX-A.md)
+    *   `GP-AM-*-07-001-OV-A.md`: Lifting & Shoring Procedures Overview
+    *   `GP-AM-*-07-010-DWG-A.md`: Jacking Point Locations & Load Limits Drawing
+    *   `GP-AM-*-07-020-PROC-A.md`: Aircraft Jacking Procedure
+    *   `GP-AM-*-07-030-DWG-A.md`: Slinging / Hoisting Point Locations Drawing
+    *   `GP-AM-*-07-040-PROC-A.md`: Aircraft Hoisting Procedure
+    *   `GP-AM-*-07-050-DWG-A.md`: Shoring Diagram & Requirements Drawing
+
+### **ATA Chapter 08: Leveling & Weighing**
+*   Canonical Index: [`GP-AM-*-08-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-08-000-IDX-A.md)
+    *   `GP-AM-*-08-001-OV-A.md`: Leveling & Weighing Overview
+    *   `GP-AM-*-08-010-PROC-A.md`: Aircraft Leveling Procedure
+    *   `GP-AM-*-08-020-DWG-A.md`: Leveling Point Locations Drawing
+    *   `GP-AM-*-08-030-PROC-A.md`: Aircraft Weighing Procedure
+    *   `GP-AM-*-08-040-LIST-A.md`: Weight & Balance Data List (Basic Empty Weight, CG)
+    *   `GP-AM-*-08-050-CAL-A.md`: Weight & Balance Calculation Methodology
+
+### **ATA Chapter 09: Towing & Taxiing**
+*   Canonical Index: [`GP-AM-*-09-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-09-000-IDX-A.md)
+    *   `GP-AM-*-09-001-OV-A.md`: Towing & Taxiing Operations Overview
+    *   `GP-AM-*-09-010-PROC-A.md`: Aircraft Towing Procedure & Limitations
+    *   `GP-AM-*-09-020-DWG-A.md`: Towing Point Locations & Attachments Drawing
+    *   `GP-AM-*-09-030-PROC-A.md`: Taxiing Procedure & Guidelines
+    *   `GP-AM-*-09-040-SPEC-A.md`: Turning Radius & Clearance Specification
+
+### **ATA Chapter 10: Parking, Mooring, Storage**
+*   Canonical Index: [`GP-AM-*-10-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-10-000-IDX-A.md)
+    *   `GP-AM-*-10-001-OV-A.md`: Parking, Mooring & Storage Overview
+    *   `GP-AM-*-10-010-PROC-A.md`: Aircraft Parking Procedure (Brakes, Chocks)
+    *   `GP-AM-*-10-020-PROC-A.md`: Aircraft Mooring Procedure
+    *   `GP-AM-*-10-030-DWG-A.md`: Mooring Point Locations & Load Limits Drawing
+    *   `GP-AM-*-10-040-PROC-A.md`: Short/Long Term Storage Procedure
+    *   `GP-AM-*-10-050-SPEC-A.md`: Storage Environmental Requirements Specification
+
+### **ATA Chapter 11: Placards & Markings**
+*   Canonical Index: [`GP-AM-*-11-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-11-000-IDX-A.md)
+    *   `GP-AM-*-11-001-OV-A.md`: Placards & Markings Overview
+    *   `GP-AM-*-11-010-DWG-A.md`: Exterior Markings Location Drawing (Livery, Registration, Warnings)
+    *   `GP-AM-*-11-020-LIST-A.md`: Exterior Markings List & Specifications
+    *   `GP-AM-*-11-030-DWG-A.md`: Interior Placards Location Drawing (Cockpit, Cabin, Cargo)
+    *   `GP-AM-*-11-040-LIST-A.md`: Interior Placards List & Specifications
+
+### **ATA Chapter 12: Servicing – Routine**
+*   Canonical Index: [`GP-AM-*-12-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-12-000-IDX-A.md)
+    *   `GP-AM-*-12-001-OV-A.md`: Routine Servicing Overview
+    *   `GP-AM-*-12-010-PROC-A.md`: Refueling/Defueling Procedure (incl. H2/SAF specifics)
+    *   `GP-AM-*-12-020-PROC-A.md`: Oil System Servicing Procedure
+    *   `GP-AM-*-12-030-PROC-A.md`: Hydraulic Fluid Servicing Procedure
+    *   `GP-AM-*-12-040-PROC-A.md`: Pneumatic/Oxygen System Servicing Procedure
+    *   `GP-AM-*-12-050-LIST-A.md`: Consumable Fluids & Materials List
+    *   `GP-AM-*-12-060-DWG-A.md`: Servicing Access Points Drawing
+
+### **ATA Chapter 13: Hydraulic Power (Minimal/EHA)**
+*   Canonical Index: [`GP-AM-*-13-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-13-000-IDX-A.md)
+    *   `GP-AM-*-13-001-OV-A.md`: Electro-Hydrostatic Actuation (EHA) System Overview
+    *   `GP-AM-*-13-010-SDD-A.md`: EHA Unit Design Description
+    *   `GP-AM-*-13-020-SPEC-A.md`: EHA Performance Specification
+    *   `GP-AM-*-13-030-DWG-A.md`: EHA Installation & Interface Drawing
+    *   `GP-AM-*-13-040-PROC-A.md`: EHA System Testing Procedure
+
+### **ATA Chapter 14: Pneumatic Power (Minimal)**
+*   Canonical Index: [`GP-AM-*-14-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-14-000-IDX-A.md)
+    *   `GP-AM-*-14-001-OV-A.md`: Auxiliary Pneumatic System Overview (if applicable)
+    *   `GP-AM-*-14-010-SDD-A.md`: Pneumatic Power Source Description (e.g., Electric Compressor)
+    *   `GP-AM-*-14-020-DWG-A.md`: Auxiliary Pneumatic Distribution Diagram
+
+### **ATA Chapter 15: *Merged into ATA 21 (Air Cond.)***
+*   Canonical Reference: [`GP-AM-*-15-001-REF-A.md`](./GP-AM/GP-AM-AMPEL-0100-15-001-REF-A.md)
+
+### **ATA Chapter 16: *Merged into ATA 21 (Air Cond.)***
+*   Canonical Reference: [`GP-AM-*-16-001-REF-A.md`](./GP-AM/GP-AM-AMPEL-0100-16-001-REF-A.md)
+
+### **ATA Chapter 17: *Merged into ATA 21 (Air Cond.)***
+*   Canonical Reference: [`GP-AM-*-17-001-REF-A.md`](./GP-AM/GP-AM-AMPEL-0100-17-001-REF-A.md)
+
+### **ATA Chapter 18: Vibration & Noise Control**
+*   Canonical Index: [`GP-AM-*-18-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-18-000-IDX-A.md)
+    *   `GP-AM-*-18-001-OV-A.md`: Vibration & Noise Control Strategy Overview
+    *   `GP-AM-*-18-010-SPEC-A.md`: Vibration Limits Specification (Airframe, Equipment)
+    *   `GP-AM-*-18-020-SDD-A.md`: Vibration Monitoring System Description
+    *   `GP-AM-*-18-030-CAL-A.md`: Noise Level Prediction & Analysis Report
+    *   `GP-AM-*-18-040-SDD-A.md`: Acoustic Treatment Design Description
+
+### **ATA Chapter 20: Standard Practices – Airframe**
+*   Canonical Index: [`GP-AM-*-20-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-20-000-IDX-A.md)
+    *   `GP-AM-*-20-001-OV-A.md`: Airframe Standard Practices Overview
+    *   `GP-AM-*-20-010-PROC-A.md`: Standard Fastener Installation Procedure
+    *   `GP-AM-*-20-020-SPEC-A.md`: Standard Fastener Torque Values Specification
+    *   `GP-AM-*-20-030-PROC-A.md`: Electrical Bonding & Grounding Procedure
+    *   `GP-AM-*-20-040-PROC-A.md`: Corrosion Prevention & Control Procedure
+    *   `GP-AM-*-20-050-PROC-A.md`: AMPEL Material Handling & Repair Procedure (Ref Part V/VI)
+
+### **ATA Chapter 21: Air Conditioning & Pressurization (ECS)**
+*   Canonical Index: [`GP-AM-*-21-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-21-000-IDX-A.md)
+    *   `GP-AM-*-21-001-OV-A.md`: Environmental Control System (ECS) Overview
+    *   `GP-AM-*-21-010-SDD-A.md`: Air Supply System Description (Bleed Air / Electric)
+    *   `GP-AM-*-21-020-SDD-A.md`: Cooling System Description (Air Cycle Machine / Vapor Cycle)
+    *   `GP-AM-*-21-030-SDD-A.md`: Heating System Description
+    *   `GP-AM-*-21-040-SDD-A.md`: Distribution System Description (Ducting, Outlets)
+    *   `GP-AM-*-21-050-SDD-A.md`: Pressurization Control System Description
+    *   `GP-AM-*-21-060-SPEC-A.md`: ECS Performance Specification
+    *   `GP-AM-*-21-070-DWG-A.md`: ECS Schematic Diagram
+
+### **ATA Chapter 22: Auto Flight**
+*   Canonical Index: [`GP-AM-*-22-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-22-000-IDX-A.md)
+    *   `GP-AM-*-22-001-OV-A.md`: Auto Flight System Architecture Overview
+    *   `GP-AM-*-22-010-SDD-A.md`: Autopilot System Description (Modes, Functions)
+    *   `GP-AM-*-22-020-SDD-A.md`: Flight Director System Description
+    *   `GP-AM-*-22-030-SDD-A.md`: Auto Throttle / Thrust Control System Description
+    *   `GP-AM-*-22-040-SDD-A.md`: Yaw Damper System Description
+    *   `GP-AM-*-22-050-SPEC-A.md`: Auto Flight Performance & Safety Specification
+    *   `GP-AM-*-22-060-ICD-A.md`: Auto Flight System Interface Control Document (Sensors, Actuators, FMS)
+    *   `GP-AM-*-22-070-SDD-A.md`: AI-Enhanced Flight Path Optimization Logic
+
+### **ATA Chapter 23: Communications**
+*   Canonical Index: [`GP-AM-*-23-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-23-000-IDX-A.md)
+    *   `GP-AM-*-23-001-OV-A.md`: Communications System Overview
+    *   `GP-AM-*-23-010-SDD-A.md`: VHF/HF Communication System Description
+    *   `GP-AM-*-23-020-SDD-A.md`: SATCOM System Description
+    *   `GP-AM-*-23-030-SDD-A.md`: Datalink Communication System Description (ACARS, CPDLC)
+    *   `GP-AM-*-23-040-SDD-A.md`: Interphone / Audio Integration System Description
+    *   `GP-AM-*-23-050-SPEC-A.md`: Communication System Performance Specification
+    *   `GP-AM-*-23-060-DWG-A.md`: Antenna Locations Drawing
+    *   `GP-AM-*-23-070-SDD-A.md`: QKD Integration for Secure Datalink Description (Ref Part III)
+
+### **ATA Chapter 24: Electrical Power**
+*   Canonical Index: [`GP-AM-*-24-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-24-000-IDX-A.md)
+    *   `GP-AM-*-24-001-OV-A.md`: Electrical Power System Architecture Overview (AC/DC)
+    *   `GP-AM-*-24-010-SDD-A.md`: Power Generation Description (Generators, TRUs, Inverters)
+    *   `GP-AM-*-24-020-SDD-A.md`: Power Distribution Description (Buses, Contactors, Circuit Breakers)
+    *   `GP-AM-*-24-030-SDD-A.md`: Battery System Description (Main, APU, Emergency)
+    *   `GP-AM-*-24-040-SPEC-A.md`: Electrical Load Analysis Specification
+    *   `GP-AM-*-24-050-DWG-A.md`: Electrical System Schematic Diagram
+    *   `GP-AM-*-24-060-SDD-A.md`: External Power System Description
+    *   `GP-AM-*-24-070-SDD-A.md`: AI Power Management & Load Shedding Description
+
+### **ATA Chapter 25: Equipment / Furnishings**
+*   Canonical Index: [`GP-AM-*-25-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-25-000-IDX-A.md)
+    *   `GP-AM-*-25-001-OV-A.md`: Cockpit & Cabin Equipment/Furnishings Overview
+    *   `GP-AM-*-25-010-SPEC-A.md`: Flight Crew Seat Specification
+    *   `GP-AM-*-25-020-SPEC-A.md`: Passenger Seat Specification
+    *   `GP-AM-*-25-030-DWG-A.md`: Cabin Layout of Passenger Accommodations (LOPA) Drawing
+    *   `GP-AM-*-25-040-SPEC-A.md`: Galley Equipment Specification
+    *   `GP-AM-*-25-050-SPEC-A.md`: Lavatory Equipment Specification
+    *   `GP-AM-*-25-060-LIST-A.md`: Emergency Equipment List (Life Vests, Rafts, First Aid, Fire Extinguishers)
+    *   `GP-AM-*-25-070-DWG-A.md`: Emergency Equipment Location Drawing
+
+### **ATA Chapter 26: Fire Protection**
+*   Canonical Index: [`GP-AM-*-26-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-26-000-IDX-A.md)
+    *   `GP-AM-*-26-001-OV-A.md`: Fire Protection System Overview
+    *   `GP-AM-*-26-010-SDD-A.md`: Engine/APU Fire Detection & Extinguishing System Description
+    *   `GP-AM-*-26-020-SDD-A.md`: Cargo Compartment Fire Detection & Suppression System Description
+    *   `GP-AM-*-26-030-SDD-A.md`: Cabin/Lavatory Smoke Detection System Description
+    *   `GP-AM-*-26-040-SPEC-A.md`: Fire Protection System Performance Specification
+    *   `GP-AM-*-26-050-DWG-A.md`: Detector & Extinguisher Locations Drawing
+
+### **ATA Chapter 27: Flight Controls**
+*   Canonical Index: [`GP-AM-*-27-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-27-000-IDX-A.md)
+    *   `GP-AM-*-27-001-OV-A.md`: Flight Control System Overview (Primary/Secondary)
+    *   `GP-AM-*-27-010-SDD-A.md`: Aileron Control System Description
+    *   `GP-AM-*-27-020-SDD-A.md`: Rudder Control System Description
+    *   `GP-AM-*-27-030-SDD-A.md`: Elevator Control System Description
+    *   `GP-AM-*-27-040-SDD-A.md`: Stabilizer Trim Control System Description
+    *   `GP-AM-*-27-050-SDD-A.md`: Flap Control System Description
+    *   `GP-AM-*-27-060-SDD-A.md`: Slat/Leading Edge Device Control System Description
+    *   `GP-AM-*-27-070-SDD-A.md`: Spoiler/Speedbrake Control System Description
+    *   `GP-AM-*-27-080-SPEC-A.md`: Flight Control Actuation Specification (Hydraulic/EHA/EMA)
+    *   `GP-AM-*-27-090-DWG-A.md`: Flight Control System Schematic/Layout Drawing
+    *   `GP-AM-*-27-100-SDD-A.md`: Fly-By-Wire (FBW) / Fly-By-Light (FBL) Architecture Description
+    *   `GP-AM-*-27-110-SDD-A.md`: GPAM (GAIA Polymorphic Aero-Morphing) Control Logic Description
+
+### **ATA Chapter 28: Fuel**
+*   Canonical Index: [`GP-AM-*-28-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-28-000-IDX-A.md)
+    *   `GP-AM-*-28-001-OV-A.md`: Fuel System Overview (incl. H2/SAF specifics)
+    *   `GP-AM-*-28-010-SDD-A.md`: Fuel Storage System Description (Tanks, Structure)
+    *   `GP-AM-*-28-020-SDD-A.md`: Fuel Distribution System Description (Pumps, Valves, Lines)
+    *   `GP-AM-*-28-030-SDD-A.md`: Fuel Quantity Indicating System Description
+    *   `GP-AM-*-28-040-SDD-A.md`: Fuel Management/Transfer System Description
+    *   `GP-AM-*-28-050-SPEC-A.md`: Fuel System Performance & Safety Specification
+    *   `GP-AM-*-28-060-DWG-A.md`: Fuel System Schematic Diagram
+    *   `GP-AM-*-28-070-SPEC-A.md`: Hydrogen (H2) Fuel System Specific Requirements (Cryo Storage, Boil-off)
+    *   `GP-AM-*-28-080-SPEC-A.md`: Sustainable Aviation Fuel (SAF) Compatibility Specification
+
+### **ATA Chapter 29: Hydraulic Power (Actuation Focus)**
+*   Canonical Index: [`GP-AM-*-29-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-29-000-IDX-A.md)
+    *   `GP-AM-*-29-001-OV-A.md`: Main Hydraulic Power System Overview (If Applicable)
+    *   `GP-AM-*-29-010-SDD-A.md`: Hydraulic Power Generation Description (Pumps - EDP, EMP, ADP)
+    *   `GP-AM-*-29-020-SDD-A.md`: Hydraulic Fluid Storage & Conditioning Description (Reservoirs, Filters, Coolers)
+    *   `GP-AM-*-29-030-SDD-A.md`: Hydraulic Distribution Description (Lines, Valves, Accumulators)
+    *   `GP-AM-*-29-040-SPEC-A.md`: Hydraulic System Performance Specification (Pressure, Flow)
+    *   `GP-AM-*-29-050-DWG-A.md`: Hydraulic System Schematic Diagram
+
+### **ATA Chapter 30: Ice & Rain Protection**
+*   Canonical Index: [`GP-AM-*-30-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-30-000-IDX-A.md)
+    *   `GP-AM-*-30-001-OV-A.md`: Ice & Rain Protection System Overview
+    *   `GP-AM-*-30-010-SDD-A.md`: Wing & Empennage Ice Protection Description (Thermal/Pneumatic/Electro-Impulse)
+    *   `GP-AM-*-30-020-SDD-A.md`: Engine Intake Ice Protection Description
+    *   `GP-AM-*-30-030-SDD-A.md`: Pitot/Static & Sensor Ice Protection Description
+    *   `GP-AM-*-30-040-SDD-A.md`: Windshield Ice & Rain Protection Description (Heating, Wipers, Repellent)
+    *   `GP-AM-*-30-050-SDD-A.md`: Ice Detection System Description
+    *   `GP-AM-*-30-060-SPEC-A.md`: Ice Protection Performance Specification
+
+### **ATA Chapter 31: Indicating / Recording Systems**
+*   Canonical Index: [`GP-AM-*-31-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-31-000-IDX-A.md)
+    *   `GP-AM-*-31-001-OV-A.md`: Indicating & Recording Systems Overview
+    *   `GP-AM-*-31-010-SDD-A.md`: Instrument & Display System Description (Cockpit Displays, Standby Instruments)
+    *   `GP-AM-*-31-020-SPEC-A.md`: Display Unit Specification (Size, Resolution, Brightness)
+    *   `GP-AM-*-31-030-SDD-A.md`: Flight Data Recorder (FDR) System Description
+    *   `GP-AM-*-31-040-SPEC-A.md`: FDR Parameter List & Recording Specification
+    *   `GP-AM-*-31-050-SDD-A.md`: Cockpit Voice Recorder (CVR) System Description
+    *   `GP-AM-*-31-060-SDD-A.md`: Central Annunciator / Warning System Description (EICAS/ECAM)
+    *   `GP-AM-*-31-070-ICD-A.md`: Indicating System Data Bus Interface Document
+
+### **ATA Chapter 32: Landing Gear**
+*   Canonical Index: [`GP-AM-*-32-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-32-000-IDX-A.md)
+    *   `GP-AM-*-32-001-OV-A.md`: Landing Gear System Overview
+    *   `GP-AM-*-32-010-SDD-A.md`: Main & Nose Gear Structure Description
+    *   `GP-AM-*-32-020-SDD-A.md`: Extension & Retraction System Description (Actuation, Locking)
+    *   `GP-AM-*-32-030-SDD-A.md`: Wheels & Brakes System Description
+    *   `GP-AM-*-32-040-SPEC-A.md`: Brake Performance Specification
+    *   `GP-AM-*-32-050-SDD-A.md`: Steering System Description (Nose/Main Gear)
+    *   `GP-AM-*-32-060-SDD-A.md`: Position & Warning System Description
+    *   `GP-AM-*-32-070-DWG-A.md`: Landing Gear Assembly Drawing
+
+### **ATA Chapter 33: Lights**
+*   Canonical Index: [`GP-AM-*-33-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-33-000-IDX-A.md)
+    *   `GP-AM-*-33-001-OV-A.md`: Lighting System Overview
+    *   `GP-AM-*-33-010-SDD-A.md`: Cockpit Lighting System Description
+    *   `GP-AM-*-33-020-SDD-A.md`: Cabin Lighting System Description
+    *   `GP-AM-*-33-030-SDD-A.md`: Emergency Lighting System Description
+    *   `GP-AM-*-33-040-SDD-A.md`: Exterior Lighting System Description (Navigation, Anti-Collision, Landing, Taxi, Logo)
+    *   `GP-AM-*-33-050-SPEC-A.md`: Lighting System Performance & Specification (Intensity, Color, Coverage)
+    *   `GP-AM-*-33-060-DWG-A.md`: Exterior Light Locations Drawing
+
+### **ATA Chapter 34: Navigation**
+*   Canonical Index: [`GP-AM-*-34-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-34-000-IDX-A.md)
+    *   `GP-AM-*-34-001-OV-A.md`: Navigation System Architecture Overview
+    *   `GP-AM-*-34-010-SDD-A.md`: Flight Management System (FMS) Description
+    *   `GP-AM-*-34-020-SPEC-A.md`: FMS Navigation Database Specification
+    *   `GP-AM-*-34-030-SDD-A.md`: Inertial Reference System (IRS) / Attitude Heading Reference System (AHRS) Description
+    *   `GP-AM-*-34-040-SDD-A.md`: Global Navigation Satellite System (GNSS/GPS) Receiver Description
+    *   `GP-AM-*-34-050-SDD-A.md`: Radio Navigation System Description (VOR/ILS/DME/ADF)
+    *   `GP-AM-*-34-060-SDD-A.md`: Air Data System Description (ADC, Probes)
+    *   `GP-AM-*-34-070-SDD-A.md`: Weather Radar System Description
+    *   `GP-AM-*-34-080-SDD-A.md`: Traffic Alert & Collision Avoidance System (TCAS) Description
+    *   `GP-AM-*-34-090-SDD-A.md`: Terrain Awareness & Warning System (TAWS/GPWS) Description
+    *   `GP-AM-*-34-100-SDD-A.md`: Quantum Navigation Sensor Integration Concept Description
+
+### **ATA Chapter 35: Oxygen**
+*   Canonical Index: [`GP-AM-*-35-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-35-000-IDX-A.md)
+    *   `GP-AM-*-35-001-OV-A.md`: Oxygen System Overview
+    *   `GP-AM-*-35-010-SDD-A.md`: Crew Oxygen System Description (Storage, Regulators, Masks)
+    *   `GP-AM-*-35-020-SDD-A.md`: Passenger Oxygen System Description (Generators/Gaseous, Masks)
+    *   `GP-AM-*-35-030-SPEC-A.md`: Oxygen System Performance & Duration Specification
+    *   `GP-AM-*-35-040-DWG-A.md`: Oxygen System Schematic & Component Location Drawing
+
+### **ATA Chapter 36: Pneumatic**
+*   Canonical Index: [`GP-AM-*-36-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-36-000-IDX-A.md)
+    *   `GP-AM-*-36-001-OV-A.md`: Main Pneumatic System Overview (Bleed Air)
+    *   `GP-AM-*-36-010-SDD-A.md`: Bleed Air Source Description (Engine, APU, Ground)
+    *   `GP-AM-*-36-020-SDD-A.md`: Pneumatic Distribution System Description (Ducting, Valves)
+    *   `GP-AM-*-36-030-SPEC-A.md`: Pneumatic System Performance Specification (Pressure, Temperature, Flow)
+    *   `GP-AM-*-36-040-DWG-A.md`: Pneumatic System Schematic Diagram
+
+### **ATA Chapter 37: Vacuum**
+*   Canonical Overview: [`GP-AM-*-37-001-OV-A.md`](./GP-AM/GP-AM-AMPEL-0100-37-001-OV-A.md)
+    *   *(Generally Not Applicable for modern aircraft using AHRS/ADC, may contain legacy system info if present or references)*
+
+### **ATA Chapter 38: Water / Waste**
+*   Canonical Index: [`GP-AM-*-38-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-38-000-IDX-A.md)
+    *   `GP-AM-*-38-001-OV-A.md`: Water & Waste System Overview
+    *   `GP-AM-*-38-010-SDD-A.md`: Potable Water System Description (Storage, Distribution, Heating)
+    *   `GP-AM-*-38-020-SDD-A.md`: Waste System Description (Toilet, Vacuum Generator, Storage Tank)
+    *   `GP-AM-*-38-030-SPEC-A.md`: Water & Waste System Capacity Specification
+    *   `GP-AM-*-38-040-DWG-A.md`: Water & Waste System Schematic & Layout Drawing
+
+### **ATA Chapter 39: Electrical/Electronic Panels**
+*   Canonical Index: [`GP-AM-*-39-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-39-000-IDX-A.md)
+    *   `GP-AM-*-39-001-OV-A.md`: Panel & Rack Integration Overview
+    *   `GP-AM-*-39-010-DWG-A.md`: Cockpit Panel Layout Drawing
+    *   `GP-AM-*-39-020-DWG-A.md`: Avionics Bay Rack Layout Drawing
+    *   `GP-AM-*-39-030-SPEC-A.md`: Standard Panel & Rack Specification (Dimensions, Cooling, Mounting)
+
+### **ATA Chapter 41: Water Ballast**
+*   Canonical Index: [`GP-AM-*-41-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-41-000-IDX-A.md)
+    *   `GP-AM-*-41-001-OV-A.md`: Water Ballast System Overview (If Applicable, e.g., for CG control in specialized aircraft)
+    *   `GP-AM-*-41-010-SDD-A.md`: Ballast Tank & Transfer System Description
+    *   `GP-AM-*-41-020-PROC-A.md`: Ballast System Operation Procedure
+
+### **ATA Chapter 42: Integrated Modular Avionics (IMA)**
+*   Canonical Index: [`GP-AM-*-42-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-42-000-IDX-A.md)
+    *   `GP-AM-*-42-001-OV-A.md`: IMA Architecture Overview (ARINC 653)
+    *   `GP-AM-*-42-010-SDD-A.md`: Core Processing Module (CPM) Description
+    *   `GP-AM-*-42-020-SDD-A.md`: Input/Output Module (IOM) Description
+    *   `GP-AM-*-42-030-SPEC-A.md`: Avionics Network Specification (e.g., AFDX - ARINC 664)
+    *   `GP-AM-*-42-040-PLAN-A.md`: Software Partitioning & Integration Plan
+    *   `GP-AM-*-42-050-ICD-A.md`: IMA Module Interface Control Document
+
+### **ATA Chapter 44: Cabin Systems**
+*   Canonical Index: [`GP-AM-*-44-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-44-000-IDX-A.md)
+    *   `GP-AM-*-44-001-OV-A.md`: Cabin Systems Integration Overview
+    *   `GP-AM-*-44-010-SDD-A.md`: Cabin Intercommunication Data System (CIDS) / Cabin Management System (CMS) Description
+    *   `GP-AM-*-44-020-SDD-A.md`: In-Flight Entertainment (IFE) System Description
+    *   `GP-AM-*-44-030-SDD-A.md`: Passenger Service Unit (PSU) Description
+    *   `GP-AM-*-44-040-SDD-A.md`: Cabin Network System Description (Wired/Wireless)
+    *   `GP-AM-*-44-050-ICD-A.md`: Cabin System Interface Control Document
+
+### **ATA Chapter 45: Central Maintenance System (CMS)**
+*   Canonical Index: [`GP-AM-*-45-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-45-000-IDX-A.md)
+    *   `GP-AM-*-45-001-OV-A.md`: Central Maintenance System Overview (Onboard/Ground Link)
+    *   `GP-AM-*-45-010-SDD-A.md`: On-Board Maintenance Function (OMF) Description
+    *   `GP-AM-*-45-020-SDD-A.md`: Fault Reporting & Diagnostics Logic Description
+    *   `GP-AM-*-45-030-SPEC-A.md`: Maintenance Message Format Specification
+    *   `GP-AM-*-45-040-ICD-A.md`: CMS Interface Control Document (System Integration)
+    *   `GP-AM-*-45-050-SDD-A.md`: i-Aher0 Predictive Maintenance Algorithm Integration Description (Ref Part III)
+
+### **ATA Chapter 46: Information Systems**
+*   Canonical Index: [`GP-AM-*-46-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-46-000-IDX-A.md)
+    *   `GP-AM-*-46-001-OV-A.md`: Aircraft Information Systems Architecture Overview
+    *   `GP-AM-*-46-010-SDD-A.md`: Electronic Flight Bag (EFB) System Description & Integration
+    *   `GP-AM-*-46-020-SDD-A.md`: Aircraft Network Security System Description (Firewalls, IDS) (Ref Part III)
+    *   `GP-AM-*-46-030-SPEC-A.md`: Data Loading Specification (Software, Databases)
+    *   `GP-AM-*-46-040-SDD-A.md`: Wireless Connectivity System Description (On-Ground/In-Flight)
+    *   `GP-AM-*-46-050-SDD-A.md`: BITT Ledger Onboard Node Description (Ref Part III)
+
+### **ATA Chapter 47: Nitrogen Generation System (NGS)**
+*   Canonical Index: [`GP-AM-*-47-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-47-000-IDX-A.md)
+    *   `GP-AM-*-47-001-OV-A.md`: Nitrogen Generation System / Fuel Tank Inerting System Overview
+    *   `GP-AM-*-47-010-SDD-A.md`: Air Separation Module (ASM) Description
+    *   `GP-AM-*-47-020-SDD-A.md`: NGS Control & Distribution System Description
+    *   `GP-AM-*-47-030-SPEC-A.md`: Inerting Performance Specification (Oxygen Concentration)
+
+### **ATA Chapter 49: Airborne Auxiliary Power (AAP/APU)**
+*   Canonical Index: [`GP-AM-*-49-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-49-000-IDX-A.md)
+    *   `GP-AM-*-49-001-OV-A.md`: Auxiliary Power Unit (APU) System Overview
+    *   `GP-AM-*-49-010-SPEC-A.md`: APU Engine Specification (Type, Power Output)
+    *   `GP-AM-*-49-020-SDD-A.md`: APU Control System Description (Start, Run, Shutdown)
+    *   `GP-AM-*-49-030-SDD-A.md`: APU Fuel & Oil System Description
+    *   `GP-AM-*-49-040-DWG-A.md`: APU Installation Drawing
+
+### **ATA Chapter 50: Cargo and Accessory Compartments**
+*   Canonical Index: [`GP-AM-*-50-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-50-000-IDX-A.md)
+    *   `GP-AM-*-50-001-OV-A.md`: Cargo & Accessory Compartments Overview
+    *   `GP-AM-*-50-010-DWG-A.md`: Cargo Compartment Layout & Dimensions Drawing
+    *   `GP-AM-*-50-020-SPEC-A.md`: Cargo Loading System Specification (Rollers, Locks, Nets)
+    *   `GP-AM-*-50-030-SDD-A.md`: Cargo Compartment Lining & Insulation Description
+    *   `GP-AM-*-50-040-DWG-A.md`: Accessory Compartment Locations Drawing (e.g., Avionics Bay, Wheel Wells)
+
+### **ATA Chapter 51: Structures – General**
+*   Canonical Index: [`GP-AM-*-51-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-51-000-IDX-A.md)
+    *   `GP-AM-*-51-001-OV-A.md`: Airframe Structural Design Philosophy Overview
+    *   `GP-AM-*-51-010-SPEC-A.md`: Structural Design Criteria Specification (Loads, Factors of Safety)
+    *   `GP-AM-*-51-020-SPEC-A.md`: Primary Structural Materials Specification (AMPEL, Alloys, Composites)
+    *   `GP-AM-*-51-030-PLAN-A.md`: Structural Integrity Program Plan (Fatigue, Damage Tolerance)
+    *   `GP-AM-*-51-040-SDD-A.md`: Structural Health Monitoring (SHM) System Integration Description
+
+### **ATA Chapter 52: Doors**
+*   Canonical Index: [`GP-AM-*-52-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-52-000-IDX-A.md)
+    *   `GP-AM-*-52-001-OV-A.md`: Door Systems Overview
+    *   `GP-AM-*-52-010-SDD-A.md`: Passenger/Crew Door Description (Structure, Mechanism, Sealing)
+    *   `GP-AM-*-52-020-SDD-A.md`: Emergency Exit Door Description
+    *   `GP-AM-*-52-030-SDD-A.md`: Cargo Door Description
+    *   `GP-AM-*-52-040-SDD-A.md`: Access/Service Door Description
+    *   `GP-AM-*-52-050-SDD-A.md`: Door Warning System Description
+
+### **ATA Chapter 53: Fuselage**
+*   Canonical Index: [`GP-AM-*-53-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-53-000-IDX-A.md)
+    *   `GP-AM-*-53-001-OV-A.md`: Fuselage Structure Overview
+    *   `GP-AM-*-53-010-DD-A.md`: Fuselage Section Design Document (Nose, Center, Aft)
+    *   `GP-AM-*-53-020-SPEC-A.md`: Fuselage Skin, Stringer, Frame Specification
+    *   `GP-AM-*-53-030-CAL-A.md`: Fuselage Stress Analysis Report
+    *   `GP-AM-*-53-040-DWG-A.md`: Fuselage Assembly Drawing
+
+### **ATA Chapter 54: Nacelles/Pylons**
+*   Canonical Index: [`GP-AM-*-54-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-54-000-IDX-A.md)
+    *   `GP-AM-*-54-001-OV-A.md`: Nacelle & Pylon Structure Overview
+    *   `GP-AM-*-54-010-DD-A.md`: Pylon Structural Design Document
+    *   `GP-AM-*-54-020-DD-A.md`: Nacelle Structure Design Document (Inlets, Cowlings, Thrust Reverser)
+    *   `GP-AM-*-54-030-CAL-A.md`: Nacelle/Pylon Stress & Loads Analysis Report
+    *   `GP-AM-*-54-040-DWG-A.md`: Nacelle/Pylon Assembly Drawing
+
+### **ATA Chapter 55: Stabilizers**
+*   Canonical Index: [`GP-AM-*-55-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-55-000-IDX-A.md)
+    *   `GP-AM-*-55-001-OV-A.md`: Empennage Structure Overview
+    *   `GP-AM-*-55-010-DD-A.md`: Horizontal Stabilizer Design Document
+    *   `GP-AM-*-55-020-DD-A.md`: Vertical Stabilizer Design Document
+    *   `GP-AM-*-55-030-CAL-A.md`: Stabilizer Stress & Loads Analysis Report
+    *   `GP-AM-*-55-040-DWG-A.md`: Stabilizer Assembly Drawing
+
+### **ATA Chapter 56: Windows**
+*   Canonical Index: [`GP-AM-*-56-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-56-000-IDX-A.md)
+    *   `GP-AM-*-56-001-OV-A.md`: Window Systems Overview
+    *   `GP-AM-*-56-010-SPEC-A.md`: Cockpit Windshield Specification (Structure, Heating, Materials)
+    *   `GP-AM-*-56-020-SPEC-A.md`: Cabin Window Specification (Structure, Materials)
+    *   `GP-AM-*-56-030-SDD-A.md`: VR/AR Enhanced Window System Description (If Applicable)
+    *   `GP-AM-*-56-040-PROC-A.md`: Window Inspection & Repair Procedure
+
+### **ATA Chapter 57: Wings**
+*   Canonical Index: [`GP-AM-*-57-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-57-000-IDX-A.md)
+    *   `GP-AM-*-57-001-OV-A.md`: Wing Structure Overview
+    *   `GP-AM-*-57-010-DD-A.md`: Wing Box Design Document
+    *   `GP-AM-*-57-020-SPEC-A.md`: Wing Spar, Rib, Skin Specification
+    *   `GP-AM-*-57-030-DD-A.md`: Leading/Trailing Edge Structure Design Document
+    *   `GP-AM-*-57-040-CAL-A.md`: Wing Stress, Loads & Aeroelasticity Analysis Report
+    *   `GP-AM-*-57-050-DWG-A.md`: Wing Assembly Drawing
+    *   `GP-AM-*-57-060-SDD-A.md`: GPAM Wing Morphing Mechanism Design Description
+
+### **ATA Chapter 60: Standard Practices - Engine**
+*   Canonical Index: [`GP-AM-*-60-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-60-000-IDX-A.md)
+    *   `GP-AM-*-60-001-OV-A.md`: Engine Standard Practices Overview (Installation, Handling)
+    *   `GP-AM-*-60-010-PROC-A.md`: Engine Installation/Removal Procedure
+    *   `GP-AM-*-60-020-PROC-A.md`: Standard Engine Interface Connection Procedure (Fluid, Electrical, Mechanical)
+    *   `GP-AM-*-60-030-SPEC-A.md`: Standard Engine Hardware Specification (Mounts, Bolts)
+
+### **ATA Chapter 61: Propellers/Propulsors** *(If Applicable)*
+*   Canonical Index: [`GP-AM-*-61-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-61-000-IDX-A.md)
+    *   `GP-AM-*-61-001-OV-A.md`: Propeller/Propulsor System Overview
+    *   `GP-AM-*-61-010-SPEC-A.md`: Propeller Blade Specification
+    *   `GP-AM-*-61-020-SDD-A.md`: Propeller Control System Description (Pitch Change, Feathering)
+    *   `GP-AM-*-61-030-SDD-A.md`: Propeller Synchronization System Description
+    *   `GP-AM-*-61-040-DWG-A.md`: Propeller Assembly Drawing
+
+### **ATA Chapter 62: Main Rotor** *(If Applicable - Rotorcraft)*
+*   Canonical Index: [`GP-AM-*-62-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-62-000-IDX-A.md)
+    *   `GP-AM-*-62-001-OV-A.md`: Main Rotor System Overview
+    *   `GP-AM-*-62-010-SPEC-A.md`: Rotor Blade Specification
+    *   `GP-AM-*-62-020-SDD-A.md`: Rotor Hub & Mast Description
+    *   `GP-AM-*-62-030-DWG-A.md`: Main Rotor Assembly Drawing
+
+### **ATA Chapter 63: Main Rotor Drive** *(If Applicable - Rotorcraft)*
+*   Canonical Index: [`GP-AM-*-63-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-63-000-IDX-A.md)
+    *   `GP-AM-*-63-001-OV-A.md`: Main Rotor Drive System Overview
+    *   `GP-AM-*-63-010-SDD-A.md`: Main Gearbox Description
+    *   `GP-AM-*-63-020-SPEC-A.md`: Drive Shaft & Coupling Specification
+    *   `GP-AM-*-63-030-DWG-A.md`: Main Rotor Drive Schematic
+
+### **ATA Chapter 64: Tail Rotor** *(If Applicable - Rotorcraft)*
+*   Canonical Index: [`GP-AM-*-64-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-64-000-IDX-A.md)
+    *   `GP-AM-*-64-001-OV-A.md`: Tail Rotor System Overview
+    *   `GP-AM-*-64-010-SPEC-A.md`: Tail Rotor Blade Specification
+    *   `GP-AM-*-64-020-SDD-A.md`: Tail Rotor Hub Description
+    *   `GP-AM-*-64-030-DWG-A.md`: Tail Rotor Assembly Drawing
+
+### **ATA Chapter 65: Tail Rotor Drive** *(If Applicable - Rotorcraft)*
+*   Canonical Index: [`GP-AM-*-65-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-65-000-IDX-A.md)
+    *   `GP-AM-*-65-001-OV-A.md`: Tail Rotor Drive System Overview
+    *   `GP-AM-*-65-010-SDD-A.md`: Intermediate/Tail Gearbox Description
+    *   `GP-AM-*-65-020-SPEC-A.md`: Tail Rotor Drive Shaft Specification
+    *   `GP-AM-*-65-030-DWG-A.md`: Tail Rotor Drive Schematic
+
+### **ATA Chapter 66: Folding Blades/Pylon** *(If Applicable)*
+*   Canonical Index: [`GP-AM-*-66-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-66-000-IDX-A.md)
+    *   `GP-AM-*-66-001-OV-A.md`: Folding Mechanism Overview
+    *   `GP-AM-*-66-010-SDD-A.md`: Blade/Pylon Folding Mechanism Description
+    *   `GP-AM-*-66-020-PROC-A.md`: Folding/Unfolding Procedure
+
+### **ATA Chapter 67: Rotors Flight Control** *(If Applicable - Rotorcraft)*
+*   Canonical Index: [`GP-AM-*-67-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-67-000-IDX-A.md)
+    *   `GP-AM-*-67-001-OV-A.md`: Rotorcraft Flight Control System Overview
+    *   `GP-AM-*-67-010-SDD-A.md`: Main Rotor Control Description (Swashplate, Collective, Cyclic)
+    *   `GP-AM-*-67-020-SDD-A.md`: Tail Rotor Control Description (Pitch Control)
+    *   `GP-AM-*-67-030-DWG-A.md`: Rotor Control Linkage Drawing
+
+### **ATA Chapter 70: Standard Practices – Engines**
+*   Canonical Index: [`GP-AM-*-70-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-70-000-IDX-A.md)
+    *   `GP-AM-*-70-001-OV-A.md`: Engine Standard Maintenance Practices Overview
+    *   `GP-AM-*-70-010-PROC-A.md`: Standard Engine Inspection Procedure (Borescope, Visual)
+    *   `GP-AM-*-70-020-PROC-A.md`: Engine Preservation & Storage Procedure
+    *   `GP-AM-*-70-030-LIST-A.md`: Standard Engine Tooling List
+
+### **ATA Chapter 71: Power Plant–General**
+*   Canonical Index: [`GP-AM-*-71-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-71-000-IDX-A.md)
+    *   `GP-AM-*-71-001-OV-A.md`: Power Plant System Overview
+    *   `GP-AM-*-71-010-DD-A.md`: Engine Build Specification (Module Definition)
+    *   `GP-AM-*-71-020-DWG-A.md`: Power Plant General Arrangement Drawing
+    *   `GP-AM-*-71-030-SDD-A.md`: Cowling & Access Panel Description
+
+### **ATA Chapter 72: Engine (Turbine/Hybrid/H2)**
+*   Canonical Index: [`GP-AM-*-72-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-72-000-IDX-A.md)
+    *   `GP-AM-*-72-001-OV-A.md`: Engine Core Architecture Overview
+    *   `GP-AM-*-72-010-DD-A.md`: Compressor Section Design Document
+    *   `GP-AM-*-72-020-DD-A.md`: Combustion Section Design Document (incl. H2 specifics)
+    *   `GP-AM-*-72-030-DD-A.md`: Turbine Section Design Document
+    *   `GP-AM-*-72-040-SPEC-A.md`: Engine Performance Specification (Thrust, SFC)
+    *   `GP-AM-*-72-050-SDD-A.md`: Hybrid Electric System Integration Description (If Applicable)
+    *   `GP-AM-*-72-060-DWG-A.md`: Engine Cross-Section Drawing
+
+### **ATA Chapter 72-Q01: Quantum Propulsion Extension**
+*   Canonical Index: [`GP-AM-*-72-Q01-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-72-Q01-000-IDX-A.md)
+    *   `GP-AM-*-72-Q01-001-OV-A.md`: Quantum Propulsion Module (QPM) Overview (Atmospheric)
+    *   `GP-AM-*-72-Q01-010-SPEC-A.md`: QPM Performance Specification (Atmospheric Thrust Augmentation)
+    *   `GP-AM-*-72-Q01-020-SDD-A.md`: Quantum Entanglement Emitter (QEE) Integration Description (Atmospheric)
+    *   `GP-AM-*-72-Q01-030-SDD-A.md`: Quantum State Modulator (QSM) Integration Description (Atmospheric)
+    *   `GP-AM-*-72-Q01-040-ICD-A.md`: QPM Control Interface Document (Engine Integration)
+    *   `GP-AM-*-72-Q01-050-PROC-A.md`: QPM Safing & Maintenance Procedure
+
+### **ATA Chapter 73: Engine Fuel & Control**
+*   Canonical Index: [`GP-AM-*-73-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-73-000-IDX-A.md)
+    *   `GP-AM-*-73-001-OV-A.md`: Engine Fuel & Control System Overview
+    *   `GP-AM-*-73-010-SDD-A.md`: Fuel Pumping & Metering Unit Description
+    *   `GP-AM-*-73-020-SDD-A.md`: Engine Control Unit (ECU/FADEC) Description
+    *   `GP-AM-*-73-030-SPEC-A.md`: FADEC Software Specification & Control Laws
+    *   `GP-AM-*-73-040-DWG-A.md`: Engine Fuel System Schematic
+
+### **ATA Chapter 74: Ignition**
+*   Canonical Index: [`GP-AM-*-74-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-74-000-IDX-A.md)
+    *   `GP-AM-*-74-001-OV-A.md`: Engine Ignition System Overview
+    *   `GP-AM-*-74-010-SDD-A.md`: Ignition Exciter & Lead Description
+    *   `GP-AM-*-74-020-SPEC-A.md`: Igniter Plug Specification
+    *   `GP-AM-*-74-030-DWG-A.md`: Ignition System Wiring Diagram
+
+### **ATA Chapter 75: Air (Engine Bleed/ECS Input)**
+*   Canonical Index: [`GP-AM-*-75-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-75-000-IDX-A.md)
+    *   `GP-AM-*-75-001-OV-A.md`: Engine Air Systems Overview
+    *   `GP-AM-*-75-010-SDD-A.md`: Engine Bleed Air System Description (Valves, Regulation)
+    *   `GP-AM-*-75-020-SDD-A.md`: Engine Anti-Ice Air System Description
+    *   `GP-AM-*-75-030-SDD-A.md`: Engine Cooling & Sealing Air System Description
+    *   `GP-AM-*-75-040-DWG-A.md`: Engine Air System Schematic
+
+### **ATA Chapter 76: Engine Controls**
+*   Canonical Index: [`GP-AM-*-76-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-76-000-IDX-A.md)
+    *   `GP-AM-*-76-001-OV-A.md`: Engine Control Interface Overview
+    *   `GP-AM-*-76-010-SDD-A.md`: Thrust Lever / Power Control Description
+    *   `GP-AM-*-76-020-ICD-A.md`: Engine Control Interface Document (Cockpit to FADEC)
+    *   `GP-AM-*-76-030-PROC-A.md`: Engine Emergency Shutdown Procedure
+
+### **ATA Chapter 77: Engine Indication**
+*   Canonical Index: [`GP-AM-*-77-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-77-000-IDX-A.md)
+    *   `GP-AM-*-77-001-OV-A.md`: Engine Indicating System Overview
+    *   `GP-AM-*-77-010-SPEC-A.md`: Key Engine Parameter Specification (N1, N2, EGT, Fuel Flow, Oil Pressure/Temp)
+    *   `GP-AM-*-77-020-SDD-A.md`: Engine Sensor Description & Locations
+    *   `GP-AM-*-77-030-ICD-A.md`: Engine Indication Interface Document (Sensors to Display System)
+    *   `GP-AM-*-77-040-SDD-A.md`: Engine Vibration Monitoring System Description
+
+### **ATA Chapter 78: Exhaust**
+*   Canonical Index: [`GP-AM-*-78-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-78-000-IDX-A.md)
+    *   `GP-AM-*-78-001-OV-A.md`: Engine Exhaust System Overview
+    *   `GP-AM-*-78-010-DD-A.md`: Exhaust Nozzle/Plug Design Document
+    *   `GP-AM-*-78-020-DD-A.md`: Thrust Reverser System Design Document
+    *   `GP-AM-*-78-030-DWG-A.md`: Exhaust System Assembly Drawing
+
+### **ATA Chapter 79: Oil**
+*   Canonical Index: [`GP-AM-*-79-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-79-000-IDX-A.md)
+    *   `GP-AM-*-79-001-OV-A.md`: Engine Oil System Overview
+    *   `GP-AM-*-79-010-SDD-A.md`: Oil Storage & Distribution Description (Tank, Pumps, Lines)
+    *   `GP-AM-*-79-020-SDD-A.md`: Oil Filtering & Cooling Description
+    *   `GP-AM-*-79-030-SDD-A.md`: Oil Indicating System Description (Pressure, Temp, Quantity)
+    *   `GP-AM-*-79-040-DWG-A.md`: Engine Oil System Schematic
+
+### **ATA Chapter 80: Starting**
+*   Canonical Index: [`GP-AM-*-80-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-80-000-IDX-A.md)
+    *   `GP-AM-*-80-001-OV-A.md`: Engine Starting System Overview
+    *   `GP-AM-*-80-010-SDD-A.md`: Starter Description (Air Turbine / Electric)
+    *   `GP-AM-*-80-020-SDD-A.md`: Starting Control System Description (Sequencing)
+    *   `GP-AM-*-80-030-DWG-A.md`: Starting System Schematic
+
+### **ATA Chapter 83: Accessory Gear Boxes**
+*   Canonical Index: [`GP-AM-*-83-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-83-000-IDX-A.md)
+    *   `GP-AM-*-83-001-OV-A.md`: Accessory Gearbox (AGB) Overview
+    *   `GP-AM-*-83-010-DD-A.md`: AGB Design Document (Gear Train, Housing)
+    *   `GP-AM-*-83-020-SPEC-A.md`: AGB Interface Specification (Engine Drive, Accessory Mounting)
+    *   `GP-AM-*-83-030-DWG-A.md`: AGB Assembly Drawing
+
+### **ATA Chapter 85: Fuel Cell System** *(If Applicable - e.g., for APU replacement or hybrid power)*
+*   Canonical Index: [`GP-AM-*-85-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-85-000-IDX-A.md)
+    *   `GP-AM-*-85-001-OV-A.md`: Fuel Cell System Overview (Aircraft Application)
+    *   `GP-AM-*-85-010-SPEC-A.md`: Fuel Cell Stack Specification (Power Density, Durability)
+    *   `GP-AM-*-85-020-SDD-A.md`: Reactant Storage & Supply Description (H2/O2 or H2/Air)
+    *   `GP-AM-*-85-030-SDD-A.md`: Power Conditioning & Integration Description (Interface to Electrical Bus)
+    *   `GP-AM-*-85-040-DWG-A.md`: Fuel Cell System Installation Drawing
+
+### **ATA Chapter 91: Charts**
+*   Canonical Index: [`GP-AM-*-91-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-91-000-IDX-A.md)
+    *   `GP-AM-*-91-001-OV-A.md`: Documentation Charts & Diagrams Overview
+    *   `GP-AM-*-91-010-LIST-A.md`: Master Wiring Diagram Index List
+    *   `GP-AM-*-91-020-LIST-A.md`: Master Hydraulic/Pneumatic Schematic Index List
+    *   `GP-AM-*-91-030-REF-A.md`: Reference to Digital Twin Visualization Interface (If Available)
+
+### **ATA Chapter 92: Electrical System Installation**
+*   Canonical Index: [`GP-AM-*-92-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-92-000-IDX-A.md)
+    *   `GP-AM-*-92-001-OV-A.md`: Wiring Installation Practices Overview
+    *   `GP-AM-*-92-010-PROC-A.md`: Wire Harness Fabrication & Installation Procedure
+    *   `GP-AM-*-92-020-SPEC-A.md`: Wire & Cable Specification (Type, Gauge, Rating)
+    *   `GP-AM-*-92-030-SPEC-A.md`: Connector & Terminal Specification
+    *   `GP-AM-*-92-040-PROC-A.md`: Wire Marking & Identification Procedure
+    *   `GP-AM-*-92-050-DWG-A.md`: Typical Wiring Installation Standard Drawings
+
+### **ATA Chapter 95: Special Equipment (GSE)**
+*   Canonical Index: [`GP-AM-*-95-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-95-000-IDX-A.md)
+    *   `GP-AM-*-95-001-OV-A.md`: Ground Support Equipment (GSE) & Special Tooling Overview
+    *   `GP-AM-*-95-010-LIST-A.md`: Required GSE List (Towing, Power, Air Start, Test Equipment)
+    *   `GP-AM-*-95-020-SPEC-A.md`: GSE Interface Specification
+    *   `GP-AM-*-95-030-LIST-A.md`: Special Maintenance Tooling List
+
+### **ATA Chapter 97: Wiring Reporting**
+*   Canonical Index: [`GP-AM-*-97-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-97-000-IDX-A.md)
+    *   `GP-AM-*-97-001-OV-A.md`: Wiring Data Management Overview
+    *   `GP-AM-*-97-010-SPEC-A.md`: Wiring List Database Format Specification
+    *   `GP-AM-*-97-020-PROC-A.md`: Wiring Data Configuration Control Procedure
+    *   `GP-AM-*-97-030-REF-A.md`: Link to Wiring Data Management Tool/System
+
+### **ATA Chapter 99: Special / Emerging Tech**
+*   Canonical Index: [`GP-AM-*-99-000-IDX-A.md`](./GP-AM/GP-AM-AMPEL-0100-99-000-IDX-A.md)
+    *   `GP-AM-*-99-001-OV-A.md`: Emerging Technologies Integration Overview (Air Systems)
+    *   `GP-AM-*-99-010-SDD-A.md`: Advanced Sensor Systems Description (e.g., LIDAR for Autonomous Ops)
+    *   `GP-AM-*-99-020-RPT-A.md`: Novel Materials (AMPEL) Application Report (Airframe Specific)
+    *   `GP-AM-*-99-030-OV-A.md`: Integration with RAME Systems Overview (Ground Ops) (Ref Part VI)
+    *   `GP-AM-*-99-040-ICD-A.md`: RAME System Interface Document (Ground Maintenance)
+
+---
+
+## Appendix (Part 1)
+
+*   **(Placeholder: `GP-AM-*-APP-A-001-GLO-A.md`)**: Glossary of Air Systems Terms & Acronyms *(GLO)*
+*   **(Placeholder: `GP-AM-*-APP-B-001-REF-A.md`)**: Referenced COAFI Documents (Air Systems) *(REF, LIST)*
+
+---
+
+**Document Status:** Draft (Generated based on AToC v2025-04-18)
+**Last Updated:** 2025-04-18
+**Requires:** Review, Ratification, and Population with actual document links.
+
+
+
+This detailed `ToC-GP-AM.md` provides the structure and illustrative examples for navigating Part 1 of your COAFI documentation. Remember to replace the example bullet points with links to actual, ratified documents as they become available.
 
 ---
 
