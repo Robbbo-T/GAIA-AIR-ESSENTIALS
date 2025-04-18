@@ -1,24 +1,26 @@
-
 # GAIA-AIR-ESSENTIALS
 
 **ESTRUCTURA PRIMARIA**
 
 ## ON GROUND (on-ground)
-Infraestructura terrestre, soporte, operaciones base.
+Infraestructura terrestre, soporte, operaciones base.  
+**Ecosystem:** ON-GROUND-ECOSYSTEMS
 
 ## INTRO ATMOSFERIC (intro-sphere)
-Región atmosférica inferior, vuelos por debajo de la ionosfera
+Región atmosférica inferior, vuelos por debajo de la ionosfera.  
+**Ecosystem:** INTRO-SPHERE-ECOSYSTEMS
 
 ## EXO ATMOSFERIC (exo-sphere)
-Región superior y exoatmosférica, operaciones orbitales o de límite.
+Región superior y exoatmosférica, operaciones orbitales o de límite.  
+**Ecosystem:** EXO-SPHERE-ECOSYSTEMS
 
-ON-GROUND → ON-GROUND-ECOSYSTEMS
+---
 
-INTRO-SPHERE → INTRO-SPHERE-ECOYSTEMS
+## Interactive Diagram
 
-EXO-SPHERE → EXO-SPHERE-ECOSYSTEMS
+To visualize the relationships between zones and ecosystems, here is an interactive diagram rendered using Mermaid:
 
-```MERMAID
+```mermaid
 graph TD
     %% Primary Structure
     ON_GROUND["ON GROUND (on-ground)\nInfraestructura terrestre, soporte, operaciones base."]
@@ -34,4 +36,12 @@ graph TD
     ON_GROUND --> INTRO_SPHERE
     INTRO_SPHERE --> EXO_SPHERE
 ```
-navigating to [GAIA-AIR-ESSENTIALS](https://github.com/Robbbo-T/GAIA-AIR-ESSENTIALS/new/main?readme=1), creating a new file, and pasting the markdown content above. Let me know if you need further assistance!
+
+---
+
+### Notes
+
+- Use the [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/) to customize and interact with the diagram further.
+- If the Mermaid diagram does not render in this Markdown viewer, copy the code into the live editor above for visualization.
+
+```
