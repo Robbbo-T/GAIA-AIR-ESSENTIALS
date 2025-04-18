@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GAIA AIR – COAFI Navigable Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;margin:0;padding:0 1rem;}
+    .container{max-width:1200px;margin:auto;background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    h1{color:#0056b3;text-align:center;margin-top:0.2em;}
+    .disclaimer{background:#fff3cd;border:1px solid #ffeeba;color:#856404;padding:1rem;border-radius:6px;margin-bottom:1.2rem;font-weight:bold;text-align:center;}
+    .part{border:1px solid #ddd;border-radius:6px;padding:0.8rem;margin-bottom:1rem;}
+    .part > h2{margin:.2rem 0;cursor:pointer;color:#003d80;font-size:1.25rem;display:flex;align-items:center;}
+    .chapter{margin-left:1.2rem;}
+    ul{list-style:none;padding-left:1.2rem;margin:0.2rem 0;}
+    li{margin:0.2rem 0;}
+    a{color:#0066cc;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .toggle{font-weight:bold;margin-right:6px;}
+    .nested{display:none;border-left:1px solid #eee;margin-left:0.5rem;padding-left:0.8rem;}
+    .visible{display:block;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>GAIA AIR: COAFI Navigable Index</h1>
+<div class="disclaimer">🚨 DISCLAIMER – GenAI Proposal Status 🚨 <br>(Generated structures require official authority check.)</div>
+<div id="index-root">Loading index…</div>
+</div>
+<script>
+function createPart(title){
+    const wrapper=document.createElement('div');wrapper.className='part';
+    const h=document.createElement('h2');
+    const icon=document.createElement('span');icon.textContent='▶';icon.className='toggle';
+    h.appendChild(icon);h.appendChild(document.createTextNode(' '+title));
+    const list=document.createElement('ul');list.className='nested';
+    h.onclick=()=>{list.classList.toggle('visible');icon.textContent=list.classList.contains('visible')?'▼':'▶';};
+    wrapper.appendChild(h);wrapper.appendChild(list);
+    return {wrapper,list};
+}
+function createChapter(title){
+    const li=document.createElement('li');
+    const h=document.createElement('div');h.className='chapter';
+    const icon=document.createElement('span');icon.textContent='▶';icon.className='toggle';
+    h.appendChild(icon);h.appendChild(document.createTextNode(' '+title));
+    const sub=document.createElement('ul');sub.className='nested';
+    h.onclick=()=>{sub.classList.toggle('visible');icon.textContent=sub.classList.contains('visible')?'▼':'▶';};
+    li.appendChild(h);li.appendChild(sub);
+    return {li,sub};
+}
+fetch('AToC.md').then(r=>r.text()).then(md=>{
+    const root=document.getElementById('index-root');root.textContent='';
+    const lines=md.split('\n');
+    let currentPart=null, currentChapter=null;
+    for(let line of lines){
+        if(line.startsWith('##') && line.includes('Part')){
+            // Close previous structures automatically by resetting references
+            const title=line.replace(/^##\s*/,'').trim();
+            currentPart=createPart(title);
+            root.appendChild(currentPart.wrapper);
+            currentChapter=null;
+        }else if(line.startsWith('*   ')||line.startsWith('*	')){
+            const clean=line.replace(/^\*\s+/,'');
+            // items inside bullet may include link or text
+            const linkMatch=clean.match(/\[([^\]]+)\]\(([^)]+)\):?\s*(.*)/);
+            if(linkMatch){
+                const [,text,url,rest]=linkMatch;
+                const display=text+(rest?': '+rest:'');
+                const li=document.createElement('li');
+                const a=document.createElement('a');a.href=url;a.textContent=display;
+                li.appendChild(a);
+                (currentChapter?currentChapter.sub:currentPart.list).appendChild(li);
+            }else{
+                // may be chapter bullet header like *   [GP-AM] Title
+            }
+        }else if(/^###\s/.test(line)){
+            const title=line.replace(/^###\s*/,'').trim();
+            currentChapter=createChapter(title);
+            if(currentPart) currentPart.list.appendChild(currentChapter.li);
+        }
+    }
+}).catch(err=>{document.getElementById('index-root').textContent='Error loading index: '+err;});
+</script>
+</body>
+</html>
