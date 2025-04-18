@@ -85,8 +85,72 @@ graph TD
     classDef ecosystemStyle fill:#e6f7ff,stroke:#0077cc,stroke-width:1px,padding:8px,rx:5px,ry:5px;
 
 ```
+# INFCODES
 
----
+```
+=== INFOCODE RPT BEGIN ===
+INFOCODE:        21RTRPT
+TITLE:           REAL TIME REPORT SYSTEM STATUS ECS (ATA 21)
+VERSION:         1.0
+DATE:            {{YYYY‑MM‑DD}}
+TIME:            {{HH:MM:SS}}
+AUTHOR:          {{NOMBRE_AUTOR}}
+SYSTEM:          ECS
+ATA_CHAPTER:     21
+
+--- METADATA ---
+# Campo               | Valor
+#---------------------|----------------
+# Aircraft Tail       | {{TAIL_NUMBER}}
+# Flight / Cycle ID   | {{FLIGHT_ID}}
+# Location (Lat,Lon)  | {{LAT}},{{LON}}
+# Ambient Temp (°C)   | {{EXT_TEMP}}
+# Cabin Altitude (ft) | {{CAB_ALT_FT}}
+
+--- REPOSITORY DESTINATION ---
+# Mail Box Address    | {{REPOSITORY_MAILBOX}}
+# Retention Policy    | {{RETENTION_POLICY}}
+
+--- BODY ---  
+[1] SYSTEM_OVERVIEW  
+• Uptime:                      {{UPTIME}}  
+• Current Mode:                {{MODE}}  
+• Last Fault Code:             {{FAULT_CODE}}  
+
+[2] AIR_SOURCE_STATUS (21‑10)  
+• Bleed Air Valves:            {{BLEED_VALVE_STATE}}  
+• Electric Compressors:        {{ELEC_COMP_STATE}}  
+• APU Air Source:              {{APU_STATE}}  
+
+[3] DISTRIBUTION_STATUS (21‑20)  
+• Front Cabin Flow (m³/s):     {{FLOW_FRONT}}  
+• Rear Cabin Flow (m³/s):      {{FLOW_REAR}}  
+• Cargo Zone Recirc:           {{RECIRC_RATE}}  
+
+[4] FILTRATION_STATUS (21‑21)  
+• Filter Efficiency (%):       {{FILTER_EFF}}  
+• UV‑C Sterilizer Status:      {{UV_C_STATUS}}  
+• Next Replacement Due:        {{FILTER_REPLACE_DATE}}  
+
+[5] PRESSURIZATION_STATUS (21‑30 & 21‑31)  
+• Cabin Altitude (ft):         {{CAB_ALT_FT}}  
+• Outflow Valve Position (%):  {{OUTFLOW_POS}}  
+• Pressure Change Rate (PSI/min): {{PRESS_RATE}}  
+
+[6] GREEN_ECS_METRICS (21‑50)  
+• Pack Power Usage (kW):       {{PACK_POWER}}  
+• Energy Recovery Rate (%):     {{ENERGY_RECOVERY}}  
+
+[7] AI_CLIMATE_ZONES (21‑60)  
+• Zones Adjusted:              {{NUM_ZONES_ADJ}}  
+• Avg. Bias Score:             {{AVG_BIAS_SCORE}}  
+• Safety Override Active:      {{OVERRIDE_FLAG}}  
+
+--- FOOTER ---  
+REPORT_GENERATED_BY:    QAO‑Monitor v2.3  
+SIGNATURE:             {{DIGITAL_SIGNATURE}}
+=== INFOCODE RPT END ===
+```
 
 ### Notes
 
@@ -130,7 +194,58 @@ graph TD
 
 *Purpose: Airframe Design, System & Maintenance Manuals*
 
-*(... Full Part 1 structure remains the same as previously provided and corrected ...)*
+# GP‑AM · Air Systems & Airframes – Master ToC
+🚨 Generated draft — requires official audit before release 🚨  
+Click any ▶ symbol or heading to expand/collapse.
+
+## ▶ Part 1 – GP‑AM (Air Systems & Airframes) 🚀
+### ▶ ATA 00 : Intro & General ✈️
+- **00‑01** : Intro & General Overview (OV)
+- **00‑10** : Regulatory Compliance Overview (REQ)
+- **00‑11** : Certification Strategy (PLAN)
+- **00‑20** : Core Design Principles (OV)
+- **00‑21** : Advanced Materials Philosophy (AMPEL) (OV)
+- **00‑30** : AI‑Driven Doc Adaptation System Description (SDD)
+
+### ▶ ATA 01 : Aircraft General
+- **01‑01** : Aircraft Identification & General Specs Overview (OV)
+- **01‑02** : Identification / Registration Specification (SPEC)
+- **01‑03** : General Specifications (SPEC)
+- **01‑10** : Performance Characteristics Report (RPT)
+- **01‑11** : Weight & Balance Data List (LIST)
+- **01‑20** : Operational Limits Specification (SPEC / REQ)
+- **01‑21** : AI‑Enhanced Operational Monitoring Description (SDD)
+
+### ▶ ATA 02 : Operations Information
+- **02‑01** : Operations Manual Overview (OV)
+- **02‑10** : Normal Operating Procedures (PROC)
+- **02‑11** : AI‑Assisted Flight Ops Concept (SDD)
+- **02‑20** : Abnormal Operating Procedures (PROC)
+- **02‑21** : Emergency Procedures (PROC)
+
+### ▶ ATA 03 : Performance
+- **03‑01** : Performance Data Overview (OV / RPT)
+- **03‑10** : Take‑Off Performance Report (RPT / CAL)
+- **03‑11** : Quantum Propulsion Take‑Off Analysis (SDD)
+- **03‑20** : Cruise Performance Report (RPT / CAL)
+- **03‑21** : AI‑Optimised Cruise Efficiency System (SDD)
+- **03‑30** : Landing Performance Report (RPT / CAL)
+
+### ▶ ATA 04 : Airworthiness
+- **04‑01** : Airworthiness Requirements Overview (OV / REQ)
+- **04‑10** : Certification Standards Compliance (REQ)
+- **04‑11** : Quantum Certification Challenges Report (RPT)
+- **04‑20** : Continued Airworthiness Maintenance Program (PLAN)
+- **04‑21** : AI‑Driven Airworthiness Monitoring System (SDD)
+
+### ▶ ATA 05 : Time Limits / Maintenance Checks ⏱️
+- **05‑01** : Maintenance Philosophy Overview (OV)
+- **05‑10** : Maintenance Program Plan (PLAN)
+- **05‑11** : AI Adaptive Scheduling System (i‑Aher0) (SDD)
+- **05‑20** : Predictive Maintenance System Description (SDD)
+- **05‑50** : Component Life Limits List (LIST)
+- **05‑51** : Airworthiness Limitations Requirements (REQ)
+- **05‑52** : Structural Inspection Program Plan (PLAN)
 
 ---
 
