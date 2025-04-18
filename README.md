@@ -1,4 +1,339 @@
-*(... Full INFOCODE-INDEX Content as generated previously ...)*
+# GAIA AIR: COAFI Master Table of Contents (AToC.md) - Index to Technical Mastery Manuals
+
+**(🚨 DISCLAIMER - GenAI Proposal Status 🚨)**
+**(Generated Structures and Contents require Official Authority Check for tool Compliance and Certification.)**
+
+**(Note:** This Master Table of Contents (AToC.md) serves as the central index for the entire **COAFI (Codes and Ontology as Aerospace Foresights Indexed)** technical documentation library, often referred to as the GAIA AIR "Mastery Manuals". It provides a fully enumerated, hierarchical structure linking to specific COAFI Data Modules (documents) identified by their unique Infocode and filename. Document Types (Info Codes) are indicated for each entry. The detailed technical content resides within the linked `.md` files. This document also includes the **INFOCODE-INDEX** defining the purpose and structure of each document type, and references key framework standards like **AGIS**, **TPSL/TPWD**, **CFSI**, **CEU**, **AGAD**, **URIF**, and **e.G.A.I.As** which are detailed in their respective foundational documents within Part 0.)*
+
+[Return to COAFI.MD Main Document](./COAFI.md)
+
+---
+
+## Document Parts Overview
+
+| Part    | Domain Code | Title                              | Scope                                           | Key Interfaces                     |
+| :------ | :---------- | :--------------------------------- | :---------------------------------------------- | :--------------------------------- |
+| **0**   | `GP-FD`     | **Program Foundations**            | Vision, ethics, compliance, standards, doctrines. | All domains.                       |
+| **1**   | `GP-AM`     | **Air Systems & Airframes**        | AMPEL materials, aircraft systems (ATA chapters). | `GP-COM`, `GP-GRO`, `GP-RAME`.       |
+| **2**   | `GP-AS`     | **Space Systems & Spaceframes**    | AMPEL+ platforms, orbital logistics (AS chapters). | `GP-COM`, `GP-GRO`, `GP-RAME`.       |
+| **3**   | `GP-COM`    | **Core Operating Matrix**          | AI (`i-Aher0`), QAO, secure networks, BITT.     | All domains.                       |
+| **4**   | `GP-GRO`    | **Ground & Infrastructure**        | Robotics-augmented logistics, launch/landing.   | `GP-AM`, `GP-AS`, `GP-SUPL`.       |
+| **5**   | `GP-SUPL`   | **Supply Chain & Ethical Logistics** | Ethical sourcing, lifecycle traceability.        | `GP-GRO`, `GP-RAME`, `GP-AM`/`GP-AS`. |
+| **6**   | `GP-RAME`   | **Robotic Assembly & Maintenance** | Autonomous assembly, predictive maintenance.    | `GP-AM`, `GP-AS`, `GP-SUPL`.       |
+| **7**   | `GP-PM`     | **Program Management & Ops**       | Certification, risk management, lifecycle QA.   | All domains.                       |
+| *(Note: Further Parts reserved for future expansion)* |
+
+---
+
+## COAFI Information Code Index (INFOCODE-INDEX)
+
+*This section maps information codes (`infoCodes`) to their meaning, expected key sections, and representative documents within the GAIA AIR COAFI system. It serves as a semantic key to complement the hierarchical AToC structure below, enabling functional understanding and toolchain integration.*
+
+*(Note: Template/Schema/Renderer paths are illustrative placeholders for a potential automated documentation system)*
+
+### INFO-OV — Overview Document
+- **Purpose:** High-level conceptual/functional introduction.
+- **Format:** Narrative, diagrams, summaries, links.
+- **Key Sections:** Introduction (Purpose, Scope, Audience, Refs), Context & Background, System/Process Description, Key Concepts/Components, High-Level Architecture/Flow, Major Interfaces/Relationships, Document Roadmap (Optional), Summary/Conclusion.
+- **Associated Template:** `template_ov.md.jinja` | **Schema:** `schema_ov.json` | **Renderer:** `RendererOV.tsx`
+- **Example:** [GP-AM-AMPEL-0100-55-001-OV-A.md](./GP-AM/GP-AM-AMPEL-0100-55-001-OV-A.md)
+
+---
+
+### INFO-SPEC — Specification
+- **Purpose:** Define precise, verifiable requirements or characteristics.
+- **Format:** Tabular/structured lists, standards references, measurable criteria.
+- **Key Sections:** Introduction (Scope, Applicable Docs, Definitions), General Requirements (Optional), Detailed Requirements/Specifications (ID, Text, Rationale, Verification, Traceability), Interface Requirements (Optional), Verification Matrix (Optional Appendix).
+- **Associated Template:** `template_spec.md.jinja` | **Schema:** `schema_spec.json` | **Renderer:** `RendererSPEC.tsx`
+- **Example:** [GP-AM-AMPEL-0100-55-006-SPEC-A.md](./GP-AM/GP-AM-AMPEL-0100-55-006-SPEC-A.md)
+
+---
+
+### INFO-REQ — Requirements Document
+- **Purpose:** Capture higher-level requirements (mission/system/stakeholder).
+- **Format:** Structured lists/tables, traceability focused.
+- **Key Sections:** Introduction (Purpose, Scope, Stakeholders, Refs), Mission Objectives/Needs, System-Level Requirements, Operational Requirements, Constraints, Traceability Matrix.
+- **Associated Template:** `template_req.md.jinja` | **Schema:** `schema_req.json` | **Renderer:** `RendererREQ.tsx`
+- **Example:** [GP-FD-02-002-REQ-A.md](./GP-FD/GP-FD-02-002-REQ-A.md)
+
+---
+
+### INFO-DD — Design Document
+- **Purpose:** Detail the *how* – implementation details meeting the requirements.
+- **Format:** Narrative, diagrams, analysis references, rationale.
+- **Key Sections:** Introduction (Objective, Scope, Reqs Addressed, References, Philosophy), Architectural Design, Detailed Design (Structural/Mechanical/Electrical/Software/Thermal), Interface Definitions (Reference ICDs), Material/Technology Rationale, Design V&V, Manufacturing Considerations, XAI Metadata (Optional).
+- **Associated Template:** `template_dd.md.jinja` | **Schema:** `schema_dd.json` | **Renderer:** `RendererDD.tsx`
+- **Example:** [GP-AM-AMPEL-0100-55-005-DD-A.md](./GP-AM/GP-AM-AMPEL-0100-55-005-DD-A.md)
+
+---
+
+### INFO-SDD — System Design Description
+- **Purpose:** Describe *what* the system is and *how* it broadly works (focus on architecture).
+- **Format:** Narrative, block/context diagrams, component lists, functional flows.
+- **Key Sections:** Introduction (Purpose, Scope, Context Diagram), System Overview, Functional Description, System Architecture, Component Descriptions, Interface Descriptions (Reference ICDs), Operational Scenarios, Performance Summary, Data Flow Diagrams (Optional).
+- **Associated Template:** `template_sdd.md.jinja` | **Schema:** `schema_sdd.json` | **Renderer:** `RendererSDD.tsx`
+- **Example:** [GP-COM-AI-0300-01-001-OV-A.md](./GP-COM/GP-COM-AI-0300-01-001-OV-A.md) *(Example updated to reflect new GP-COM code)*
+
+---
+
+### INFO-DWG — Engineering Drawing
+- **Purpose:** Provide a precise graphical representation (geometry/schematic).
+- **Format:** Link to canonical file (e.g., `.dwg`, `.catdrawing`, `.pdf`) with metadata wrapper.
+- **Key Sections (Wrapper):** Identification (Number, Revision, Title), Context (System, Applicable Standards, References), Metadata (Scale, Size, Standard, Units), Content Summary, Link to File.
+- **Associated Template:** `template_dwg.md.jinja` | **Schema:** `schema_dwg.json` | **Renderer:** `RendererDWG.tsx`
+- **Example:** [GP-AM-AMPEL-0100-55-007-DWG-A.md](./GP-AM/GP-AM-AMPEL-0100-55-007-DWG-A.md)
+
+---
+
+### INFO-CAL — Calculation / Analysis Report
+- **Purpose:** Document specific engineering analyses.
+- **Format:** Narrative, equations, data tables, results, plots.
+- **Key Sections:** Introduction (Objective, Scope, System, Verified Reqs), Methodology, Model Description, Assumptions/Limitations, Input Data, Tools Used, Results, Discussion, Analysis Verification & Validation, Conclusion, References.
+- **Associated Template:** `template_cal.md.jinja` | **Schema:** `schema_cal.json` | **Renderer:** `RendererCAL.tsx`
+- **Example:** [GP-AS-AMPELPLUS-0200-08-003-CAL-A.md](./GP-AS/GP-AS-AMPELPLUS-0200-08-003-CAL-A.md) *(Updated path to GP-AS)*
+
+---
+
+### INFO-RPT — Report
+- **Purpose:** General communication of findings, status updates, or investigation results.
+- **Format:** Standard report structure (abstract, methodology, findings, conclusions, appendices).
+- **Key Sections:** Front Matter (Title, Abstract, TOC), Introduction, Body (Methodology, Results, Discussion), Conclusion/Recommendations, Back Matter (References, Appendices).
+- **Associated Template:** `template_rpt.md.jinja` | **Schema:** `schema_rpt.json` | **Renderer:** `RendererRPT.tsx`
+- **Example:** [GP-FD-03-003-RPT-A.md](./GP-FD/GP-FD-03-003-RPT-A.md)
+
+---
+
+### INFO-TEST — Test Plan / Procedure / Report
+- **Purpose:** Define and document verification & validation testing.
+- **Format:** Structured test plans, procedures, and reports.
+- **Key Sections:** Test Overview (ID, Title, Objective, Scope, Reqs), Setup & Configuration (Environment, Personnel, Tools), Execution (Steps, Expected Results, Data Recording), Pass/Fail Criteria, Results (Summary, Actual Outcomes, Deviations, Analysis), Conclusion.
+- **Associated Template:** `template_test.md.jinja` | **Schema:** `schema_test.json` | **Renderer:** `RendererTEST.tsx`
+- **Example:** [GP-AM-AMPEL-0100-60-005-TEST-A.md](./GP-AM/GP-AM-AMPEL-0100-60-005-TEST-A.md)
+
+---
+
+### INFO-RES — Research Document
+- **Purpose:** Document foundational research and R&D findings.
+- **Format:** Academic style, detailed methodology, experimental results.
+- **Key Sections:** Abstract, Introduction, Literature Review/Background, Methodology, Results, Discussion, Conclusion/Future Work, References, Appendices (Optional).
+- **Associated Template:** `template_res.md.jinja` | **Schema:** `schema_res.json` | **Renderer:** `RendererRES.tsx`
+- **Example:** [GP-FD-01-005-RES-A.md](./GP-FD/GP-FD-01-005-RES-A.md)
+
+---
+
+### INFO-MAN — Manual
+- **Purpose:** Provide user guides for operation, maintenance, and troubleshooting.
+- **Format:** Structured chapters, procedures, diagrams, troubleshooting guides.
+- **Key Sections:** Introduction, Safety Summary, System Description, Operating Instructions, Maintenance Procedures (Reference to PROC), Troubleshooting, Parts List References (CAT/BOM), Glossary References, Index.
+- **Associated Template:** `template_man.md.jinja` | **Schema:** `schema_man.json` | **Renderer:** `RendererMAN.tsx`
+- **Example:** *[Hypothetical: GP-AM-AMPEL-0100-OPS-MAN-A.md]*
+
+---
+
+### INFO-PROC — Procedure
+- **Purpose:** Step-by-step instructions for a specific task.
+- **Format:** Action-oriented, numbered steps, warnings, verification points.
+- **Key Sections:** Identification, Purpose/Objective, Scope/Applicability, Prerequisites, Safety Warnings, Tools/Materials Needed, Step-by-Step Instructions, Verification Points, Completion/Recording, Contingency Measures.
+- **Associated Template:** `template_proc.md.jinja` | **Schema:** `schema_proc.json` | **Renderer:** `RendererPROC.tsx`
+- **Example:** [GP-PM-CERT-0500-01-003-PROC-A.md](./GP-PM/GP-PM-CERT-0500-01-003-PROC-A.md) *(Path updated to GP-PM)*
+
+---
+
+### INFO-CAT — Catalog / Parts List
+- **Purpose:** List and detail items (parts, components, materials) used in manufacturing or inventory.
+- **Format:** Structured tables with item numbers, descriptions, quantities, and references.
+- **Key Sections:** Identification, Table of Items (Item Number, Part Number, Description, Quantity, Unit, Material/Spec Reference, Source), Revision History.
+- **Associated Template:** `template_cat.md.jinja` | **Schema:** `schema_cat.json` | **Renderer:** `RendererCAT.tsx`
+- **Example:** *[Hypothetical: GP-AM-AMPEL-0100-57-CAT-A.md]*
+
+---
+
+### INFO-GLO — Glossary
+- **Purpose:** Define and explain terms and acronyms.
+- **Format:** Alphabetically ordered list.
+- **Key Sections:** Introduction, Glossary Entries (Term, Definition, Acronym, Context).
+- **Associated Template:** `template_glo.md.jinja` | **Schema:** `schema_glo.json` | **Renderer:** `RendererGLO.tsx`
+- **Example:** [GP-AM-AMPEL-0100-APP-A-001-GLO-A.md](./GP-AM/GP-AM-AMPEL-0100-APP-A-001-GLO-A.md)
+
+---
+
+### INFO-PLAN — Plan
+- **Purpose:** Outline a strategy, schedule, and tasks for a given objective.
+- **Format:** Narrative with schedules, resource tables, and work breakdown references.
+- **Key Sections:** Introduction, Approach/Strategy, Schedule/Milestones, Organizational and Resource Plan, Work Breakdown Structure (Ref WBS), Monitoring & Control Measures, Risk Summary (Ref RISK), Assumptions/Constraints.
+- **Associated Template:** `template_plan.md.jinja` | **Schema:** `schema_plan.json` | **Renderer:** `RendererPLAN.tsx`
+- **Example:** [GP-FD-00-003-PLAN-A.md](./GP-FD/GP-FD-00-003-PLAN-A.md)
+
+---
+
+### INFO-ICD — Interface Control Document
+- **Purpose:** Define and document interfaces between systems or components.
+- **Format:** Precise definitions, tables, and interface diagrams.
+- **Key Sections:** Introduction, Interface Overview Diagram, Detailed Interface Definitions (ID, Type, Specifications - Mechanical, Electrical, Data, Thermal, etc.), Verification Matrix.
+- **Associated Template:** `template_icd.md.jinja` | **Schema:** `schema_icd.json` | **Renderer:** `RendererICD.tsx`
+- **Example:** [GP-AM-AMPEL-0100-46-011-ICD-A.md](./GP-AM/GP-AM-AMPEL-0100-46-011-ICD-A.md)
+
+---
+
+### INFO-LIST — List
+- **Purpose:** Provide a simple enumeration of items.
+- **Format:** Bulleted or numbered lists.
+- **Key Sections:** Title/Purpose, List Items with brief descriptions (if necessary).
+- **Associated Template:** `template_list.md.jinja` | **Schema:** `schema_list.json` | **Renderer:** `RendererLIST.tsx`
+- **Example:** [GP-AM-AMPEL-0100-25-010-LIST-A.md](./GP-AM/GP-AM-AMPEL-0100-25-010-LIST-A.md)
+
+---
+
+### INFO-FIG — Figure / Illustration
+- **Purpose:** Primarily a visual document (Diagram, Photo, Chart not fitting DWG/CAL).
+- **Format:** Embedded image or link with caption within a Markdown wrapper.
+- **Key Sections:** Figure Display, Caption (Number, Title, Explanation), Source (Optional).
+- **Associated Template:** `template_fig.md.jinja` | **Schema:** `schema_fig.json` | **Renderer:** `RendererFIG.tsx`
+- **Example:** [GP-AM-AMPEL-0100-42-005-FIG-A.md](./GP-AM/GP-AM-AMPEL-0100-42-005-FIG-A.md)
+
+---
+
+### INFO-CONOPS — Concept of Operations
+- **Purpose:** Describe system operation from a user or operator perspective.
+- **Format:** Scenario-driven narrative with diagrams.
+- **Key Sections:** Introduction, System Overview, Operational Environment, User Roles, Operational Scenarios (Nominal/Off-Nominal), System Interactions, Assumptions/Constraints.
+- **Associated Template:** `template_conops.md.jinja` | **Schema:** `schema_conops.json` | **Renderer:** `RendererCONOPS.tsx`
+- **Example:** [GP-RAME-RAME-0600-01-002-CONOPS-A.md](./GP-RAME/GP-RAME-RAME-0600-01-002-CONOPS-A.md) *(Example updated to reflect new GP-RAME code)*
+
+---
+
+### INFO-WBS — Work Breakdown Structure
+- **Purpose:** Provide a hierarchical breakdown of project scope.
+- **Format:** Tree diagram or hierarchical list.
+- **Key Sections:** Introduction, WBS Hierarchy, Element Descriptions (ID, Name, Work Description, Deliverables).
+- **Associated Template:** `template_wbs.md.jinja` | **Schema:** `schema_wbs.json` | **Renderer:** `RendererWBS.tsx`
+- **Example:** [GP-PM-WBS-0500-02-002-WBS-A.md](./GP-PM/GP-PM-WBS-0500-02-002-WBS-A.md) *(Path updated to GP-PM)*
+
+---
+
+### INFO-JSON — JSON Data / Schema
+- **Purpose:** Provide canonical structured data or schema.
+- **Format:** Raw JSON content within a contextual wrapper or linked `.json` file.
+- **Key Sections:** Introduction, Link to JSON File (Optional), JSON Content Block, Schema Reference (if applicable).
+- **Associated Template:** N/A (or `template_json_wrapper.md.jinja`) | **Schema:** `schema_json.json` | **Renderer:** JSON Viewer
+- **Example:** *[Hypothetical: GP-FD-06-001-SPEC-A.json]*
+
+---
+
+### INFO-BOM — Bill of Materials
+- **Purpose:** Provide a detailed list of parts/materials for manufacturing.
+- **Format:** Structured table or list.
+- **Key Sections:** Assembly Identification and Metadata, Component Table (Level, Item Number, Part Number, Description, Quantity, Unit, Material/Spec Reference, Source), Revision History.
+- **Associated Template:** `template_bom.md.jinja` | **Schema:** `schema_bom.json` | **Renderer:** `RendererBOM.tsx`
+- **Example:** *[Hypothetical: GP-AM-AMPEL-0100-57-BOM-A.md]*
+
+---
+
+### INFO-SWD — Software Documentation
+- **Purpose:** Serve as a container for various software documentation (architecture, requirements, design, testing, usage).
+- **Format:** Variable (UML diagrams, narrative, code, guides).
+- **Key Sections:** Introduction, Architecture, Requirements, Design, API Documentation, Test Plans, Usage Guides.
+- **Associated Template:** `template_swd_*.md.jinja` | **Schema:** `schema_swd_*.json` | **Renderer:** `RendererSWD_*.tsx`
+- **Example:** *[Hypothetical: GP-COM-AI-0300-FSW-SDD-A.md]* *(Example updated to reflect new GP-COM code)*
+
+---
+
+### INFO-ADMIN — Administrative Document
+- **Purpose:** Provide non-technical administrative information (meeting minutes, memos, org charts).
+- **Format:** Variable.
+- **Key Sections:** Document Type, Date, Subject, Attendees, Actions, Distribution.
+- **Associated Template:** `template_admin.md.jinja` | **Schema:** `schema_admin.json` | **Renderer:** `RendererADMIN.tsx`
+- **Example:** *[Hypothetical: GP-PM-MEETING-20241026-MIN-A.md]* *(Path updated to GP-PM)*
+
+---
+
+### INFO-REF — Reference Document / Pointer
+- **Purpose:** Serve as a pointer to another canonical document (internal or external).
+- **Format:** Short Markdown wrapper.
+- **Key Sections:** Reference Purpose, Target ID/URL, Description, Relationship Type.
+- **Associated Template:** `template_ref.md.jinja` | **Schema:** `schema_ref.json` | **Renderer:** `RendererREF.tsx`
+- **Example:** [GP-PM-CERT-0500-01-005-REF-A.md](./GP-PM/GP-PM-CERT-0500-01-005-REF-A.md) *(Path updated to GP-PM)*
+
+---
+
+### INFO-IDX — Index Document
+- **Purpose:** Provide a table of contents or index for a specific section or topic.
+- **Format:** Hierarchical list of links.
+- **Key Sections:** Title/Scope, Hierarchical Entries (Link, Title, Description/InfoCodes).
+- **Associated Template:** N/A (Dynamic) | **Schema:** N/A | **Renderer:** Navigation Component
+- **Example:** This very document (`AToC.md`) serves as the master index. *(Example: GP-AM-AMPEL-0100-00-000-IDX-A.md)*
+
+---
+
+### INFO-MPD — Maintenance Planning Document
+- **Purpose:** Detail scheduled maintenance tasks derived from reliability analysis.
+- **Format:** Tabular, linking tasks, components, intervals, and procedures.
+- **Key Sections:** Introduction, Task List (ID, Component, Description, Interval, Resources, PROC Reference), Schedule Overview.
+- **Associated Template:** `template_mpd.md.jinja` | **Schema:** `schema_mpd.json` | **Renderer:** `RendererMPD.tsx`
+- **Example:** *[Hypothetical: GP-AM-AMPEL-0100-MPD-A.md]*
+
+---
+
+### INFO-WDM — Wiring Diagram Manual
+- **Purpose:** Compile and present wiring diagrams.
+- **Format:** Compiled document (typically a PDF) linked from a Markdown wrapper.
+- **Key Sections:** Introduction, Usage Instructions, Diagram List, Schematics, Harness Diagrams, Pinouts, Component Locator.
+- **Associated Template:** `template_wdm_wrapper.md.jinja` | **Schema:** `schema_wdm.json` | **Renderer:** Link/PDF Viewer
+- **Example:** *[Hypothetical: Link to WDM for GP-AM-AMPEL-0100]*
+
+---
+
+### INFO-CERT — Certification Document
+- **Purpose:** Provide formal documentation required by regulatory authorities.
+- **Format:** Regulated formats (letters, forms) with a wrapper linking to the official document.
+- **Key Sections:** Regulatory Reference, Compliance Statement, Evidence Links, Signatures, Dates.
+- **Associated Template:** `template_cert_wrapper.md.jinja` | **Schema:** `schema_cert.json` | **Renderer:** `RendererCERT.tsx`
+- **Example:** *[Hypothetical: GP-PM-CERT-FAA-8110-A.md]* *(Path updated to GP-PM)*
+
+---
+
+### INFO-PRES — Presentation
+- **Purpose:** Deliver slides or visual content for briefings, reviews, or training.
+- **Format:** Link to file (`.pptx`/`.pdf`) or Markdown slides with a contextual wrapper.
+- **Key Sections:** Title, Presenter, Date, Event, Abstract, Link.
+- **Associated Template:** `template_pres_wrapper.md.jinja` | **Schema:** `schema_pres.json` | **Renderer:** Link/Slide Viewer
+- **Example:** *[Hypothetical: GP-PM-PDR-Slides-A.md]* *(Path updated to GP-PM)*
+
+---
+
+### INFO-BASE — Baseline Document
+- **Purpose:** Record a formally approved version representing a milestone.
+- **Format:** Based on the underlying document type plus baseline metadata.
+- **Key Sections:** Underlying Document Content + Baseline Metadata (version, approval date, change log).
+- **Associated Template:** Uses underlying template with additional baseline fields.
+- **Example:** *[Hypothetical: GP-AM-AMPEL-0100-SPEC-CDR-BASE-A.md]*
+
+---
+
+### INFO-MD — Markdown Document
+- **Purpose:** Generic Markdown document for notes, wikis, or informal documentation.
+- **Format:** Free-form Markdown.
+- **Key Sections:** Title, Author, Date, Content.
+- **Associated Template:** `template_md_generic.md.jinja` | **Schema:** `schema_md_generic.json` | **Renderer:** Standard Markdown Renderer
+- **Example:** *[Hypothetical: GP-COM-TECHNOTE-QPU-BENCHMARK-A.md]* *(Example updated to reflect new GP-COM code)*
+
+---
+
+### INFO-SCRIPT — Script / Code
+- **Purpose:** Provide executable code with context and usage information.
+- **Format:** Code wrapper with embedded code or link to an external file.
+- **Key Sections:** Purpose, Language, Version, Dependencies, Inputs, Usage, Link, Expected Output.
+- **Associated Template:** `template_script_wrapper.md.jinja` | **Schema:** `schema_script.json` | **Renderer:** Code Block Renderer
+- **Example:** *[Hypothetical: GP-GRO-AUTOCHECK-SCRIPT-A.py.md]* *(Example updated to reflect new GP-GRO code)*
+
+---
+
+### INFO-NB — Notebook
+- **Purpose:** Provide an interactive computational notebook (e.g., Jupyter).
+- **Format:** Link to `.ipynb` with a metadata wrapper.
+- **Key Sections:** Title, Purpose, Libraries/Dependencies, Link, Summary of Findings (Optional).
+- **Associated Template:** `template_notebook_wrapper.md.jinja` | **Schema:** `schema_notebook.json` | **Renderer:** Notebook Viewer
+- **Example:** *[Hypothetical: GP-CAL-TRAJECTORY-OPT-NB-A.ipynb.md]*
 
 ---
 
