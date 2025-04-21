@@ -965,7 +965,7 @@ This reorganization by COAFI Part numbers provides a different perspective on ho
 
 This detailed breakdown shows how Part 3 (GP-COM) acts as the central nervous system and computational brain of the GAIA AIR framework, providing the core AI, Quantum, Security, Blockchain, and Network capabilities that enable the diverse range of advanced applications across all operational domains.📄
 
-```mermaid 
+
 ![mermaid-ai-diagram-2025-04-21-153327](https://github.com/user-attachments/assets/33787a5b-4b7d-4a2e-9d42-4269481aaf71)
 ```
 **GAIA AIR - GEN_AI APPLICATIUON AUGMENTED INTERFACE REALITIES**
