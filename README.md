@@ -555,12 +555,11 @@ graph TD
 
 *Further COAFI tables for remaining Parts will follow this exact pattern as they are defined and ratified.*
 
-### Gestión de Tráfico Aéreo y Espacial con IA en GAIA AIR COAFI
+### Air and Space Traffic Management with AI in GAIA AIR COAFI
 
+Let's delve into **Traffic Management (App7)** and how it would be documented within the COAFI structure, as it represents an excellent example of cross-cutting integration encompassing both atmospheric operations (ATM/UTM) and space operations (STM).
 
-Profundicemos en la **Gestión de Tráfico (App7)** y cómo se documentaría dentro de la estructura COAFI, ya que representa un excelente ejemplo de integración transversal que abarca tanto operaciones atmosféricas (ATM/UTM) como espaciales (STM).
-
-## Gestión de Tráfico Integrada con IA en COAFI
+## Integrated Traffic Management with AI in COAFI
 
 ```mermaid
 graph TD
@@ -752,128 +751,111 @@ graph TD
 
 ---
 
-## Documentación en la Estructura COAFI
+## Documentation in the COAFI Structure
 
-### 1. Núcleo Digital (Parte 3)
+### 1. Digital Core (Part 3)
 
 **GP-COM-AI-01: GAIA AI Core (i-Aher0)**
 
-- Algoritmos de predicción de trayectorias y detección de conflictos
-- Modelos de aprendizaje para optimización de flujo de tráfico
-- Interfaces con sistemas ATM/UTM/STM
-
+- Trajectory prediction algorithms and conflict detection
+- Learning models for traffic flow optimization
+- Interfaces with ATM/UTM/STM systems
 
 **GP-COM-QAO-02: Quantum-Augmented Orchestration**
 
-- Algoritmos cuánticos para optimización de rutas en tiempo real
-- Simulación de escenarios complejos de tráfico multi-dominio
-
+- Quantum algorithms for real-time route optimization
+- Simulation of complex multi-domain traffic scenarios
 
 **GP-COM-SEC-03: Cybersecurity Framework**
 
-- Protocolos de seguridad para comunicaciones de gestión de tráfico
-- Prevención de interferencias y ataques en sistemas de navegación
+- Security protocols for traffic management communications
+- Prevention of interference and attacks on navigation systems
 
-
-### 2. Gestión de Tráfico Aéreo Convencional (Parte 4)
+### 2. Conventional Air Traffic Management (Part 4)
 
 **GP-GRO-ATM-05: Air Traffic Management Integration**
 
-- Interfaces con sistemas ATM convencionales
-- Protocolos de transición entre espacio aéreo controlado y no controlado
-- Integración con sistemas de vigilancia y comunicación terrestres
+- Interfaces with conventional ATM systems
+- Transition protocols between controlled and uncontrolled airspace
+- Integration with terrestrial surveillance and communication systems
 
+### 3. Drone and UAM Traffic Management (Parts 7 and 8)
 
-### 3. Gestión de Tráfico de Drones y UAM (Partes 7 y 8)
+**GP-ADR-UTM-27: Urban Traffic Management Integration (Drones)**
 
-**GP-ADR-UTM-27: Urban Traffic Mgmt Integration (Drones)**
+- Flight corridors for drones in urban environments
+- Management of BVLOS operations with AI supervision
+- Automatic response to contingencies
 
-- Corredores de vuelo para drones en entornos urbanos
-- Gestión de operaciones BVLOS con supervisión de IA
-- Respuesta automática a contingencias
+**GP-FF-CITY-UTM-27: Urban Traffic Management Integration (UAM)**
 
+- Management of vertiports and urban corridors
+- Integration with conventional land and air transport
+- Automated approach and landing procedures
 
-**GP-FF-CITY-UTM-27: Urban Traffic Mgmt Integration (UAM)**
-
-- Gestión de vertiports y corredores urbanos
-- Integración con transporte terrestre y aéreo convencional
-- Procedimientos de aproximación y aterrizaje automatizados
-
-
-### 4. Gestión de Tráfico Espacial (Parte 2 y 9)
+### 4. Space Traffic Management (Parts 2 and 9)
 
 **GP-SPACE-SAPR-MISSION-03: Mission Performance (STM)**
 
-- Planificación de trayectorias para evitar desechos espaciales
-- Coordinación de ventanas de lanzamiento y reentrada
-- Gestión de constelaciones de satélites
-
+- Trajectory planning to avoid space debris
+- Coordination of launch and reentry windows
+- Management of satellite constellations
 
 **GP-AS-AS-88-AMPELPLUS: RPOD (Rendezvous, Proximity Operations, Docking)**
 
-- Procedimientos automatizados para aproximación y acoplamiento
-- Gestión de tráfico en órbitas concurridas (LEO, GEO)
-- Coordinación de operaciones de servicio en órbita
+- Automated procedures for approach and docking
+- Traffic management in crowded orbits (LEO, GEO)
+- Coordination of on-orbit servicing operations
 
-
-### 5. Integración con Sistemas de Comunicación y Navegación (Partes 1 y 2)
+### 5. Integration with Communication and Navigation Systems (Parts 1 and 2)
 
 **GP-AM-AP-23-AMPEL: Communications**
 
-- Protocolos de comunicación aire-tierra para gestión de tráfico
-- Enlaces de datos para información de tráfico en tiempo real
-
+- Air-to-ground communication protocols for traffic management
+- Data links for real-time traffic information
 
 **GP-AM-AP-34-AMPEL: Navigation**
 
-- Sistemas de navegación aumentados por IA
-- Integración con sistemas de vigilancia cooperativos y no cooperativos
+- AI-augmented navigation systems
+- Integration with cooperative and non-cooperative surveillance systems
 
-
-### 6. Gestión de Operaciones (Parte 10)
+### 6. Operations Management (Part 10)
 
 **GP-PMO-OPS-08: Operations & SOPs**
 
-- Procedimientos operativos estándar para gestión de tráfico multi-dominio
-- Planes de contingencia para degradación de sistemas
-- Métricas de rendimiento y seguridad para sistemas de gestión de tráfico con IA
+- Standard operating procedures for multi-domain traffic management
+- Contingency plans for system degradation
+- Performance and safety metrics for AI-based traffic management systems
 
+## Information Flows and Key Processes
 
-## Flujos de Información y Procesos Clave
+1. **Conflict Detection and Resolution**
 
-1. **Detección y Resolución de Conflictos**
+   1. The AI core (GP-COM-AI-01) processes surveillance data
+   2. Predicts potential conflicts using quantum algorithms (GP-COM-QAO-02)
+   3. Generates and communicates resolutions through communication systems (GP-AM-AP-23)
+   4. Documents procedures in operations manuals (GP-PMO-OPS-08)
 
-1. El núcleo de IA (GP-COM-AI-01) procesa datos de vigilancia
-2. Predice conflictos potenciales usando algoritmos cuánticos (GP-COM-QAO-02)
-3. Genera y comunica resoluciones a través de sistemas de comunicación (GP-AM-AP-23)
-4. Documenta procedimientos en manuales de operaciones (GP-PMO-OPS-08)
+2. **Contingency Management**
 
+   1. Security systems (GP-COM-SEC-03) detect anomalies or interference
+   2. Automated response procedures are activated according to SOPs (GP-PMO-OPS-08)
+   3. Secure communication of alerts to all affected vehicles
+   4. Post-event recording and analysis for continuous improvement
 
-2. **Gestión de Contingencias**
+3. **Domain Transitions**
 
-1. Sistemas de seguridad (GP-COM-SEC-03) detectan anomalías o interferencias
-2. Procedimientos automatizados de respuesta se activan según SOPs (GP-PMO-OPS-08)
-3. Comunicación segura de alertas a todos los vehículos afectados
-4. Registro y análisis post-evento para mejora continua
+   1. Coordination of transitions between conventional airspace (GP-GRO-ATM-05) and urban airspace (GP-FF-CITY-UTM-27)
+   2. Procedures for atmosphere-space transitions (GP-AS-AS-02)
+   3. Priority management and sequencing at convergence points
 
+## Benefits of the COAFI Structure for Traffic Management
 
-3. **Transiciones entre Dominios**
-
-1. Coordinación de transiciones entre espacio aéreo convencional (GP-GRO-ATM-05) y urbano (GP-FF-CITY-UTM-27)
-2. Procedimientos para transición atmósfera-espacio (GP-AS-AS-02)
-3. Gestión de prioridades y secuenciación en puntos de convergencia
-
-
-
-## Beneficios de la Estructura COAFI para Gestión de Tráfico
-
-1. **Trazabilidad Completa**: Cada aspecto del sistema está documentado con referencias cruzadas
-2. **Integración Multi-dominio**: Facilita la coordinación entre sistemas atmosféricos y espaciales
-3. **Gobernanza Clara**: Establece responsabilidades y procedimientos para cada componente
-4. **Evolución Tecnológica**: Permite incorporar avances en IA y computación cuántica de manera estructurada
-5. **Certificación Simplificada**: Proporciona una base documental para la certificación de sistemas autónomos
-
-This reorganization by COAFI Part numbers provides a different perspective on how applications are distributed across the architectural framework. Some applications appear in multiple parts due to their cross-cutting nature (like Traffic Management and Quantum Propulsion Management), highlighting the integrated design of the GAIA AIR system.
+1. **Complete Traceability**: Every aspect of the system is documented with cross-references
+2. **Multi-domain Integration**: Facilitates coordination between atmospheric and space systems
+3. **Clear Governance**: Establishes responsibilities and procedures for each component
+4. **Technological Evolution**: Enables structured incorporation of advances in AI and quantum computing
+5. **Simplified Certification**: Provides a documentary basis for autonomous system certification
 
 
 ## Detailed Breakdown: Part 3 - Core Operating Matrix (GP-COM)
