@@ -15,6 +15,98 @@ graph TD;
     A-->L["10: Program Management"]
 ```
 
+**Integración Detallada**
+
+1.  **IA y Propulsión (P1, P2, P3):**
+    *   **Optimización:** La IA (A) ajusta parámetros para eficiencia y adaptación ambiental.
+    *   **Diagnóstico:** La IA (A) permite mantenimiento predictivo (App3) detectando anomalías.
+    *   **Gestión Híbrida/Cuántica:** La IA (A) gestiona la complejidad de los sistemas avanzados (P3).
+
+2.  **IA y Vuelos Comerciales Atmosféricos (C1):**
+    *   **Rutas y Combustible:** La IA (A) optimiza rutas (App1) y consumo (App2).
+    *   **Asistencia y Tráfico:** La IA (A) asiste a pilotos (App4) y se integra con ATM/UTM (App7).
+    *   **Mantenimiento:** La IA (A) habilita el Mantenimiento Predictivo (App3).
+
+3.  **IA y Vuelos Comerciales Espaciales (C2):**
+    *   **Planificación y Trayectorias:** La IA (A) optimiza misiones (App5) y trayectorias (App1).
+    *   **Autonomía y Recursos:** La IA (A) permite operaciones autónomas (App6) y gestiona recursos (App2).
+    *   **Mantenimiento y Seguridad:** La IA (A) apoya el Mantenimiento Predictivo (App3) y la seguridad de pasajeros/misión.
+
+4.  **Reflejo en el Framework COAFI:**
+    *   **Parte 0:** Ética y Gobernanza de IA.
+    *   **Parte 1, 2, 7, 8, 9:** Documentación específica de la integración IA-Propulsión y IA-Control de Vuelo.
+    *   **Parte 3:** El núcleo digital (IA, QAO) que habilita estas funciones.
+    *   **Parte 10:** Gestión de programas y certificación de sistemas con IA.
+
+Este nivel de detalle y la visualización de las interconexiones son cruciales. Refleja una arquitectura donde la inteligencia no es un añadido, sino una parte integral del diseño y la operación en todos los niveles.
+
+```mermaid
+graph TD
+    subgraph "GAIA AIR Core Capabilities"
+        A["3: Digital Core - AI<br>(GP-COM)"]:::coreAI
+    end
+
+    subgraph "Propulsion Systems"
+        P1["Propulsión Atmosférica<br>(Part 1, 7, 8)"]:::propulsion
+        P2["Propulsión Espacial<br>(Part 2, 9)"]:::propulsion
+        P3["Propulsión Híbrida/Cuántica<br>(Part 1, 2, 9 - Ch 72/Q01)"]:::propulsion
+    end
+
+    subgraph "Commercial Flight Operations"
+        C1["Vuelos Comerciales Atmosféricos<br>(Ref: Part 1, 8)"]:::commercialOps
+        C2["Vuelos Comerciales Espaciales<br>(Ref: Part 2)"]:::commercialOps
+    end
+
+    subgraph "AI Applications"
+        App1["Optimización de Rutas/Trayectorias"]:::aiApp
+        App2["Gestión de Combustible/Energía"]:::aiApp
+        App3["Mantenimiento Predictivo (Propulsión/Sistemas)"]:::aiApp
+        App4["Asistencia a Pilotos / Operadores"]:::aiApp
+        App5["Planificación de Misiones (Espacio)"]:::aiApp
+        App6["Sistemas Autónomos (GNC/RPOD)"]:::aiApp
+        App7["Gestión de Tráfico (ATM/UTM/STM)"]:::aiApp
+    end
+
+    %% Connections
+    A -- Controls & Optimizes --> P1
+    A -- Controls & Optimizes --> P2
+    A -- Controls & Optimizes --> P3
+    A -- Enables --> C1
+    A -- Enables --> C2
+
+    P1 -- Powers --> C1
+    P2 -- Powers --> C2
+    P3 -- Powers --> C1
+    P3 -- Powers --> C2
+
+    A --> App1
+    A --> App2
+    A --> App3
+    A --> App4
+    A --> App5
+    A --> App6
+    A --> App7
+
+    App1 --> C1
+    App1 --> C2
+    App2 --> P1; App2 --> P2; App2 --> P3
+    App3 --> P1; App3 --> P2; App3 --> P3
+    App3 --> C1("MRO"); App3 --> C2("MRO")
+    App4 --> C1("Cockpit/Ops")
+    App5 --> C2("Mission Planning")
+    App6 --> C2("Autonomous Ops")
+    App7 --> C1("ATM/UTM")
+    App7 --> C2("STM")
+
+
+    %% Styling
+    classDef coreAI fill:#cc99ff,stroke:#333,stroke-width:2px;
+    classDef propulsion fill:#ffcc99,stroke:#333,stroke-width:1px;
+    classDef commercialOps fill:#99ccff,stroke:#333,stroke-width:1px;
+    classDef aiApp fill:#ccffcc,stroke:#333,stroke-width:1px,rx:5px,ry:5px;
+
+```
+
 # GAIA AIR • Master Table of Contents (AToC.md)
 
 > **Canonical Orchestrated Architecture File Index (COAFI)**  – *embedded master‑index section*
