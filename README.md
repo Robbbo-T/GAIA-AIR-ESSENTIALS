@@ -968,4 +968,4 @@ This detailed breakdown shows how Part 3 (GP-COM) acts as the central nervous sy
 
 ![mermaid-ai-diagram-2025-04-21-153327](https://github.com/user-attachments/assets/33787a5b-4b7d-4a2e-9d42-4269481aaf71)
 ```
-**GAIA AIR - GEN_AI APPLICATIUON AUGMENTED INTERFACE REALITIES**
+**GAIA AIR – GEN_AI APPLICATION AUGMENTED INTERFACE REALITIES**
