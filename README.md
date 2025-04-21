@@ -1,6 +1,31 @@
 # Gen-AI Architecture (GAIA) Augmented by Intelligent Robotics (AIR) for Canonical Organization of Aerospace Full Ident’s Lifecycle (COAFI)
 
----
+```mermaid
+graph TD;
+    A["GAIA AIR Master Framework"]-->B["Part 0: Program Foundations"]
+    A-->C["Part 1: Air Systems & Airframes"]
+    A-->D["Part 2: Space Systems & Spaceframes"]
+    A-->E["Part 3: Core Operating Matrix"]
+    A-->F["Part 4: Ground Infrastructure"]
+    A-->G["Part 5: Supply Chain & Logistics"]
+    A-->H["Part 6: Robotic Assembly"]
+    A-->I["Part 7: Aerial Drones"]
+    A-->J["Part 8: Flying City Cars"]
+    A-->K["Part 9: Space Satellites & Probes"]
+    A-->L["Part 10: Program Management"]
+    
+    B-->B1["Foundations (Ethics, Vision, Standards)"]
+    C-->C1["ATA-based Aircraft Documentation"]
+    D-->D1["AS-based Spacecraft Documentation"]
+    E-->E1["Digital & Computational Systems"]
+    F-->F1["Ground-based Systems & Facilities"]
+    G-->G1["Ethical Sourcing & Logistics"]
+    H-->H1["Autonomous Assembly & Maintenance"]
+    I-->I1["AI-Piloted Drone Systems"]
+    J-->J1["Urban Air Mobility Vehicles"]
+    K-->K1["Uncrewed Spacecraft Systems"]
+    L-->L1["Project & Operational Oversight"]
+```
 
 # GAIA AIR • Master Table of Contents (AToC.md)
 
