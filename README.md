@@ -2,29 +2,17 @@
 
 ```mermaid
 graph TD;
-    A["GAIA AIR Master Framework"]-->B["Part 0: Program Foundations"]
-    A-->C["Part 1: Air Systems & Airframes"]
-    A-->D["Part 2: Space Systems & Spaceframes"]
-    A-->E["Part 3: Core Operating Matrix"]
-    A-->F["Part 4: Ground Infrastructure"]
-    A-->G["Part 5: Supply Chain & Logistics"]
-    A-->H["Part 6: Robotic Assembly"]
-    A-->I["Part 7: Aerial Drones"]
-    A-->J["Part 8: Flying City Cars"]
-    A-->K["Part 9: Space Satellites & Probes"]
-    A-->L["Part 10: Program Management"]
-    
-    B-->B1["Foundations (Ethics, Vision, Standards)"]
-    C-->C1["ATA-based Aircraft Documentation"]
-    D-->D1["AS-based Spacecraft Documentation"]
-    E-->E1["Digital & Computational Systems"]
-    F-->F1["Ground-based Systems & Facilities"]
-    G-->G1["Ethical Sourcing & Logistics"]
-    H-->H1["Autonomous Assembly & Maintenance"]
-    I-->I1["AI-Piloted Drone Systems"]
-    J-->J1["Urban Air Mobility Vehicles"]
-    K-->K1["Uncrewed Spacecraft Systems"]
-    L-->L1["Project & Operational Oversight"]
+    A["GAIA AIR Framework"]-->B["0: Program Foundations"]
+    A-->C["1: Aircraft Systems"]
+    A-->D["2: Spacecraft Systems"]
+    A-->E["3: Digital Core"]
+    A-->F["4: Ground Systems"]
+    A-->G["5: Supply Chain"]
+    A-->H["6: Robotics"]
+    A-->I["7: Drones"]
+    A-->J["8: Urban Air Mobility"]
+    A-->K["9: Satellites & Probes"]
+    A-->L["10: Program Management"]
 ```
 
 # GAIA AIR • Master Table of Contents (AToC.md)
