@@ -15,30 +15,34 @@ graph TD;
     A-->L["10: Program Management"]
 ```
 
-**Integración Detallada**
+## Detailed Integration
 
-1.  **IA y Propulsión (P1, P2, P3):**
-    *   **Optimización:** La IA (A) ajusta parámetros para eficiencia y adaptación ambiental.
-    *   **Diagnóstico:** La IA (A) permite mantenimiento predictivo (App3) detectando anomalías.
-    *   **Gestión Híbrida/Cuántica:** La IA (A) gestiona la complejidad de los sistemas avanzados (P3).
+### AI and Propulsion (P1, P2, P3):
 
-2.  **IA y Vuelos Comerciales Atmosféricos (C1):**
-    *   **Rutas y Combustible:** La IA (A) optimiza rutas (App1) y consumo (App2).
-    *   **Asistencia y Tráfico:** La IA (A) asiste a pilotos (App4) y se integra con ATM/UTM (App7).
-    *   **Mantenimiento:** La IA (A) habilita el Mantenimiento Predictivo (App3).
+- **Optimization**: AI (A) adjusts parameters for efficiency and environmental adaptation.
+- **Diagnostics**: AI (A) enables predictive maintenance (App3) by detecting anomalies.
+- **Hybrid/Quantum Management**: AI (A) manages the complexity of advanced systems (P3).
 
-3.  **IA y Vuelos Comerciales Espaciales (C2):**
-    *   **Planificación y Trayectorias:** La IA (A) optimiza misiones (App5) y trayectorias (App1).
-    *   **Autonomía y Recursos:** La IA (A) permite operaciones autónomas (App6) y gestiona recursos (App2).
-    *   **Mantenimiento y Seguridad:** La IA (A) apoya el Mantenimiento Predictivo (App3) y la seguridad de pasajeros/misión.
+### AI and Atmospheric Commercial Flights (C1):
 
-4.  **Reflejo en el Framework COAFI:**
-    *   **Parte 0:** Ética y Gobernanza de IA.
-    *   **Parte 1, 2, 7, 8, 9:** Documentación específica de la integración IA-Propulsión y IA-Control de Vuelo.
-    *   **Parte 3:** El núcleo digital (IA, QAO) que habilita estas funciones.
-    *   **Parte 10:** Gestión de programas y certificación de sistemas con IA.
+- **Routes and Fuel**: AI (A) optimizes routes (App1) and fuel consumption (App2).
+- **Assistance and Traffic**: AI (A) assists pilots (App4) and integrates with ATM/UTM (App7).
+- **Maintenance**: AI (A) enables predictive maintenance (App3).
 
-Este nivel de detalle y la visualización de las interconexiones son cruciales. Refleja una arquitectura donde la inteligencia no es un añadido, sino una parte integral del diseño y la operación en todos los niveles.
+### AI and Space Commercial Flights (C2):
+
+- **Planning and Trajectories**: AI (A) optimizes missions (App5) and trajectories (App1).
+- **Autonomy and Resources**: AI (A) enables autonomous operations (App6) and manages resources (App2).
+- **Maintenance and Safety**: AI (A) supports predictive maintenance (App3) and ensures passenger/mission safety.
+
+### Reflection in the COAFI Framework:
+
+- **Part 0**: Ethics and Governance of AI.
+- **Parts 1, 2, 7, 8, 9**: Specific documentation of AI-Propulsion and AI-Flight Control integration.
+- **Part 3**: The digital core (AI, QAO) that enables these functions.
+- **Part 10**: Program management and certification of systems with AI.
+
+This level of detail and visualization of interconnections is crucial. It reflects an architecture where intelligence is not an addition but an integral part of the design and operation at all levels..
 
 ```mermaid
 graph TD
