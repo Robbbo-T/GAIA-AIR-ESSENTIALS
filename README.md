@@ -1,3 +1,7 @@
+# Gen-AI Architecture (GAIA) Augmented by Intelligent Robotics (AIR) for Canonical Organization of Aerospace Full Ident’s Lifecycle (COAFI)
+
+---
+
 # GAIA AIR • Master Table of Contents (AToC.md)
 
 > **Canonical Orchestrated Architecture File Index (COAFI)**  – *embedded master‑index section*
@@ -18,7 +22,7 @@
 ### Part 0 • Program Foundations (GP‑FD) 🏛️
 
 *Purpose: Foundational framework encompassing vision, theories, standards, ethics, and overall program governance.*
-*(Domain: `GP-FD`, Entity: `GEN`, Baseline: `0000`, systemDiffCode: `GP`, systemCode: `00`, assyCode: maps to Numerical Chapter Code)*
+*(Domain: `GP-FD`, Entity: `GEN`, Baseline: `0000`, systemDiffCode: `GP`, systemCode: `00`, subSystemCode: `GEN`, subSubSystemCode: `0000`, assyCode: maps to Numerical Chapter Code, disassyCode: `00`, disassyCodeVariant: `000`, infoCode: `013`, infoCodeVariant: `Z`, itemLocationCode: `A`, itemLocationCodeVariant: `00`, productClass: `D`, seqIdentifier: `001`, issueNumber: `001`, inWork: `00`)*
 
 | DM‑code attributes (SD‑XML syntax) | Title |
 |---|---|
@@ -36,7 +40,7 @@
 ### Part 1 • Air Systems & Airframes (GP‑AM) 🚀✈️
 
 *Purpose: Airframe Design, System & Ops Manuals for AMPEL platforms, leveraging ATA chapter structure.*
-*(Domain: `GP-AM`, Entity: `AMPEL`, Baseline: `0100`, systemDiffCode: `AP`, systemCode: maps to ATA Chapter Code, assyCode: `00`)*
+*(Domain: `GP-AM`, Entity: `AMPEL`, Baseline: `0100`, systemDiffCode: `AP`, systemCode: maps to ATA Chapter Code, subSystemCode: `AMPEL` (or `Q01`), subSubSystemCode: `0100`, assyCode: `00`, disassyCode: `00`, disassyCodeVariant: `000`, infoCode: `013`, infoCodeVariant: `Z`, itemLocationCode: `A`, itemLocationCodeVariant: `00`, productClass: `D`, seqIdentifier: `001`, issueNumber: `001`, inWork: `00` - EXCEPTION for ATA 72-Q01)*
 
 | DM‑code attributes (SD‑XML syntax) | Title |
 |---|---|
@@ -124,10 +128,10 @@
 
 ---
 
-### Part 2 • Space Systems & Spaceframes (GP‑AS) 🛰️🌌
+### Part 2 • Space Systems & Spaceframes (GP‑AS) 🛰️🌌
 
 *Purpose: Spaceframe Design, System & Ops Manuals for AMPEL+ platforms, leveraging AS chapter structure.*
-*(Domain: `GP-AS`, Entity: `AMPELPLUS`, Baseline: `0200`, systemDiffCode: `AS`, systemCode: maps to AS Chapter Code, assyCode: `00`)*
+*(Domain: `GP-AS`, Entity: `AMPELPLUS`, Baseline: `0200`, systemDiffCode: `AS`, systemCode: maps to AS Chapter Code, subSystemCode: `AMPELPLUS` (or `Q01`), subSubSystemCode: `0200`, assyCode: `00`, disassyCode: `00`, disassyCodeVariant: `000`, infoCode: `013`, infoCodeVariant: `Z`, itemLocationCode: `A`, itemLocationCodeVariant: `00`, productClass: `D`, seqIdentifier: `001`, issueNumber: `001`, inWork: `00` - EXCEPTION for AS 72-Q01)*
 
 | DM‑code attributes (SD‑XML syntax) | Title |
 |---|---|
@@ -246,7 +250,64 @@
 
 ---
 
-### Part 4 • Ground Infrastructure & Automation (GP‑GRO) 🏗️⛽
+### Part 4 • Ground Infrastructure & Automation (GP‑GRO) 🏗️⛽
+
+*Purpose: Documents ground-based systems, facilities, and automation.*
+*(Domain: `GP-GRO`, Baseline: `0400`, systemDiffCode: `GP`, systemCode: `04`, subSystemCode: maps to Entity Code, assyCode: maps to Numerical Chapter Code)*
+
+| DM‑code attributes (SD‑XML syntax) | Title |
+|---|---|
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="GEN" subSubSystemCode="0400" assyCode="00" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 4 Ch 00 General (GRO) Index** |
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="FACILITIES" subSubSystemCode="0400" assyCode="01" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 4 Ch 01 Launch & Landing Facilities Index** |
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="FUELING" subSubSystemCode="0400" assyCode="02" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="00" subSystemCode="AMPELCORE" subSubSystemCode="0300" assyCode="06" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 06 AMPEL Core Systems Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="NET" subSubSystemCode="0300" assyCode="07" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 07 Common Network Infrastructure Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="EN" subSubSystemCode="0300" assyCode="08" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 08 Energy System Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="PR" subSubSystemCode="0300" assyCode="09" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 09 Propulsion System Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="SPEC" subSubSystemCode="0300" assyCode="90" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 90 Specifications Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="TEST" subSubSystemCode="0300" assyCode="91" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 91 Testing & Verification Methods Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="SPECIAL" subSubSystemCode="0300" assyCode="99" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 99 Special / Emerging Tech (COM) Index** |
+
+---
+
+### Part 4 • Ground Infrastructure & Automation (GP‑GRO) 🏗️⛽
+
+*Purpose: Documents ground-based systems, facilities, and automation.*
+*(Domain: `GP-GRO`, Baseline: `0400`, systemDiffCode: `GP`, systemCode: `04`, subSystemCode: maps to Entity Code, assyCode: maps to Numerical Chapter Code)*
+
+| DM‑code attributes (SD‑XML syntax) | Title |
+|---|---|
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="GEN" subSubSystemCode="0400" assyCode="00" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 4 Ch 00 General (GRO) Index** |
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="FACILITIES" subSubSystemCode="0400" assyCode="01" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 4 Ch 01 Launch & Landing Facilities Index** |
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="FUELING" subSubSystemCode="0400" assyCode="02" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="00" subSystemCode="AMPELCORE" subSubSystemCode="0300" assyCode="06" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 06 AMPEL Core Systems Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="NET" subSubSystemCode="0300" assyCode="07" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 07 Common Network Infrastructure Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="EN" subSubSystemCode="0300" assyCode="08" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 08 Energy System Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="PR" subSubSystemCode="0300" assyCode="09" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 09 Propulsion System Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="SPEC" subSubSystemCode="0300" assyCode="90" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 90 Specifications Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="TEST" subSubSystemCode="0300" assyCode="91" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 91 Testing & Verification Methods Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="SPECIAL" subSubSystemCode="0300" assyCode="99" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 99 Special / Emerging Tech (COM) Index** |
+
+---
+
+### Part 4 • Ground Infrastructure & Automation (GP‑GRO) 🏗️⛽
+
+*Purpose: Documents ground-based systems, facilities, and automation.*
+*(Domain: `GP-GRO`, Baseline: `0400`, systemDiffCode: `GP`, systemCode: `04`, subSystemCode: maps to Entity Code, assyCode: maps to Numerical Chapter Code)*
+
+| DM‑code attributes (SD‑XML syntax) | Title |
+|---|---|
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="GEN" subSubSystemCode="0400" assyCode="00" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 4 Ch 00 General (GRO) Index** |
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="FACILITIES" subSubSystemCode="0400" assyCode="01" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 4 Ch 01 Launch & Landing Facilities Index** |
+| `modelIdent="GP‑GRO" systemDiffCode="GP" systemCode="04" subSystemCode="FUELING" subSubSystemCode="0400" assyCode="02" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="00" subSystemCode="AMPELCORE" subSubSystemCode="0300" assyCode="06" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 06 AMPEL Core Systems Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="NET" subSubSystemCode="0300" assyCode="07" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 07 Common Network Infrastructure Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="EN" subSubSystemCode="0300" assyCode="08" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 08 Energy System Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="PR" subSubSystemCode="0300" assyCode="09" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 09 Propulsion System Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="SPEC" subSubSystemCode="0300" assyCode="90" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 90 Specifications Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="TEST" subSubSystemCode="0300" assyCode="91" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 91 Testing & Verification Methods Index** |
+| `modelIdent="GP‑COM" systemDiffCode="GP" systemCode="03" subSystemCode="SPECIAL" subSubSystemCode="0300" assyCode="99" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 3 Ch 99 Special / Emerging Tech (COM) Index** |
+
+---
+
+### Part 4 • Ground Infrastructure & Automation (GP‑GRO) 🏗️⛽
 
 *Purpose: Documents ground-based systems, facilities, and automation.*
 *(Domain: `GP-GRO`, Baseline: `0400`, systemDiffCode: `GP`, systemCode: `04`, subSystemCode: maps to Entity Code, assyCode: maps to Numerical Chapter Code)*
@@ -386,14 +447,7 @@
 | `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="BUS" subSubSystemCode="0900" assyCode="01" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 01 Spacecraft Bus General Index** |
 | `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="MISSION" subSubSystemCode="0900" assyCode="02" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 02 Mission Ops Information Index** |
 | `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="MISSION" subSubSystemCode="0900" assyCode="03" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 03 Mission Performance Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="SEC" subSubSystemCode="0900" assyCode="04" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 04 Safety & Reliability Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="MISSION" subSubSystemCode="0900" assyCode="05" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 05 Maintenance & Servicing Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="BUS" subSubSystemCode="0900" assyCode="06" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 06 Dimensions & Coord Systems Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="INFRA" subSubSystemCode="0900" assyCode="07" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 07 Handling & Transportation Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="BUS" subSubSystemCode="0900" assyCode="08" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 08 Mass Properties & Balance Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="PAY" subSubSystemCode="0900" assyCode="09" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 09 Payload Instruments Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="BUS" subSubSystemCode="0900" assyCode="10" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 10 Storage & Preservation Index** |
-| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="BUS" subSubSystemCode="0900" assyCode="11" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 11 Markings & Identification Index** |
+| `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="SEC" subSubSystemCode="0900" assyCode="04" disassyCode="00"Code="0900" assyCode="11" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 11 Markings & Identification Index** |
 | `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="MISSION" subSubSystemCode="0900" assyCode="12" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 12 Servicing – Routine Index** |
 | `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="PROP" subSubSystemCode="0900" assyCode="13" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 13 Propellant Systems Index** |
 | `modelIdent="GP‑SPACE‑SAPR" systemDiffCode="GP" systemCode="09" subSystemCode="BUS" subSubSystemCode="0900" assyCode="14" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 9 Ch 14 Pressurized Gas Systems Index** |
@@ -438,6 +492,9 @@
 | `modelIdent="GP‑PMO" systemDiffCode="GP" systemCode="10" subSystemCode="DATA" subSubSystemCode="0500" assyCode="90" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 10 Ch 90 Metrics & Dashboards Index** |
 | `modelIdent="GP‑PMO" systemDiffCode="GP" systemCode="10" subSystemCode="SPECIAL" subSubSystemCode="0500" assyCode="99" disassyCode="00" disassyCodeVariant="000" infoCode="013" infoCodeVariant="Z" itemLocationCode="A" itemLocationCodeVariant="00" productClass="D" seqIdentifier="001" issueNumber="001" inWork="00"` | **Part 10 Ch 99 Special / Emerging Ops Tech Index** |
 
+---
+
+*Further COAFI tables for remaining Parts will follow this exact pattern as they are defined and ratified.*
 ---
 
 *Further COAFI tables for remaining Parts will follow this exact pattern as they are defined and ratified.*
