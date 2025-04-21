@@ -54,7 +54,7 @@
 - **Format:** Narrative, block/context diagrams, component lists, functional flows.
 - **Key Sections:** Introduction (Purpose, Scope, Context Diagram), System Overview, Functional Description, System Architecture, Component Descriptions, Interface Descriptions (Reference ICDs), Operational Scenarios, Performance Summary, Data Flow Diagrams (Optional).
 - **Associated Template:** `template_sdd.md.jinja` | **Schema:** `schema_sdd.json` | **Renderer:** `RendererSDD.tsx`
-- **Example:** [GP-COM-AI-0300-01-001-OV-A.md](./GP-COM/GP-COM-AI-0300-01-001-OV-A.md) *(Example updated to reflect new GP-COM code)*
+- **Example:** [GP-COM-AI-0300-01-001-OV-A.md](./GP-COMMON/GP-COMMON-AI-0300-01-001-OV-A.md) *(Example updated to reflect new GP-COM code)*
 
 ---
 
@@ -189,7 +189,7 @@
 - **Format:** Tree diagram or hierarchical list.
 - **Key Sections:** Introduction, WBS Hierarchy, Element Descriptions (ID, Name, Work Description, Deliverables).
 - **Associated Template:** `template_wbs.md.jinja` | **Schema:** `schema_wbs.json` | **Renderer:** `RendererWBS.tsx`
-- **Example:** [GP-PM-WBS-0500-02-002-WBS-A.md](./GP-PM/GP-PM-WBS-0500-02-002-WBS-A.md) *(Path updated to GP-PM)*
+- **Example:** [GP-PMO-WBS-0500-02-002-WBS-A.md](./GP-PMO/GP-PMO-WBS-0500-02-002-WBS-A.md) *(Path updated to GP-PM)*
 
 ---
 
@@ -270,7 +270,7 @@
 - **Format:** Regulated formats (letters, forms) with a wrapper linking to the official document.
 - **Key Sections:** Regulatory Reference, Compliance Statement, Evidence Links, Signatures, Dates.
 - **Associated Template:** `template_cert_wrapper.md.jinja` | **Schema:** `schema_cert.json` | **Renderer:** `RendererCERT.tsx`
-- **Example:** *[Hypothetical: GP-PM-CERT-FAA-8110-A.md]* *(Path updated to GP-PM)*
+- **Example:** *[Hypothetical: GP-PMO-CERT-FAA-8110-A.md]* *(Path updated to GP-PM)*
 
 ---
 
@@ -279,7 +279,7 @@
 - **Format:** Link to file (`.pptx`/`.pdf`) or Markdown slides with a contextual wrapper.
 - **Key Sections:** Title, Presenter, Date, Event, Abstract, Link.
 - **Associated Template:** `template_pres_wrapper.md.jinja` | **Schema:** `schema_pres.json` | **Renderer:** Link/Slide Viewer
-- **Example:** *[Hypothetical: GP-PM-PDR-Slides-A.md]* *(Path updated to GP-PM)*
+- **Example:** *[Hypothetical: GP-PMO-PDR-Slides-A.md]* *(Path updated to GP-PM)*
 
 ---
 
@@ -297,7 +297,7 @@
 - **Format:** Free-form Markdown.
 - **Key Sections:** Title, Author, Date, Content.
 - **Associated Template:** `template_md_generic.md.jinja` | **Schema:** `schema_md_generic.json` | **Renderer:** Standard Markdown Renderer
-- **Example:** *[Hypothetical: GP-COM-TECHNOTE-QPU-BENCHMARK-A.md]* *(Example updated to reflect new GP-COM code)*
+- **Example:** *[Hypothetical: GP-COMMON-TECHNOTE-QPU-BENCHMARK-A.md]* *(Example updated to reflect new GP-COM code)*
 
 ---
 
@@ -306,7 +306,7 @@
 - **Format:** Code wrapper with embedded code or link to an external file.
 - **Key Sections:** Purpose, Language, Version, Dependencies, Inputs, Usage, Link, Expected Output.
 - **Associated Template:** `template_script_wrapper.md.jinja` | **Schema:** `schema_script.json` | **Renderer:** Code Block Renderer
-- **Example:** *[Hypothetical: GP-GRO-AUTOCHECK-SCRIPT-A.py.md]* *(Example updated to reflect new GP-GRO code)*
+- **Example:** *[Hypothetical: GP-GROUND-AUTOCHECK-SCRIPT-A.py.md]* *(Example updated to reflect new GP-GRO code)*
 
 ---
 
@@ -328,19 +328,23 @@
 ### ON GROUND (on-ground)
 Infraestructura terrestre, soporte, operaciones base.
 **Ecosystem:** ON-GROUND-ECOSYSTEMS
-*(Primarily covered by **Part 4: GP-GRO**)*
+*(Primarily covered by **Part 4,5,6: GP-GROUND, GP-SUPPLY, GP-RAME**)*
 
 ### INTRO ATMOSFERIC (intro-sphere)
 Región atmosférica inferior, vuelos por debajo de la ionosfera.
 **Ecosystem:** INTRO-SPHERE-ECOSYSTEMS
-*(Primarily covered by **Part 1: GP-AM**)*
+*(Primarily covered by **Part 1,7,8: GP-AM, GP-ADR. GP-FF-CITY**)*
 
 ### EXO ATMOSFERIC (exo-sphere)
 Región superior y exoatmosférica, operaciones orbitales o de límite.
 **Ecosystem:** EXO-SPHERE-ECOSYSTEMS
-*(Primarily covered by **Part 2: GP-AS**)*
+*(Primarily covered by **Part 2,9: GP-AS, GP-SPACE-SATPR**)*
 
----
+### COSMIC/COMMONS (Infra-net)
+Infraestructura Comun y Segura
+**Ecosystem:** Infranet-ECOSYSTEMS
+*(Primarily covered by **Part 3,10: GP-COMMON, GP-PMO**)*
+
 
 ### Interactive Diagram
 
@@ -1798,7 +1802,7 @@ This detailed `ToC-GP-AM.md` provides the structure and illustrative examples fo
 
 ---
 
-## Part III: GP-COM · Core Operating Matrix 💻🔗🔒
+## Part III: GP-COMMON · Core Operating Matrix 💻🔗🔒
 
 *Scope:* **Shared Digital Infrastructure** — AI Core (*i‑Aher0*), Quantum Orchestration (*QAO*), Cyber‑security, Blockchain (*BITT*), AMPEL Core Systems and Networks.
 *Filename pattern*: `GP‑COM-[SubDomainCode]-[SeqCode]-[ChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
@@ -1838,33 +1842,1173 @@ This detailed `ToC-GP-AM.md` provides the structure and illustrative examples fo
 | **COM.06** | AMPELCORE  | 🧪   | AMPEL Core Systems               | Materials DB, AI-SHM logic, DTO platform         | lime    | [Details](./GP-COM/ToC-GP-COM.md#com06-ampel-core-systems) |
 | **COM.07** | NET        | 🌐   | Common Network Infrastructure    | Architecture, protocols, QoS, routing            | sky     | [Details](./GP-COM/ToC-GP-COM.md#com07-common-network-infrastructure) |
 
-## Part IV: GP-GRO · Ground & Infrastructure 🏗️⛽🤖
-**[Link to Part IV Detailed ToC](./GP-GRO/ToC-GP-GRO.md)**
+
+## Introduction
+
+This document serves as the central index for GP-COM (Part 3 – Core Operating Matrix) documentation. GP-COM outlines the architecture, design, specifications, and procedures for a complex integrated system involving advanced AI, quantum computing, cybersecurity, blockchain, and core application logic.
+
+Use this file to navigate the Core Operating Matrix documentation structure.
 
 ---
 
-## Part V: GP-SUPL · Supply Chain & Ethical Logistics 🌍⛓️✅
-**[Link to Part V Detailed ToC](./GP-SUPL/ToC-GP-SUPL.md)**
+## Document Naming Convention
+
+The documentation follows a standardized naming convention based on the COAFI framework:
+
+`GP-COM-[SystemCode]-[SeqCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+Where:
+
+*   `GP-COM`: Project Identifier (Core Operating Matrix)
+*   `[SystemCode]`: 3-letter code for the specific subsystem/chapter (e.g., `AI_01`, `QAO_02`, `SEC_03`)
+*   `[SeqCode]`: Sequence number representing the chapter (e.g., `01`, `02`, `03`) - *Note: This numbering differs slightly from the folder names but maps directly.*
+*   `[SubjectCode]`: 3-digit sequential document number within the chapter (e.g., `001`, `002`, `003`)
+*   `[InfoCode]`: Document type indicator (OV, SDD, SPEC, ICD, CAL, PROC, REQ, TEST, etc. - see INFOCODE-INDEX)
+*   `[Rev]`: Revision identifier (e.g., `A`, `B`, `A1`)
+*   `.ext`: Markdown file extension (`.md`)
+
+Common Info Codes:
+
+*   OV – Overview
+*   SDD – System Design Description
+*   SPEC – Specification
+*   ICD – Interface Control Document
+*   CAL – Calculation / Analysis
+*   PROC – Procedure
+*   REQ – Requirements
+*   TEST – Test Plan / Procedure
+*   *(For a complete list, see the INFOCODE-INDEX in AToC.md)*
 
 ---
 
-## Part VI: GP-RAME · Robotic Assembly & Maintenance 🤖🛠️🌌
-**[Link to Part VI Detailed ToC](./GP-RAME/ToC-GP-RAME.md)**
+## PART III Core Operating Matrix Chapters (COMMON NETWORKS)
+
+*(Click the section titles below to expand/collapse the detailed document listings.)*
+
+*   [Chapter 01: GAIA AI Core (i-Aher0) – AI\_01](#chapter-01-gaia-ai-core-i-aher0--ai_01)
+*   [Chapter 02: Quantum-Augmented Orchestration – QAO\_02](#chapter-02-quantum-augmented-orchestration--qao_02)
+*   [Chapter 03: Cybersecurity Framework – SEC\_03](#chapter-03-cybersecurity-framework--sec_03)
+*   [Chapter 04: Blockchain Infrastructure – BC\_04](#chapter-04-blockchain-infrastructure--bc_04)
+*   [Chapter 05: BITT Application Layer – BITT\_05](#chapter-05-bitt-application-layer--bitt_05)
+*   [Chapter 06: AMPEL Core Systems – AMPELCORE\_06](#chapter-06-ampel-core-systems--ampelcore_06)
+*   [Chapter 07: Common Network Infrastructure – NET\_07](#chapter-07-common-network-infrastructure--net_07)
+*   [Chapter 08: Sistema de Energía – EN\_08](#chapter-08-sistema-de-energía--en_08)
+*   [Chapter 09: Sistema de Propulsión – PR\_09](#chapter-09-sistema-de-propulsión--pr_09)
 
 ---
 
-## Part VII: GP-PM · Program Management & Ops 📊📈📋
-**[Link to Part VII Detailed ToC](./GP-PM/ToC-GP-PM.md)**
+<details>
+<summary>### Chapter 01: GAIA AI Core (i-Aher0) – AI_01</summary>
+
+*Directory: `./GP-COM/AI_01/`*
+*Description: Core AI engine including models, training pipelines, ethical constraints, and APIs.*
+
+*   [GP-COM-AI_01-0300-001-OV-A.md](./AI_01/GP-COM-AI_01-0300-001-OV-A.md): 01-001: AI Core Architecture Overview - *(OV)*
+*   [GP-COM-AI_01-0300-002-SDD-A.md](./AI_01/GP-COM-AI_01-0300-002-SDD-A.md): 01-002: System Design Description - *(SDD)*
+*   [GP-COM-AI_01-0300-003-SPEC-A.md](./AI_01/GP-COM-AI_01-0300-003-SPEC-A.md): 01-003: Core AI Model Specification - *(SPEC)*
+*   [GP-COM-AI_01-0300-004-ICD-A.md](./AI_01/GP-COM-AI_01-0300-004-ICD-A.md): 01-004: API and Integration ICD - *(ICD)*
+*   [GP-COM-AI_01-0300-005-PLAN-A.md](./AI_01/GP-COM-AI_01-0300-005-PLAN-A.md): 01-005: Model Training and Validation Plan - *(PLAN)*
+
+</details>
+
+<details>
+<summary>### Chapter 02: Quantum-Augmented Orchestration – QAO_02</summary>
+
+*Directory: `./GP-COM/QAO_02/`*
+*Description: Integration and orchestration of quantum resources, algorithms, and hardware interfaces.*
+
+*   [GP-COM-QAO_02-0300-001-OV-A.md](./QAO_02/GP-COM-QAO_02-0300-001-OV-A.md): 02-001: QAO System Architecture Overview - *(OV)*
+*   [GP-COM-QAO_02-0300-002-SDD-A.md](./QAO_02/GP-COM-QAO_02-0300-002-SDD-A.md): 02-002: System Design Description - *(SDD)*
+*   [GP-COM-QAO_02-0300-003-SPEC-A.md](./QAO_02/GP-COM-QAO_02-0300-003-SPEC-A.md): 02-003: QAO Algorithm Specification - *(SPEC)*
+*   [GP-COM-QAO_02-0300-004-ICD-A.md](./QAO_02/GP-COM-QAO_02-0300-004-ICD-A.md): 02-004: QAO Interface Control Document - *(ICD)*
+
+</details>
+
+<details>
+<summary>### Chapter 03: Cybersecurity Framework – SEC_03</summary>
+
+*Directory: `./GP-COM/SEC_03/`*
+*Description: Security architecture, controls, incident response, QKD network, and AI-driven IDPS.*
+
+*   [GP-COM-SEC_03-0300-001-OV-A.md](./SEC_03/GP-COM-SEC_03-0300-001-OV-A.md): 03-001: Cybersecurity Framework Overview - *(OV)*
+*   [GP-COM-SEC_03-0300-002-PLAN-A.md](./SEC_03/GP-COM-SEC_03-0300-002-PLAN-A.md): 03-002: Security Policy and Plan - *(PLAN)*
+*   [GP-COM-SEC_03-0300-003-SDD-A.md](./SEC_03/GP-COM-SEC_03-0300-003-SDD-A.md): 03-003: AI-Driven IDPS Description - *(SDD)*
+*   [GP-COM-SEC_03-0300-004-SPEC-A.md](./SEC_03/GP-COM-SEC_03-0300-004-SPEC-A.md): 03-004: QKD Network Specification - *(SPEC)*
+
+</details>
+
+<details>
+<summary>### Chapter 04: Blockchain Infrastructure – BC_04</summary>
+
+*Directory: `./GP-COM/BC_04/`*
+*Description: Distributed ledger design, consensus, smart contracts, node management.*
+
+*   [GP-COM-BC_04-0300-001-OV-A.md](./BC_04/GP-COM-BC_04-0300-001-OV-A.md): 04-001: Blockchain Infrastructure Overview - *(OV)*
+*   [GP-COM-BC_04-0300-002-SDD-A.md](./BC_04/GP-COM-BC_04-0300-002-SDD-A.md): 04-002: Distributed Ledger Design - *(SDD)*
+*   [GP-COM-BC_04-0300-003-SPEC-A.md](./BC_04/GP-COM-BC_04-0300-003-SPEC-A.md): 04-003: Consensus Mechanism Specification - *(SPEC)*
+*   [GP-COM-BC_04-0300-004-SPEC-A.md](./BC_04/GP-COM-BC_04-0300-004-SPEC-A.md): 04-004: Smart Contract Specification - *(SPEC)*
+
+</details>
+
+<details>
+<summary>### Chapter 05: BITT Application Layer – BITT_05</summary>
+
+*Directory: `./GP-COM/BITT_05/`*
+*Description: Blockchain-Integrated Traceability & Transparency layer: immutable logging, provenance.*
+
+*   [GP-COM-BITT_05-0300-001-OV-A.md](./BITT_05/GP-COM-BITT_05-0300-001-OV-A.md): 05-001: BITT Application Layer Overview - *(OV)*
+*   [GP-COM-BITT_05-0300-002-SDD-A.md](./BITT_05/GP-COM-BITT_05-0300-002-SDD-A.md): 05-002: Immutable Logging System Description - *(SDD)*
+*   [GP-COM-BITT_05-0300-003-SPEC-A.md](./BITT_05/GP-COM-BITT_05-0300-003-SPEC-A.md): 05-003: Provenance Tracking Specification - *(SPEC)*
+
+</details>
+
+<details>
+<summary>### Chapter 06: AMPEL Core Systems – AMPELCORE_06</summary>
+
+*Directory: `./GP-COM/AMPELCORE_06/`*
+*Description: Advanced Materials Processing, Engineering & Lifecycle systems, including DB schema and AI-SHM logic.*
+
+*   [GP-COM-AMPELCORE_06-0300-001-OV-A.md](./AMPELCORE_06/GP-COM-AMPELCORE_06-0300-001-OV-A.md): 06-001: AMPEL Core Systems Overview - *(OV)*
+*   [GP-COM-AMPELCORE_06-0300-002-SDD-A.md](./AMPELCORE_06/GP-COM-AMPELCORE_06-0300-002-SDD-A.md): 06-002: AI-SHM Logic Description - *(SDD)*
+*   [GP-COM-AMPELCORE_06-0300-003-SPEC-A.md](./AMPELCORE_06/GP-COM-AMPELCORE_06-0300-003-SPEC-A.md): 06-003: Materials Database Schema Specification - *(SPEC)*
+
+</details>
+
+<details>
+<summary>### Chapter 07: Common Network Infrastructure – NET_07</summary>
+
+*Directory: `./GP-COM/NET_07/`*
+*Description: Underlying network architecture, protocols, QoS, SDN/NFV, and management.*
+
+*   [GP-COM-NET_07-0300-001-OV-A.md](./NET_07/GP-COM-NET_07-0300-001-OV-A.md): 07-001: Network Infrastructure Overview - *(OV)*
+*   [GP-COM-NET_07-0300-002-SDD-A.md](./NET_07/GP-COM-NET_07-0300-002-SDD-A.md): 07-002: Network Architecture and Protocols - *(SDD, SPEC)*
+*   [GP-COM-NET_07-0300-003-SPEC-A.md](./NET_07/GP-COM-NET_07-0300-003-SPEC-A.md): 07-003: Quality of Service (QoS) Specification - *(SPEC)*
+
+</details>
+
+<details>
+<summary>### Chapter 08: Sistema de Energía – EN_08</summary>
+
+*Directory: `./GP-COM/EN_08/`*
+*Description: Energy system including collection, conversion, storage, and distribution.*
+
+*   [GP-COM-EN_08-0300-001-OV-A.md](./EN_08/GP-COM-EN_08-0300-001-OV-A.md): 08-001: Energy System Overview - *(OV)*
+*   [GP-COM-EN_08-0300-002-SDD-A.md](./EN_08/GP-COM-EN_08-0300-002-SDD-A.md): 08-002: System Design Description - *(SDD)*
+*   [GP-COM-EN_08-0300-003-SPEC-A.md](./EN_08/GP-COM-EN_08-0300-003-SPEC-A.md): 08-003: Energy Conversion Specification - *(SPEC)*
+*   [GP-COM-EN_08-0300-004-ICD-A.md](./EN_08/GP-COM-EN_08-0300-004-ICD-A.md): 08-004: Interface Control Document - *(ICD)*
+
+</details>
+
+<details>
+<summary>### Chapter 09: Sistema de Propulsión – PR_09</summary>
+
+*Directory: `./GP-COM/PR_09/`*
+*Description: Propulsion system including engines, thrusters, and control mechanisms.*
+
+*   [GP-COM-PR_09-0300-001-OV-A.md](./PR_09/GP-COM-PR_09-0300-001-OV-A.md): 09-001: Propulsion System Overview - *(OV)*
+*   [GP-COM-PR_09-0300-002-SDD-A.md](./PR_09/GP-COM-PR_09-0300-002-SDD-A.md): 09-002: System Design Description - *(SDD)*
+*   [GP-COM-PR_09-0300-003-SPEC-A.md](./PR_09/GP-COM-PR_09-0300-003-SPEC-A.md): 09-003: Engine Specification - *(SPEC)*
+*   [GP-COM-PR_09-0300-004-ICD-A.md](./PR_09/GP-COM-PR_09-0300-004-ICD-A.md): 09-004: Interface Control Document - *(ICD)*
+
+</details>
 
 ---
 
-*(Note: Part VIII: GP-GMO - Galactic Mining Operations and Part IX: GP-RES - Reserved Future Expansion are placeholders and not fully detailed in this version)*
+## How to Use This Documentation
+
+Identify the subsystem or chapter relevant to your needs.
+Click on the section title to expand the detailed document listing.
+Click on the document filename link to navigate to the specific document.
+Refer to the Document Naming Convention for decoding file names and the INFOCODE-INDEX in AToC.md for understanding document types.
+
+*(Appendices for Part 3 follow the standard structure)*
+
+---
+
+*(End of ToC-GP-COM.md)*
+
+---
+
+## Part IV: Ground Infrastructure & Automation (GP-GB) 🏗️⛽
+
+*Purpose: Ground Support & Automation Manuals*
+
+# ToC-GP-GRO
+
+**(🚨 DISCLAIMER - GenAI Proposal Status 🚨)**
+**(Generated Structures and Contents require Official Authority Check for tool Compliance and Certification.)**
+
+**(Note:** This document provides the detailed index for COAFI Part 4 (GP-GRO). It aligns with the high-level structure defined in the Master Table of Contents (AToC.md). The directories listed below represent logical groupings of documents (`.md` files and associated binaries) within the GP-GRO domain.)*
+
+[Return to AToC.md](../AToC.md)
+[Return to COAFI.MD Main Document](../COAFI.md)
+
+---
+
+## Document Part Overview (GP-GRO)
+
+| Part | Domain | Code   | Theme                                         | Purpose within COAFI Library            | Key Interfaces                 |
+|------|--------|--------|-----------------------------------------------|-----------------------------------------|--------------------------------|
+| 4    | Ground & Infrastructure | GP-GRO | Robotics-augmented logistics, launch/landing. | Ground Support & Automation Manuals   | GP-AM, GP-AS, GP-SUPL.       |
+
+---
+
+## GP-GRO Detailed Table of Contents
+
+*(Click the section titles below to expand/collapse the detailed content.)*
+
+*   [Launch & Landing Facilities](#launch--landing-facilities)
+*   [Fueling & Servicing Systems](#fueling--servicing-systems)
+*   [Ground Data Network & Control Centers](#ground-data-network--control-centers)
+*   [Ground Robotics & Automation](#ground-robotics--automation)
+*   [Ground Support Equipment (GSE)](#ground-support-equipment-gse)
+*   [Common Components & Standards](#common-components--standards)
+
+---
+
+<details>
+### <summary> Launch & Landing Facilities</summary>
+
+*Focus: Design, operations, and documentation for airport and spaceport infrastructure.*
+
+*   **Airports (`./GP-GRO/airports/`)**
+    *   `./GP-GRO/airports/docs/`
+        *   [GP-GRO-AIRPORT-0401-001-OV-A.md](./airports/docs/GP-GRO-AIRPORT-0401-001-OV-A.md): 01-01: Airport Infrastructure Overview - *(OV)*
+        *   [GP-GRO-AIRPORT-0401-002-SPEC-A.md](./airports/docs/GP-GRO-AIRPORT-0401-002-SPEC-A.md): 01-02: Runway & Apron Specification - *(SPEC)*
+        *   [GP-GRO-AIRPORT-0401-003-PROC-A.md](./airports/docs/GP-GRO-AIRPORT-0401-003-PROC-A.md): 01-03: Aircraft Parking & Ground Operations Procedure (Airport) - *(PROC)*
+    *   `./GP-GRO/airports/models/` *(Links to model wrappers)*
+        *   [3D-GP-GRO-AIRPORT-0401-010-LAYOUT-A.md](./airports/models/3D-GP-GRO-AIRPORT-0401-010-LAYOUT-A.md): 01-10: Airport Layout Model - *(DWG)*
+        *   [GP-GRO-AIRPORT-0401-011-SIM-A.md](./airports/simulations/GP-GRO-AIRPORT-0401-011-SIM-A.md): 01-11: Ground Traffic Simulation Model (Airport) - *(SIM)*
+    *   `./GP-GRO/airports/simulations/` *(Links to simulation wrappers)*
+        *   [GP-GRO-AIRPORT-0401-020-CAL-A.md](./airports/simulations/GP-GRO-AIRPORT-0401-020-CAL-A.md): 01-20: Gate Assignment Optimization Analysis - *(CAL)*
+
+*   **Spaceports (`./GP-GRO/spaceports/`)**
+    *   `./GP-GRO/spaceports/docs/`
+        *   [GP-GRO-SPACEPORT-0401-101-OV-A.md](./spaceports/docs/GP-GRO-SPACEPORT-0401-101-OV-A.md): 01-101: Spaceport Infrastructure Overview - *(OV)*
+        *   [GP-GRO-SPACEPORT-0401-102-SPEC-A.md](./spaceports/docs/GP-GRO-SPACEPORT-0401-102-SPEC-A.md): 01-102: Launch Pad & Landing Zone Specification - *(SPEC)*
+        *   [GP-GRO-SPACEPORT-0401-103-PROC-A.md](./spaceports/docs/GP-GRO-SPACEPORT-0401-103-PROC-A.md): 01-103: Spacecraft Staging & Ground Ops Procedure (Spaceport) - *(PROC)*
+    *   `./GP-GRO/spaceports/launch-systems/`
+        *   [GP-GRO-SPACEPORT-0401-201-DD-A.md](./spaceports/launch-systems/GP-GRO-SPACEPORT-0401-201-DD-A.md): 01-201: Launch Tower Design Document - *(DD, DWG)*
+        *   [GP-GRO-SPACEPORT-0401-202-SPEC-A.md](./spaceports/launch-systems/GP-GRO-SPACEPORT-0401-202-SPEC-A.md): 01-202: Umbilical Tower Specification - *(SPEC)*
+    *   `./GP-GRO/spaceports/ground-support/` *(Specific to spaceport GSE)*
+        *   [GP-GRO-SPACEPORT-0401-301-SPEC-A.md](./spaceports/ground-support/GP-GRO-SPACEPORT-0401-301-SPEC-A.md): 01-301: Spacecraft Transporter Specification - *(SPEC)*
+        *   [GP-GRO-SPACEPORT-0401-302-PROC-A.md](./spaceports/ground-support/GP-GRO-SPACEPORT-0401-302-PROC-A.md): 01-302: Spacecraft Grounding & Checkout Procedure - *(PROC)*
+</details>
+
+<details>
+### <summary> Fueling & Servicing Systems</summary>
+
+*Focus: Design, operations, and documentation for ground-based fuel production, storage, distribution, and vehicle servicing.*
+
+*   **Hydrogen Chain (`./GP-GRO/hydrogen-chain/`)**
+    *   `./GP-GRO/hydrogen-chain/production/`
+        *   [GP-GRO-H2-0402-001-OV-A.md](./hydrogen-chain/production/GP-GRO-H2-0402-001-OV-A.md): 02-01: Green Hydrogen Production Overview - *(OV)*
+        *   [GP-GRO-H2-0402-002-DD-A.md](./hydrogen-chain/production/GP-GRO-H2-0402-002-DD-A.md): 02-02: Electrolyzer Facility Design Document - *(DD)*
+    *   `./GP-GRO/hydrogen-chain/storage/`
+        *   [GP-GRO-H2-0402-101-SPEC-A.md](./hydrogen-chain/storage/GP-GRO-H2-0402-101-SPEC-A.md): 02-101: Cryogenic LH2 Storage Tank Specification (Ground) - *(SPEC)*
+        *   [GP-GRO-H2-0402-102-PROC-A.md](./hydrogen-chain/storage/GP-GRO-H2-0402-102-PROC-A.md): 02-102: LH2 Tank Farm Operations Procedure - *(PROC)*
+    *   `./GP-GRO/hydrogen-chain/distribution/`
+        *   [GP-GRO-H2-0402-201-SDD-A.md](./hydrogen-chain/distribution/GP-GRO-H2-0402-201-SDD-A.md): 02-201: LH2 Pipeline & Vehicle Interface Description (Ground) - *(SDD, ICD)*
+        *   [GP-GRO-H2-0402-202-PROC-A.md](./hydrogen-chain/distribution/GP-GRO-H2-0402-202-PROC-A.md): 02-202: Automated Vehicle Fueling Procedure (LH2) - *(PROC, SDD)*
+</details>
+
+<details>
+### <summary> Ground Data Network & Control Centers</summary>
+
+*Focus: Design, operations, and documentation for mission control, air traffic control interface, and ground data infrastructure.*
+
+*   **Data Centers (`./GP-GRO/data-centers/`)**
+    *   `./GP-GRO/data-centers/designs/`
+        *   [GP-GRO-DC-0403-001-DD-A.md](./data-centers/designs/GP-GRO-DC-0403-001-DD-A.md): 03-01: Primary Data Center Architectural Design - *(DD)*
+        *   [GP-GRO-DC-0403-002-SPEC-A.md](./data-centers/designs/GP-GRO-DC-0403-002-SPEC-A.md): 03-02: HPC Cluster Specification (Ground) - *(SPEC)*
+    *   `./GP-GRO/data-centers/cooling/`
+        *   [GP-GRO-DC-0403-101-SDD-A.md](./data-centers/cooling/GP-GRO-DC-0403-101-SDD-A.md): 03-101: Data Center Cooling System Description - *(SDD)*
+        *   [GP-GRO-DC-0403-102-CAL-A.md](./data-centers/cooling/GP-GRO-DC-0403-102-CAL-A.md): 03-102: Thermal Load Analysis (Data Center) - *(CAL)*
+    *   `./GP-GRO/data-centers/power/`
+        *   [GP-GRO-DC-0403-201-SDD-A.md](./data-centers/power/GP-GRO-DC-0403-201-SDD-A.md): 03-201: Data Center Power Distribution Architecture - *(SDD)*
+        *   [GP-GRO-DC-0403-202-SPEC-A.md](./data-centers/power/GP-GRO-DC-0403-202-SPEC-A.md): 03-202: Emergency Power System Specification (Data Center) - *(SPEC)*
+
+*   **Control Systems (`./GP-GRO/control-systems/`)**
+    *   `./GP-GRO/control-systems/air-traffic/`
+        *   [GP-GRO-CONTROL-0403-301-OV-A.md](./control-systems/air-traffic/GP-GRO-CONTROL-0403-301-OV-A.md): 03-301: Air Traffic Control Integration Overview - *(OV, ICD)*
+        *   [GP-GRO-CONTROL-0403-302-PROC-A.md](./control-systems/air-traffic/GP-GRO-CONTROL-0403-302-PROC-A.md): 03-302: Automated ATC Communication Procedure (Ground) - *(PROC, SDD)*
+    *   `./GP-GRO/control-systems/space-operations/`
+        *   [GP-GRO-CONTROL-0403-401-OV-A.md](./control-systems/space-operations/GP-GRO-CONTROL-0403-401-OV-A.md): 03-401: Mission Control Center (MCC) Functional Overview - *(OV, SDD)*
+        *   [GP-GRO-CONTROL-0403-402-PROC-A.md](./control-systems/space-operations/GP-GRO-CONTROL-0403-402-PROC-A.md): 03-402: Spacecraft Telemetry Monitoring Procedure (MCC) - *(PROC)*
+    *   `./GP-GRO/control-systems/integration/`
+        *   [GP-GRO-CONTROL-0403-501-SDD-A.md](./control-systems/integration/GP-GRO-CONTROL-0403-501-SDD-A.md): 03-501: Ground Control Systems Integration Architecture - *(SDD, ICD)*
+        *   [GP-GRO-CONTROL-0403-502-SPEC-A.md](./control-systems/integration/GP-GRO-CONTROL-0403-502-SPEC-A.md): 03-502: Ground Network Interoperability Specification - *(SPEC)*
+</details>
+
+<details>
+### <summary> Ground Robotics & Automation</summary>
+
+*Focus: Design, operations, and documentation for ground-based robotic systems for logistics, maintenance assistance, and inspection.*
+
+*   `./GP-GRO/ground-support/` *(Documents specifically detailing ground robotics and automated GSE)*
+    *   [GP-GRO-GROBO-0404-001-OV-A.md](./ground-support/GP-GRO-GROBO-0404-001-OV-A.md): 04-01: Ground Robotics & Automation Overview - *(OV)*
+    *   [GP-GRO-GROBO-0404-002-SPEC-A.md](./ground-support/GP-GRO-GROBO-0404-002-SPEC-A.md): 04-02: Autonomous Towing Vehicle Specification - *(SPEC)*
+    *   [GP-GRO-GROBO-0404-003-SPEC-A.md](./ground-support/GP-GRO-GROBO-0404-003-SPEC-A.md): 04-03: Robotic Refueling/Servicing Platform Specification - *(SPEC)*
+    *   [GP-GRO-GROBO-0404-004-SDD-A.md](./ground-support/GP-GRO-GROBO-0404-004-SDD-A.md): 04-04: Automated Pre-Flight Inspection System Description - *(SDD)*
+    *   [GP-GRO-GROBO-0404-005-ICD-A.md](./ground-support/GP-GRO-GROBO-0404-005-ICD-A.md): 04-05: Ground Robotics Interface Control Document (Vehicle) - *(ICD)*
+</details>
+
+<details>
+### <summary> Ground Support Equipment (GSE)</summary>
+
+*Focus: Design, operation, and documentation for standard, non-robotic ground support equipment.*
+
+*   `./GP-GRO/ground-support/` *(Documents detailing standard GSE - may coexist with robotics docs or have separate subdirectories)*
+    *   [GP-GRO-GSE-0405-001-OV-A.md](./ground-support/GP-GRO-GSE-0405-001-OV-A.md): 05-01: Standard Ground Support Equipment Overview - *(OV)*
+    *   [GP-GRO-GSE-0405-002-LIST-A.md](./ground-support/GP-GRO-GSE-0405-002-LIST-A.md): 05-02: Approved Standard GSE List - *(LIST, SPEC)*
+    *   [GP-GRO-GSE-0405-003-MAN-A.md](./ground-support/GP-GRO-GSE-0405-003-MAN-A.md): 05-03: GSE Operating & Maintenance Manuals Index - *(MAN, IDX)*
+</details>
+
+<details>
+### <summary>Common Components & Standards</summary>
+
+*Focus: Documentation for elements shared across multiple GRO areas.*
+
+*   **Common (`./GP-GRO/common/`)**
+    *   `./GP-GRO/common/models/` *(Placeholder for links to common model wrappers)*
+        *   [3D-GP-GRO-COMMON-0400-010-VIS-A.md](./common/models/3D-GP-GRO-COMMON-0400-010-VIS-A.md): 00-10: Common Ground Facility Visualization Model - *(VIS)*
+    *   `./GP-GRO/common/utils/` *(Placeholder for scripts/code wrappers)*
+        *   [GP-GRO-COMMON-0400-020-SCRIPT-A.md](./common/utils/GP-GRO-COMMON-0400-020-SCRIPT-A.md): 00-20: Ground System Log Analysis Script - *(SCRIPT)*
+    *   `./GP-GRO/common/standards/`
+        *   [GP-GRO-COMMON-0400-030-SPEC-A.md](./common/standards/GP-GRO-COMMON-0400-030-SPEC-A.md): 00-30: Ground-Based Network Protocol Standard - *(SPEC)*
+        *   [GP-GRO-COMMON-0400-031-SPEC-A.md](./common/standards/GP-GRO-COMMON-0400-031-SPEC-A.md): 00-31: Ground Robotics Communication Standard - *(SPEC)*
+</details>
+
+---
+
+*(Appendices for Part 4 follow the standard structure)*
+
+---
+
+*(End of ToC-GP-GRO.md)*
+
+---
+
+# GAIA AIR: COAFI Part 5 - Supply Chain & Ethical Logistics (GP-SUPL)
+
+**(🚨 DISCLAIMER - GenAI Proposal Status 🚨)**
+**(Generated Structures and Contents require Official Authority Check for tool Compliance and Certification.)**
+
+**(Note:** This document provides the detailed index for COAFI Part 5 (GP-SUPL). It aligns with the high-level structure defined in the Master Table of Contents (AToC.md). The directories listed below represent logical groupings of documents (`.md` files and associated binaries) within the GP-SUPL domain.)*
+
+[Return to AToC.md](../AToC.md)
+[Return to COAFI.MD Main Document](../COAFI.md)
+
+---
+
+## Document Part Overview (GP-SUPL)
+
+| Part | Domain | Code    | Theme                                           | Purpose within COAFI Library            | Key Interfaces                 |
+|------|--------|---------|-------------------------------------------------|-----------------------------------------|--------------------------------|
+| 5    | Supply Chain & Ethical Logistics | GP-SUPL | Ethical sourcing, lifecycle traceability. | Supply Chain & Logistics Manuals   | GP-GRO, GP-RAME, GP-AM/GP-AS. |
+
+---
+
+## GP-SUPL Detailed Table of Contents
+
+*(Click the section titles below to expand/collapse the detailed content.)*
+
+*   [General](#general)
+*   [Ethical Sourcing & Provenance](#ethical-sourcing--provenance)
+*   [Lifecycle Traceability](#lifecycle-traceability)
+*   [Logistics Optimization & Sustainability](#logistics-optimization--sustainability)
+*   [Appendices](#appendices)
+
+---
+
+<details>
+<summary>### General</summary>
+
+*Focus: High-level overview and general documentation for the GP-SUPL domain.*
+
+*Directory: `./GP-SUPL/00-GENERAL/`*
+
+*   [GP-SUPL-GEN-0000-00-000-OV-A.md](./00-GENERAL/GP-SUPL-GEN-0000-00-000-OV-A.md): 00-000: Placeholder Document - *(OV)*
+</details>
+
+<details>
+<summary>### Ethical Sourcing & Provenance</summary>
+
+*Focus: Documentation for ensuring ethical sourcing and tracking the origin of materials and components.*
+
+*Directory: `./GP-SUPL/01-ESRC/`*
+
+*   [GP-SUPL-ESRC-0500-01-001-OV-A.md](./01-ESRC/GP-SUPL-ESRC-0500-01-001-OV-A.md): 01-01: Ethical Sourcing Framework Overview - *(OV)*
+*   [GP-SUPL-ESRC-0500-01-002-REQ-A.md](./01-ESRC/GP-SUPL-ESRC-0500-01-002-REQ-A.md): 01-02: Supplier Code of Conduct & Requirements - *(REQ, SPEC)*
+*   [GP-SUPL-ESRC-0500-01-003-PROC-A.md](./01-ESRC/GP-SUPL-ESRC-0500-01-003-PROC-A.md): 01-03: Supplier Audit & Verification Procedure - *(PROC)*
+*   [GP-SUPL-ESRC-0500-01-004-SDD-A.md](./01-ESRC/GP-SUPL-ESRC-0500-01-004-SDD-A.md): 01-04: BITT-Based Material Provenance Tracking Description - *(SDD)*
+</details>
+
+<details>
+<summary>### Lifecycle Traceability</summary>
+
+*Focus: Documentation for tracking components and materials throughout their lifecycle, from sourcing to end-of-life.*
+
+*Directory: `./GP-SUPL/02-TRAC/`*
+
+*   [GP-SUPL-TRAC-0500-02-001-OV-A.md](./02-TRAC/GP-SUPL-TRAC-0500-02-001-OV-A.md): 02-01: Lifecycle Traceability Overview - *(OV)*
+*   [GP-SUPL-TRAC-0500-02-002-SPEC-A.md](./02-TRAC/GP-SUPL-TRAC-0500-02-002-SPEC-A.md): 02-02: Component Unique Identifier (UID) Specification - *(SPEC)*
+*   [GP-SUPL-TRAC-0500-02-003-SDD-A.md](./02-TRAC/GP-SUPL-TRAC-0500-02-003-SDD-A.md): 02-03: Digital Thread Integration for Supply Chain - *(SDD)*
+*   [GP-SUPL-TRAC-0500-02-004-PLAN-A.md](./02-TRAC/GP-SUPL-TRAC-0500-02-004-PLAN-A.md): 02-04: End-of-Life Material Recovery & Recycling Plan - *(PLAN)*
+</details>
+
+<details>
+<summary>### Logistics Optimization & Sustainability</summary>
+
+*Focus: Documentation for optimizing logistics processes and ensuring sustainable transportation and inventory management.*
+
+*Directory: `./GP-SUPL/03-LOGI/`*
+
+*   [GP-SUPL-LOGI-0500-03-001-OV-A.md](./03-LOGI/GP-SUPL-LOGI-0500-03-001-OV-A.md): 03-01: Logistics Optimization Overview - *(OV)*
+*   [GP-SUPL-LOGI-0500-03-002-SDD-A.md](./03-LOGI/GP-SUPL-LOGI-0500-03-002-SDD-A.md): 03-02: AI-Driven Route & Inventory Optimization System - *(SDD)*
+*   [GP-SUPL-LOGI-0500-03-003-SPEC-A.md](./03-LOGI/GP-SUPL-LOGI-0500-03-003-SPEC-A.md): 03-03: Sustainable Packaging Specification - *(SPEC)*
+*   [GP-SUPL-LOGI-0500-03-004-RPT-A.md](./03-LOGI/GP-SUPL-LOGI-0500-03-004-RPT-A.md): 03-04: Logistics Carbon Footprint Analysis Report - *(RPT, CAL)*
+</details>
+
+<details>
+<summary>### Appendices</summary>
+
+*Focus: Supplementary materials for the GP-SUPL domain.*
+
+*Directory: `./GP-SUPL/APPENDICES/`* *(Example Directory)*
+
+*   [GP-SUPL-GEN-0000-APP-A-001-GLO-A.md](./APPENDICES/GP-SUPL-GEN-0000-APP-A-001-GLO-A.md): A-01: Glossary of Supply Chain & Logistics Terms - *(GLO)*
+*   [GP-SUPL-GEN-0000-APP-B-001-REF-A.md](./APPENDICES/GP-SUPL-GEN-0000-APP-B-001-REF-A.md): B-01: Referenced Documents (GP-SUPL) - *(REF, LIST)*
+</details>
+
+---
+
+### GP-RAME Repository Structure
+
+## Overview
+
+The GP-RAME (Robotic Assembly & Maintenance Engineering) repository follows the COAFI framework structure, organizing documentation for robotic systems across aerospace applications, mechanical systems, and electroactuation technologies.
+
+## File Naming Convention
+
+The RAME repository follows the COAFI framework naming convention:
+
+```plaintext
+GP-RAME-[Chapter]-[Subject]-[InfoCode]-[Revision].[ext]
+```
+
+For specialized documents:
+
+```plaintext
+GP-RAME-[Chapter]-[Specialization]-[Subject]-[InfoCode]-[Revision].[ext]
+```
+# GAIA AIR: COAFI Part 6 - Robotic Assembly & Maintenance (GP-RAME)
+
+**(🚨 DISCLAIMER - GenAI Proposal Status 🚨)**
+**(Generated Structures and Contents require Official Authority Check for tool Compliance and Certification.)**
+
+**(Note:** This document provides the detailed index for COAFI Part 6 (GP-RAME). It aligns with the high-level structure defined in the Master Table of Contents (AToC.md). The directories listed below represent logical groupings of documents (`.md` files and associated binaries) within the GP-RAME domain.)*
+
+[Return to AToC.md](../AToC.md)
+[Return to COAFI.MD Main Document](../COAFI.md)
+
+---
+
+## Document Part Overview (GP-RAME)
+
+| Part | Domain | Code    | Theme                                         | Purpose within COAFI Library            | Key Interfaces                 |
+|------|--------|---------|-----------------------------------------------|-----------------------------------------|--------------------------------|
+| 6    | Robotic Assembly & Maintenance | GP-RAME | Autonomous assembly, predictive maintenance.    | Robotic Systems Design & Ops Manuals   | GP-AM, GP-AS, GP-SUPL.       |
+
+---
+
+## GP-RAME Detailed Table of Contents
+
+*(Click the section titles below to expand/collapse the detailed content.)*
+
+*   [General](#general)
+*   [Common Components](#common-components)
+*   [Integration with Other Systems](#integration-with-other-systems)
+*   [Aerospace Robotics](#aerospace-robotics)
+*   [Robotic Mechanics](#robotic-mechanics)
+*   [Electroactuation Systems](#electroactuation-systems)
+*   [Control Systems](#control-systems)
+*   [Sensor Systems](#sensor-systems)
+*   [Software Systems](#software-systems)
+*   [Testing and Validation](#testing-and-validation)
+*   [Research and Advanced Concepts](#research-and-advanced-concepts)
+*   [Robotics Braining Theory](#robotics-braining-theory)
+
+---
+
+<details>
+<summary> General</summary>
+
+*Focus: High-level framework overview, general specifications, cross-domain references, and planning.*
+
+*Directory: `./GP-RAME/00-GENERAL/`*
+
+*   [GP-RAME-00-001-OV-A.md](./00-GENERAL/GP-RAME-00-001-OV-A.md): 00-01: Overview of RAME framework - *(OV)*
+*   [GP-RAME-00-002-SPEC-A.md](./00-GENERAL/GP-RAME-00-002-SPEC-A.md): 00-02: General specifications and standards - *(SPEC)*
+*   [GP-RAME-00-003-REF-A.md](./00-GENERAL/GP-RAME-00-003-REF-A.md): 00-03: Cross-references to other GAIA AIR domains - *(REF)*
+*   [GP-RAME-00-004-PLAN-A.md](./00-GENERAL/GP-RAME-00-004-PLAN-A.md): 00-04: Integration planning and roadmap - *(PLAN)*
+</details>
+
+<details>
+<summary> Common Components</summary>
+
+*Focus: Documentation for components and resources shared across different RAME systems.*
+
+*Directory: `./GP-RAME/10-COMMON/`*
+
+*   [GP-RAME-10-001-SDD-A.md](./10-COMMON/GP-RAME-10-001-SDD-A.md): 10-01: System design description for common components - *(SDD)*
+*   [GP-RAME-10-002-ICD-A.md](./10-COMMON/GP-RAME-10-002-ICD-A.md): 10-02: Interface control document for RAME systems - *(ICD)*
+*   [GP-RAME-10-003-SPEC-A.md](./10-COMMON/GP-RAME-10-003-SPEC-A.md): 10-03: Common specifications for all RAME systems - *(SPEC)*
+</details>
+
+<details>
+<summary> Integration with Other Systems</summary>
+
+*Focus: Interface definitions and control documents for connecting RAME with other GAIA AIR domains.*
+
+*Directory: `./GP-RAME/20-INTEGRATION/`*
+
+*   [GP-RAME-20-001-ICD-A.md](./20-INTEGRATION/GP-RAME-20-001-ICD-A.md): 20-01: Interface with GP-AM (Air Systems) - *(ICD)*
+*   [GP-RAME-20-002-ICD-A.md](./20-INTEGRATION/GP-RAME-20-002-ICD-A.md): 20-02: Interface with GP-AS (Space Systems) - *(ICD)*
+*   [GP-RAME-20-003-ICD-A.md](./20-INTEGRATION/GP-RAME-20-003-ICD-A.md): 20-03: Interface with GP-COM (Core Operating Matrix) - *(ICD)*
+*   [GP-RAME-20-004-ICD-A.md](./20-INTEGRATION/GP-RAME-20-004-ICD-A.md): 20-04: Interface with GP-SUPL (Supply Chain) - *(ICD)*
+</details>
+
+<details>
+<summary> Aerospace Robotics</summary>
+
+*Focus: Documentation for robotic systems specifically designed for aerospace applications (assembly, maintenance, inspection).*
+
+*Directory: `./GP-RAME/40-AEROROBO/`*
+
+*   [GP-RAME-40-001-OV-A.md](./40-AEROROBO/GP-RAME-40-001-OV-A.md): 40-01: Overview of aerospace robotics - *(OV)*
+*   [GP-RAME-40-002-REQ-A.md](./40-AEROROBO/GP-RAME-40-002-REQ-A.md): 40-02: Requirements for aerospace robotic systems - *(REQ)*
+*   [GP-RAME-40-AEROROBO-OV-A.md](./40-AEROROBO/GP-RAME-40-AEROROBO-OV-A.md): 40-03: General integration of robotic systems in aerospace - *(OV)*
+*   [GP-RAME-40-AEROROBO-SPEC-A.md](./40-AEROROBO/GP-RAME-40-AEROROBO-SPEC-A.md): 40-04: Technical specifications for aerospace robotics - *(SPEC)*
+*   **Assembly**
+    *   [GP-RAME-40-ASY-001-PROC-A.md](./40-AEROROBO/ASSEMBLY/GP-RAME-40-ASY-001-PROC-A.md): 40-101: Assembly procedures - *(PROC)*
+*   **Maintenance**
+    *   [GP-RAME-40-MNT-001-PROC-A.md](./40-AEROROBO/MAINTENANCE/GP-RAME-40-MNT-001-PROC-A.md): 40-201: Maintenance procedures - *(PROC)*
+*   **Inspection**
+    *   [GP-RAME-40-INS-001-PROC-A.md](./40-AEROROBO/INSPECTION/GP-RAME-40-INS-001-PROC-A.md): 40-301: Inspection procedures - *(PROC)*
+</details>
+
+<details>
+<summary> Robotic Mechanics</summary>
+
+*Focus: Documentation for the mechanical design and analysis of robotic systems.*
+
+*Directory: `./GP-RAME/42-MECHROBO/`*
+
+*   [GP-RAME-42-001-OV-A.md](./42-MECHROBO/GP-RAME-42-001-OV-A.md): 42-01: Overview of robotic mechanics - *(OV)*
+*   [GP-RAME-42-MECHROBO-SDD-A1.md](./42-MECHROBO/GP-RAME-42-MECHROBO-SDD-A1.md): 42-02: System design description for mechanical systems - *(SDD)*
+*   [GP-RAME-42-MECHROBO-SPEC-A.md](./42-MECHROBO/GP-RAME-42-MECHROBO-SPEC-A.md): 42-03: Technical specifications for mechanical systems - *(SPEC)*
+*   **Kinematics**
+    *   [GP-RAME-42-KIN-001-CAL-A.md](./42-MECHROBO/KINEMATICS/GP-RAME-42-KIN-001-CAL-A.md): 42-101: Kinematics calculations and models - *(CAL)*
+*   **Structures**
+    *   [GP-RAME-42-STR-001-SPEC-A.md](./42-MECHROBO/STRUCTURES/GP-RAME-42-STR-001-SPEC-A.md): 42-201: Structural specifications - *(SPEC)*
+*   **Loads**
+    *   [GP-RAME-42-LOAD-001-CAL-A.md](./42-MECHROBO/LOADS/GP-RAME-42-LOAD-001-CAL-A.md): 42-301: Load calculations and analysis - *(CAL)*
+</details>
+
+<details>
+<summary> Electroactuation Systems</summary>
+
+*Focus: Documentation for the electrical actuation systems used in robotics.*
+
+*Directory: `./GP-RAME/43-EACTUATOR/`*
+
+*   [GP-RAME-43-001-OV-A.md](./43-EACTUATOR/GP-RAME-43-001-OV-A.md): 43-01: Overview of electroactuation systems - *(OV)*
+*   [GP-RAME-43-EACTUATOR-SPEC-A.md](./43-EACTUATOR/GP-RAME-43-EACTUATOR-SPEC-A.md): 43-02: Technical specifications for electroactuators - *(SPEC)*
+*   **Motors**
+    *   [GP-RAME-43-MOT-001-SPEC-A.md](./43-EACTUATOR/MOTORS/GP-RAME-43-MOT-001-SPEC-A.md): 43-101: Motor specifications - *(SPEC)*
+*   **Drives**
+    *   [GP-RAME-43-DRV-001-SDD-A.md](./43-EACTUATOR/DRIVES/GP-RAME-43-DRV-001-SDD-A.md): 43-201: Drive system design description - *(SDD)*
+*   **Smart Materials**
+    *   [GP-RAME-43-SMA-001-SPEC-A.md](./43-EACTUATOR/SMART-MATERIALS/GP-RAME-43-SMA-001-SPEC-A.md): 43-301: Smart materials specifications - *(SPEC)*
+</details>
+
+<details>
+<summary> Control Systems</summary>
+
+*Focus: Documentation for the robotic control architecture and logic.*
+
+*Directory: `./GP-RAME/50-CONTROL/`*
+
+*   [GP-RAME-50-001-OV-A.md](./50-CONTROL/GP-RAME-50-001-OV-A.md): 50-01: Overview of control systems - *(OV)*
+*   [GP-RAME-50-002-SDD-A.md](./50-CONTROL/GP-RAME-50-002-SDD-A.md): 50-02: System design description for control systems - *(SDD)*
+*   [GP-RAME-50-003-SPEC-A.md](./50-CONTROL/GP-RAME-50-003-SPEC-A.md): 50-03: Technical specifications for control systems - *(SPEC)*
+</details>
+
+<details>
+<summary> Sensor Systems</summary>
+
+*Focus: Documentation for the sensor suite used in robotic perception and navigation.*
+
+*Directory: `./GP-RAME/60-SENSORS/`*
+
+*   [GP-RAME-60-001-OV-A.md](./60-SENSORS/GP-RAME-60-001-OV-A.md): 60-01: Overview of sensor systems - *(OV)*
+*   [GP-RAME-60-002-SDD-A.md](./60-SENSORS/GP-RAME-60-002-SDD-A.md): 60-02: System design description for sensor systems - *(SDD)*
+*   [GP-RAME-60-003-SPEC-A.md](./60-SENSORS/GP-RAME-60-003-SPEC-A.md): 60-03: Technical specifications for sensor systems - *(SPEC)*
+</details>
+
+<details>
+<summary>### Software Systems</summary>
+
+*Focus: Documentation for the robotic software architecture, modules, and AI logic.*
+
+*Directory: `./GP-RAME/70-SOFTWARE/`*
+
+*   [GP-RAME-70-001-OV-A.md](./70-SOFTWARE/GP-RAME-70-001-OV-A.md): 70-01: Overview of software systems - *(OV)*
+*   [GP-RAME-70-002-SDD-A.md](./70-SOFTWARE/GP-RAME-70-002-SDD-A.md): 70-02: System design description for software - *(SDD)*
+*   [GP-RAME-70-003-SPEC-A.md](./70-SOFTWARE/GP-RAME-70-003-SPEC-A.md): 70-03: Technical specifications for software - *(SPEC)*
+</details>
+
+<details>
+<summary> Testing and Validation</summary>
+
+*Focus: Documentation for verifying and validating robotic system performance.*
+
+*Directory: `./GP-RAME/80-TESTING/`*
+
+*   [GP-RAME-80-001-PLAN-A.md](./80-TESTING/GP-RAME-80-001-PLAN-A.md): 80-01: Test planning - *(PLAN)*
+*   [GP-RAME-80-002-PROC-A.md](./80-TESTING/GP-RAME-80-002-PROC-A.md): 80-02: Test procedures - *(PROC)*
+*   [GP-RAME-80-003-RPT-A.md](./80-TESTING/GP-RAME-80-003-RPT-A.md): 80-03: Test reporting - *(RPT)*
+</details>
+
+<details>
+<summary> Research and Advanced Concepts</summary>
+
+*Focus: Documentation for R&D efforts related to future robotic capabilities.*
+
+*Directory: `./GP-RAME/90-RESEARCH/`*
+
+*   [GP-RAME-90-001-OV-A.md](./90-RESEARCH/GP-RAME-90-001-OV-A.md): 90-01: Overview of research areas - *(OV)*
+*   [GP-RAME-90-002-RPT-A.md](./90-RESEARCH/GP-RAME-90-002-RPT-A.md): 90-02: Research reports - *(RPT)*
+</details>
+
+<details>
+<summary> Robotics Braining Theory</summary>
+
+*Focus: Documentation for the theoretical underpinnings of robotic intelligence and learning.*
+
+*Directory: `./GP-RAME/91-RBT/`*
+
+*   [GP-RAME-91-001-OV-A.md](./91-RBT/GP-RAME-91-001-OV-A.md): 91-01: Overview of RBT - *(OV)*
+*   [GP-RAME-91-RBT-SPEC-A.md](./91-RBT/GP-RAME-91-RBT-SPEC-A.md): 91-02: RBT formal specification - *(SPEC)*
+*   [GP-RAME-91-RBT-MECH-A1.md](./91-RBT/GP-RAME-91-RBT-MECH-A1.md): 91-03: RBT applied to mechanical systems - *(MD)*
+*   [GP-RAME-91-RBT-EACTUATOR-A1.md](./91-RBT/GP-RAME-91-RBT-EACTUATOR-A1.md): 91-04: RBT applied to electroactuation - *(MD)*
+*   **Models**
+    *   [GP-RAME-91-MOD-001-CAL-A.md](./91-RBT/MODELS/GP-RAME-91-MOD-001-CAL-A.md): 91-101: Calculation models - *(CAL)*
+    *   [GP-RAME-91-MOD-002-SIM-A.md](./91-RBT/MODELS/GP-RAME-91-MOD-002-SIM-A.md): 91-102: Simulation frameworks - *(SIM)*
+</details>
+
+
+*(End of ToC-GP-RAME.md)*
+
+---
+
+# GP‑ADR · **Aerial Drones** — Part VII Master Table of Contents  
+*(Draft generated 2025‑04‑21 — pending authority review & certification)*
+
+## Filename convention
+`GP‑ADR-[PlatformCode]-[SeqCode]-[ADRChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+| Field | Meaning | Example |
+|-------|---------|---------|
+| **GP‑ADR** | Domain code (Aerial Drones) | GP‑ADR |
+| **[PlatformCode]** | Vehicle family (e.g. *ADR‑VTOL‑025*) | ADR‑VTOL‑025 |
+| **[SeqCode]** | Sequential identifier in context | 001 |
+| **[ADRChapterCode]** | Two‑digit chapter (see index below) | 24 |
+| **[SubjectCode]** | Sub‑topic / component ID | 015 |
+| **[InfoCode]** | COAFI document type (OV, SDD, ICD …) | SDD |
+| **[Rev]** | Revision (A, B, 01…) | A |
+| **[ext]** | File extension (.md, .json, .pdf …) | md |
+
+---
+
+## Sub‑Domain Legend
+| Code | Icon | Badge | Element Title | Short description |
+|------|:---:|:-----:|---------------|-------------------|
+| **PLT** | 🚁 | indigo | Drone Platforms | VTOL, fixed‑wing, tilt‑rotor, hybrid airframes |
+| **AUT** | 🤖 | purple | Autonomy & Control | Autopilot, guidance, path‑planning, AI stack |
+| **LINK**| 📡 | sky | Communications & Datalink | RF, 4G/5G, SAT‑COM, mesh networks |
+| **PAY** | 📷 | orange | Payload Systems | EO/IR cameras, LiDAR, sprayers, delivery pods |
+| **GCS** | 🖥️ | teal | Ground Control Stations | Operator UI, antennas, datacentres |
+| **SWM** | 🐝 | yellow | Swarm Coordination | Multi‑UAV co‑op, dynamic tasking |
+| **SEC** | 🔒 | red | Security & Compliance | Cyber‑security, regulatory, C2 encryption |
+| **LOGI**| 📦 | brown | Logistics & Support | Battery swapping, field tooling, spares |
+
+### Sub‑Domain ➜ InfoCode Matrix (cheat‑sheet)
+| Code | IDX root | Arch / OV | Req/Policy | Interfaces/Data | Ops/Procedures |
+|------|----------|-----------|------------|-----------------|---------------|
+| **PLT** | `PLT‑01‑000‑IDX` | OV, DD | SPEC | ICD, DWG | PROC, TEST |
+| **AUT** | `AUT‑02‑000‑IDX` | OV, SDD | SPEC, REQ | ICD, CAL | PROC, TEST |
+| **LINK**| `LINK‑03‑000‑IDX`| OV, SDD | SPEC | ICD, FIG | PROC, TEST |
+| **PAY** | `PAY‑04‑000‑IDX` | OV | SPEC | ICD | PROC |
+| **GCS** | `GCS‑05‑000‑IDX` | OV, SDD | PLAN, SPEC | ICD, FIG | PROC, TEST |
+| **SWM** | `SWM‑06‑000‑IDX` | OV, SDD | SPEC, CAL | ICD | PROC |
+| **SEC** | `SEC‑07‑000‑IDX` | OV, SDD | PLAN, REQ | ICD, SPEC | PROC, TEST |
+| **LOGI**| `LOGI‑08‑000‑IDX`| OV | PLAN, LIST | REF | PROC |
+
+---
+
+## One‑Glance Chapter Index (ADR)
+| AD Ch | Title | Canonical IDX file | Scope / Highlight |
+|:----:|-------------------------------|-------------------------------------|-----------------------------------------------|
+| **00** | Intro & General | `GP‑ADR‑*‑00‑000‑IDX‑A.md` | Vision, scope, naming, compliance, references |
+| **01** | Platform General | `GP‑ADR‑*‑01‑000‑IDX‑A.md` | Vehicle specs, configurations, weights |
+| **02** | Operations Information | `GP‑ADR‑*‑02‑000‑IDX‑A.md` | Flight ops, mission roles, SOP index |
+| **03** | Performance | `GP‑ADR‑*‑03‑000‑IDX‑A.md` | Endurance, range, ceiling, payload curves |
+| **04** | Airworthiness / Certification | `GP‑ADR‑*‑04‑000‑IDX‑A.md` | EASA SC‑UAS, FAA Part 107 / 135, SORA |
+| **05** | Maintenance & Inspection | `GP‑ADR‑*‑05‑000‑IDX‑A.md` | Scheduled tasks, battery health, overhauls |
+| **06** | Dimensions & Areas | `GP‑ADR‑*‑06‑000‑IDX‑A.md` | Span, rotors, envelope, folded geometry |
+| **07** | Launch / Recovery & Ground Ops | `GP‑ADR‑*‑07‑000‑IDX‑A.md` | VTOL pads, catapults, nets, arresting gear |
+| **08** | Weight & Balance | `GP‑ADR‑*‑08‑000‑IDX‑A.md` | CG limits, payload mounting matrices |
+| **09** | Packaging & Transport | `GP‑ADR‑*‑09‑000‑IDX‑A.md` | Cases, UN3480 battery regs, shipping SOP |
+| **10** | Storage & Preservation | `GP‑ADR‑*‑10‑000‑IDX‑A.md` | Hangar, field kit, temp/humidity limits |
+| **11** | Markings & Lighting | `GP‑ADR‑*‑11‑000‑IDX‑A.md` | Registration, conspicuity, anti‑collision LEDs |
+| **12** | Servicing – Routine | `GP‑ADR‑*‑12‑000‑IDX‑A.md` | Battery swap, firmware update, cleaning |
+| **20** | Electrical & Power | `GP‑ADR‑*‑20‑000‑IDX‑A.md` | HV systems, power buses, EMC practices |
+| **21** | Propulsion (Motor / ESC) | `GP‑ADR‑*‑21‑000‑IDX‑A.md` | Motor specs, ESC tuning, cooling |
+| **22** | Autopilot & Flight Control | `GP‑ADR‑*‑22‑000‑IDX‑A.md` | PX‑based stack, FBW, PID/MPC, redundancy |
+| **23** | Communications / Datalink | `GP‑ADR‑*‑23‑000‑IDX‑A.md` | C2 bands, LTE/5G, sat‑back‑haul, QKD hooks |
+| **24** | Battery / Energy Storage | `GP‑ADR‑*‑24‑000‑IDX‑A.md` | Li‑ion/NiMH, fuel‑cell hybrid, SOC modelling |
+| **25** | Payload Systems | `GP‑ADR‑*‑25‑000‑IDX‑A.md` | EO/IR gimbals, sprayers, delivery winches |
+| **26** | Detect‑&‑Avoid Sensors | `GP‑ADR‑*‑26‑000‑IDX‑A.md` | ADS‑B In, radar, optical flow, AI vision |
+| **27** | Swarm Coordination | `GP‑ADR‑*‑27‑000‑IDX‑A.md` | Multi‑UAV mesh, consensus, slot‑based FMS |
+| **30** | AI & Autonomy Core | `GP‑ADR‑*‑30‑000‑IDX‑A.md` | Reinforcement learning agents, XAI tags |
+| **40** | Cyber‑security & OTA | `GP‑ADR‑*‑40‑000‑IDX‑A.md` | Firmware signing, zero‑trust PKI, IDS/IPS |
+| **50** | Ground Control Systems | `GP‑ADR‑*‑50‑000‑IDX‑A.md` | Operator UI, cloud relay, BVLOS approvals |
+| **60** | Standard Practices – UAS | `GP‑ADR‑*‑60‑000‑IDX‑A.md` | Wiring, conformal coating, vibration tests |
+| **91** | Charts & Schematics | `GP‑ADR‑*‑91‑000‑IDX‑A.md` | Master wiring & hydraulic (if any) lists |
+| **99** | Special / Emerging Tech | `GP‑ADR‑*‑99‑000‑IDX‑A.md` | Hydrogen VTOL, quantum nav, bio‑inspired wings |
+
+> *Canon*: each “IDX” is the root for its chapter; bullets beneath (to be added as the library grows) link to OV, SDD, SPEC, ICD, PROC, etc.
+
+---
+
+### Immediate gaps / to‑dos
+* Populate **IDX** stubs (`00‑000`, `01‑000`, …) so writers can hang documents under each chapter.
+* Decide whether to reuse **ATA‑100** numbering fully or keep this trimmed ADR set (above).  
+  *If you prefer full ATA, swap AD20‑25 with ATA‑24/28/33, etc.*
+* Add a **COMPLIANCE MAP** tying Chapter 04 to specific authority regs (EASA, FAA, ICAO Remote ID).
+* Kick‑off a **schematic list generator** for AD91 once first DWG/FIG wrappers exist.
+
+---
+
+*End of draft v0.1 – ready for edits, expansions, or style tweaks.*
+
+
+# GP‑FF‑CITY · **Flying City Cars** — Part VIII Master Table of Contents  
+*(Draft generated 2025‑04‑21 — pending authority review & certification)*
+
+---
+
+## Filename convention
+`GP‑FF‑CITY-[PlatformCode]-[SeqCode]-[FFCChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+| Field | Meaning | Example |
+|-------|---------|---------|
+| **GP‑FF‑CITY** | Domain code (Flying City Cars) | GP‑FF‑CITY |
+| **[PlatformCode]** | Vehicle family (e.g. *FFC‑eVTOL‑040*) | FFC‑eVTOL‑040 |
+| **[SeqCode]** | Sequential identifier in context | 001 |
+| **[FFCChapterCode]** | Two‑digit chapter (see index below) | 24 |
+| **[SubjectCode]** | Sub‑topic / component ID | 015 |
+| **[InfoCode]** | COAFI document type (OV, SDD, ICD …) | SDD |
+| **[Rev]** | Revision (A, B, 01…) | A |
+| **[ext]** | File extension (.md, .json, .pdf …) | md |
+
+---
+
+## Sub‑Domain Legend
+| Code | Icon | Badge | Element Title | Short description |
+|------|:---:|:-----:|---------------|-------------------|
+| **PLT** | 🚖 | magenta | UAM Platforms | eVTOL, lift‑plus‑cruise, tilt‑rotor cars |
+| **AUT** | 🤖 | purple | Autonomy & Flight Control | Autopilot, sense‑&‑avoid, AI stack |
+| **PROP**| ⚡ | yellow | Propulsion & Power | Electric rotors, hybrid gensets, batteries |
+| **CAB** | 🛋️ | green | Passenger Cabin Systems | Seating, HMI, ECS, infotainment |
+| **LINK**| 📡 | sky | Comms & Datalink | 5G/6G, C‑Band, sat relay, mesh |
+| **UTM** | 🗺️ | teal | Urban Traffic Mgmt | U‑space corridors, digital twin, ADS‑B In |
+| **SEC** | 🔒 | red | Safety & Security | Certification, cybersecurity, remote ID |
+| **INFRA**| 🏢 | orange | Vertiport Infrastructure | Pads, chargers, passenger flow |
+| **LOGI**| 📦 | brown | Logistics & MRO | Battery swap, spares, field support |
+
+### Sub‑Domain ➜ InfoCode Matrix (cheat‑sheet)
+| Code | IDX root | Arch / OV | Req / Policy | Interfaces / Data | Ops / Procedures |
+|------|----------|-----------|--------------|-------------------|-----------------|
+| **PLT** | `PLT‑01‑000‑IDX` | OV, DD | SPEC | ICD, DWG | PROC, TEST |
+| **AUT** | `AUT‑02‑000‑IDX` | OV, SDD | SPEC, REQ | ICD, CAL | PROC, TEST |
+| **PROP**| `PROP‑03‑000‑IDX`| OV, SDD | SPEC | ICD, FIG | PROC, TEST |
+| **CAB** | `CAB‑04‑000‑IDX` | OV, SDD | SPEC | ICD | PROC |
+| **LINK**| `LINK‑05‑000‑IDX`| OV, SDD | SPEC | ICD, FIG | PROC, TEST |
+| **UTM** | `UTM‑06‑000‑IDX` | OV, SDD | SPEC, PLAN | ICD, LIST | PROC |
+| **SEC** | `SEC‑07‑000‑IDX` | OV, SDD | PLAN, REQ | ICD, SPEC | PROC, TEST |
+| **INFRA**| `INFRA‑08‑000‑IDX`| OV | PLAN, SPEC | FIG, REF | PROC |
+| **LOGI**| `LOGI‑09‑000‑IDX` | OV | PLAN, LIST | REF | PROC |
+
+---
+
+## One‑Glance Chapter Index (FFC)
+| FFC Ch | Title | Canonical IDX file | Scope / Highlight |
+|:----:|------------------------------|--------------------------------------|-----------------------------------------------|
+| **00** | Intro & General | `GP‑FF‑CITY‑*‑00‑000‑IDX‑A.md` | Vision, market, naming, compliance refs |
+| **01** | Platform General | `GP‑FF‑CITY‑*‑01‑000‑IDX‑A.md` | Configs, weights, loading diagrams |
+| **02** | Operations Information | `GP‑FF‑CITY‑*‑02‑000‑IDX‑A.md` | Flight ops, BVLOS, passenger ops guides |
+| **03** | Performance | `GP‑FF‑CITY‑*‑03‑000‑IDX‑A.md` | Range, endurance, cruise speed, noise |
+| **04** | Airworthiness / Certification | `GP‑FF‑CITY‑*‑04‑000‑IDX‑A.md` | EASA SC‑VTOL, FAA ARAM, ASTM F38 |
+| **05** | Maintenance & Inspection | `GP‑FF‑CITY‑*‑05‑000‑IDX‑A.md` | Battery health, rotor overhaul, schedules |
+| **06** | Dimensions & Areas | `GP‑FF‑CITY‑*‑06‑000‑IDX‑A.md` | Span, folded footprint, cabin envelope |
+| **07** | Ground Handling & Vertiport Ops | `GP‑FF‑CITY‑*‑07‑000‑IDX‑A.md` | Tug, dolly, lift & dock, turn‑around |
+| **08** | Weight & Balance | `GP‑FF‑CITY‑*‑08‑000‑IDX‑A.md` | CG limits, passenger luggage matrices |
+| **09** | Passenger Cabin | `GP‑FF‑CITY‑*‑09‑000‑IDX‑A.md` | Seats, restraints, infotainment |
+| **10** | Storage & Charging | `GP‑FF‑CITY‑*‑10‑000‑IDX‑A.md` | HV battery charging, cold soak limits |
+| **11** | Markings & Lighting | `GP‑FF‑CITY‑*‑11‑000‑IDX‑A.md` | Registration, conspicuity, cabin LEDs |
+| **12** | Servicing – Routine | `GP‑FF‑CITY‑*‑12‑000‑IDX‑A.md` | Battery swap, software update, cleaning |
+| **20** | Electrical & HV Power | `GP‑FF‑CITY‑*‑20‑000‑IDX‑A.md` | 800 V buses, isolation monitoring |
+| **21** | Propulsion (Motors / ESC) | `GP‑FF‑CITY‑*‑21‑000‑IDX‑A.md` | Motor specs, ESC cooling, redundancy |
+| **22** | Flight Control / Autopilot | `GP‑FF‑CITY‑*‑22‑000‑IDX‑A.md` | FBW, envelope protection, AI co‑pilot |
+| **23** | Communications / Datalink | `GP‑FF‑CITY‑*‑23‑000‑IDX‑A.md` | 5G SA, Sat‑IO, QKD hooks |
+| **24** | Battery / Energy Storage | `GP‑FF‑CITY‑*‑24‑000‑IDX‑A.md` | Li‑ion, solid‑state, hydrogen FC hybrid |
+| **25** | Cabin Systems | `GP‑FF‑CITY‑*‑25‑000‑IDX‑A.md` | Climate, noise cancel, UI displays |
+| **26** | Detect‑&‑Avoid Sensors | `GP‑FF‑CITY‑*‑26‑000‑IDX‑A.md` | Radar, optical, LiDAR fusion |
+| **27** | Urban Traffic Mgmt Integration | `GP‑FF‑CITY‑*‑27‑000‑IDX‑A.md` | U‑space, NASA UTM, slot mgmt |
+| **30** | AI & Autonomy Core | `GP‑FF‑CITY‑*‑30‑000‑IDX‑A.md` | RL agents, XAI, contingency handling |
+| **40** | Cyber‑security & OTA | `GP‑FF‑CITY‑*‑40‑000‑IDX‑A.md` | Firmware signing, SBOM, zero‑trust |
+| **50** | Vertiport & GCS Systems | `GP‑FF‑CITY‑*‑50‑000‑IDX‑A.md` | Passenger flow, booking, charging control |
+| **60** | Standard Practices – UAM | `GP‑FF‑CITY‑*‑60‑000‑IDX‑A.md` | Wiring, vibration, e‑drive tests |
+| **91** | Charts & Schematics | `GP‑FF‑CITY‑*‑91‑000‑IDX‑A.md` | Master wiring, HV harness lists |
+| **99** | Special / Emerging Tech | `GP‑FF‑CITY‑*‑99‑000‑IDX‑A.md` | eVTOL hydrogen, quantum nav, EVTDR |
+
+> *Canon*: each “IDX” is the root for its chapter; bullets beneath (to be added) point to OV, SDD, SPEC, ICD, PROC, etc.
+
+---
+
+### Immediate gaps / to‑dos
+* Spin up **IDX** stubs (`00‑000`, `01‑000`, …) to anchor incoming docs.
+* Build a **NOISE MAP** linking Chapter 03 performance to urban noise regulations (EASA SC‑VTOL Chapter E, FAA Part 36).
+* Draft a **VERTIPORT INTERFACE MAP** (Chapter 07 ↔ Part IV GP‑GRO) for power, data, passenger handling.
+* Set up **charts‑list generator** for FFC‑91 after first DWG/FIG wrappers commit.
+
+---
+
+*End of draft v0.1 – ready for edits, expansions, or stylistic tweaks.*
+
+
+
+# GP‑SPACE‑SAPR · **Space Satellites & Probes** — Part IX Master Table of Contents  
+*(Draft generated 2025‑04‑21 — pending authority review & certification)*
+
+---
+
+## Filename convention
+`GP‑SPACE‑SAPR-[PlatformCode]-[SeqCode]-[SAPRChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+| Field | Meaning | Example |
+|-------|---------|---------|
+| **GP‑SPACE‑SAPR** | Domain code (Satellites & Probes) | GP‑SPACE‑SAPR |
+| **[PlatformCode]** | Vehicle family / constellation (e.g. *SAPR‑LEO‑COMMS‑050*) | SAPR‑LEO‑COMMS‑050 |
+| **[SeqCode]** | Sequential identifier within platform context | 002 |
+| **[SAPRChapterCode]** | Two‑digit chapter (see index below) | 24 |
+| **[SubjectCode]** | Sub‑topic / component ID | 110 |
+| **[InfoCode]** | COAFI document type (OV, SDD, ICD …) | SDD |
+| **[Rev]** | Revision (A, B, 01 …) | A |
+| **[ext]** | File extension (.md, .json, .pdf …) | md |
+
+---
+
+## Sub‑Domain Legend
+| Code | Icon | Badge | Element Title | Short description |
+|------|:---:|:-----:|---------------|-------------------|
+| **BUS** | 🛰️ | gray | Spacecraft Bus | Structure, thermal, harness, ADCS base |
+| **PAY** | 🔬 | violet | Payload Instruments | Optics, radar, science sensors |
+| **COMM**| 📡 | sky | Communications & TT&C | X‑/Ka‑band, optical, ranging |
+| **PROP**| 🚀 | yellow | Propulsion & ΔV | Chemical, electric, cold‑gas, quantum |
+| **GNC** | 🎯 | teal | Guidance & Control | ADCS, nav sensors, autonomy algos |
+| **POWER**| ⚡ | orange | Electrical Power Subsystem | Solar array, battery, PCDU |
+| **THERM**| 🌡️ | brown | Thermal Control | Radiators, MLI, heaters, cryo |
+| **STRUC**| 🏗️ | silver | Structures & Mechanisms | Panels, booms, deployables |
+| **GDS** | 🖥️ | green | Ground Data System | MOC, flight software tools |
+| **MISSION**| 📅 | lime | Mission Ops & Planning | ConOps, timelines, procedures |
+| **SEC** | 🔒 | red | Security & Reliability | Cyber, FDIR, radiation hardening |
+| **INFRA**| 🚚 | indigo | Launch & Ops Infrastructure | Integration, transport, launch pad |
+| **LOGI**| 📦 | amber | Logistics & MRO | Spares, return, refurbishment |
+
+### Sub‑Domain ➜ InfoCode Matrix (cheat‑sheet)
+| Code | IDX root | Arch / OV | Req / Policy | Interfaces / Data | Ops / Procedures |
+|------|----------|----------|--------------|-------------------|-----------------|
+| **BUS** | `BUS‑01‑000‑IDX` | OV, DD | SPEC | ICD, DWG | PROC, TEST |
+| **PAY** | `PAY‑02‑000‑IDX` | OV, SDD | SPEC, REQ | ICD, CAL | PROC, TEST |
+| **COMM**| `COMM‑03‑000‑IDX`| OV, SDD | SPEC | ICD, FIG | PROC, TEST |
+| **PROP**| `PROP‑04‑000‑IDX`| OV, SDD | SPEC | ICD, CAL | PROC, TEST |
+| **GNC** | `GNC‑05‑000‑IDX` | OV, SDD | SPEC, REQ | ICD, CAL | PROC, TEST |
+| **POWER**| `POWER‑06‑000‑IDX`| OV, SDD | SPEC | ICD, FIG | PROC |
+| **THERM**| `THERM‑07‑000‑IDX`| OV, SDD | SPEC | FIG | PROC |
+| **STRUC**| `STRUC‑08‑000‑IDX`| OV, DD | SPEC | DWG | PROC |
+| **GDS** | `GDS‑09‑000‑IDX` | OV, SDD | PLAN, REQ | JSON, ICD | PROC |
+| **MISSION**| `MISSION‑10‑000‑IDX`| OV, PLAN | REQ | REF | PROC |
+| **SEC** | `SEC‑11‑000‑IDX` | OV, SDD | PLAN, REQ | ICD, SPEC | PROC, TEST |
+| **INFRA**| `INFRA‑12‑000‑IDX`| OV | PLAN, SPEC | REF, FIG | PROC |
+| **LOGI**| `LOGI‑13‑000‑IDX` | OV | PLAN, LIST | REF | PROC |
+
+---
+
+## One‑Glance Chapter Index (SAPR)
+| SAPR Ch | Title | Canonical IDX file | Scope / Highlight |
+|:----:|--------------------------------|------------------------------------------|---------------------------------------------------------|
+| **00** | Intro & General | `GP‑SPACE‑SAPR‑*‑00‑000‑IDX‑A.md` | Vision, mission classes, standards map (ECSS ‑ NASA) |
+| **01** | Spacecraft Bus General | `GP‑SPACE‑SAPR‑*‑01‑000‑IDX‑A.md` | Mass, power, data budgets, configuration |
+| **02** | Mission Ops Information | `GP‑SPACE‑SAPR‑*‑02‑000‑IDX‑A.md` | Pre‑launch, in‑orbit, cruise, EOM procedures |
+| **03** | Mission Performance | `GP‑SPACE‑SAPR‑*‑03‑000‑IDX‑A.md` | ΔV budget, pointing accuracy, data rates |
+| **04** | Safety & Reliability | `GP‑SPACE‑SAPR‑*‑04‑000‑IDX‑A.md` | FMEA/FMECA, radiation, MMOD, AI‑FDIR |
+| **05** | Maintenance & Servicing | `GP‑SPACE‑SAPR‑*‑05‑000‑IDX‑A.md` | On‑orbit servicing, refuel, RPO concepts |
+| **06** | Dimensions & Coord Systems | `GP‑SPACE‑SAPR‑*‑06‑000‑IDX‑A.md` | Envelope, coordinate frames, deck numbering |
+| **07** | Handling & Transportation | `GP‑SPACE‑SAPR‑*‑07‑000‑IDX‑A.md` | Container, vibration limits, crane points |
+| **08** | Mass Properties & Balance | `GP‑SPACE‑SAPR‑*‑08‑000‑IDX‑A.md` | CoG evolution, inertia tensors, spin balance |
+| **09** | Payload Instruments | `GP‑SPACE‑SAPR‑*‑09‑000‑IDX‑A.md` | Cameras, spectrometers, SAR, deployables |
+| **10** | Storage & Preservation | `GP‑SPACE‑SAPR‑*‑10‑000‑IDX‑A.md` | Clean‑room, bake‑out, prop‑safe modes |
+| **11** | Markings & Identification | `GP‑SPACE‑SAPR‑*‑11‑000‑IDX‑A.md` | GN ID, laser retro‑reflector, QR plates |
+| **12** | Servicing – Routine | `GP‑SPACE‑SAPR‑*‑12‑000‑IDX‑A.md` | Ground recharge, SW patch, desaturation |
+| **13** | Propellant Systems | `GP‑SPACE‑SAPR‑*‑13‑000‑IDX‑A.md` | Tanks, lines, pressurization, PMDs |
+| **14** | Pressurized Gas Systems | `GP‑SPACE‑SAPR‑*‑14‑000‑IDX‑A.md` | Helium, xenon, purge & vent |
+| **18** | Vib & Acoustic Environment | `GP‑SPACE‑SAPR‑*‑18‑000‑IDX‑A.md` | Launch & on‑orbit environment spec |
+| **20** | Standard Practices – Structure | `GP‑SPACE‑SAPR‑*‑20‑000‑IDX‑A.md` | Fasteners, bonding, NDI, CFRP repair |
+| **21** | Thermal Control | `GP‑SPACE‑SAPR‑*‑21‑000‑IDX‑A.md` | Passive & active, cryo loops, heaters |
+| **22** | Guidance & Control | `GP‑SPACE‑SAPR‑*‑22‑000‑IDX‑A.md` | Star tracker, RWA, gyro, autonomy laws |
+| **23** | Comms & TT&C | `GP‑SPACE‑SAPR‑*‑23‑000‑IDX‑A.md` | X/Ka/Laser, ranging, cross‑link |
+| **24** | Electrical Power | `GP‑SPACE‑SAPR‑*‑24‑000‑IDX‑A.md` | Solar array, PCDU, battery EOL models |
+| **25** | Command & Data Handling | `GP‑SPACE‑SAPR‑*‑25‑000‑IDX‑A.md` | OBC, mass memory, FSW, packet TM/TC |
+| **26** | Hazard Detection & Safety | `GP‑SPACE‑SAPR‑*‑26‑000‑IDX‑A.md` | Radiation, debris, thermal runaway |
+| **27** | Autonomous Ops & AI | `GP‑SPACE‑SAPR‑*‑27‑000‑IDX‑A.md` | RL planners, XAI dashboards, DTO links |
+| **30** | Science Data Pipeline | `GP‑SPACE‑SAPR‑*‑30‑000‑IDX‑A.md` | Compression, calibration, L1→L4 chain |
+| **40** | Cyber‑security & QKD | `GP‑SPACE‑SAPR‑*‑40‑000‑IDX‑A.md` | Post‑quantum crypto, QKD space‑ground |
+| **50** | Ground Data System | `GP‑SPACE‑SAPR‑*‑50‑000‑IDX‑A.md` | MOC, DSN, scheduler, dashboards |
+| **60** | Standard Practices – Propulsion | `GP‑SPACE‑SAPR‑*‑60‑000‑IDX‑A.md` | Acceptance, hot‑fire, leak check |
+| **91** | Charts & Schematics | `GP‑SPACE‑SAPR‑*‑91‑000‑IDX‑A.md` | Harness, thermal maps, control‑law flow |
+| **99** | Special / Emerging Tech | `GP‑SPACE‑SAPR‑*‑99‑000‑IDX‑A.md` | ISRU, quantum sensors, swarm federation |
+
+> *Canon*: every “IDX” anchors its chapter; bullet examples (to add) will link to OV, SDD, SPEC, ICD, PROC, etc.
+
+---
+
+### Immediate gaps / to‑dos
+1. Generate **IDX** stubs (`00‑000`…`99‑000`) for first commits.
+2. Draft **LAUNCH ENVIRONMENT SPEC** (Ch 18) aligned with latest ESA ECSS‑Q‑ST‑20‑07C Rev.2.
+3. Outline **SCIENCE DATA CYCLE** diagram (Ch 30 ↔ Part III GP‑COM) mapping level products.
+4. Create **ON‑ORBIT SERVICING INTERFACE MAP** (Ch 05 ↔ Part VI GP‑RAME) for refuel & upgrade.
+
+---
+
+*End of draft v0.1 — ready for edits, expansions, or mission‑specific tailoring.*
+
+
+
+# GP‑SPACE‑SAPR · **Space Satellites & Probes** — Part IX Master Table of Contents  
+*(Draft generated 2025‑04‑21 — pending authority review & certification)*
+
+---
+
+## Filename convention
+`GP‑SPACE‑SAPR-[PlatformCode]-[SeqCode]-[SAPRChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+| Field | Meaning | Example |
+|-------|---------|---------|
+| **GP‑SPACE‑SAPR** | Domain code (Satellites & Probes) | GP‑SPACE‑SAPR |
+| **[PlatformCode]** | Vehicle family / constellation (e.g. *SAPR‑LEO‑COMMS‑050*) | SAPR‑LEO‑COMMS‑050 |
+| **[SeqCode]** | Sequential identifier within platform context | 002 |
+| **[SAPRChapterCode]** | Two‑digit chapter (see index below) | 24 |
+| **[SubjectCode]** | Sub‑topic / component ID | 110 |
+| **[InfoCode]** | COAFI document type (OV, SDD, ICD …) | SDD |
+| **[Rev]** | Revision (A, B, 01 …) | A |
+| **[ext]** | File extension (.md, .json, .pdf …) | md |
+
+---
+
+## Sub‑Domain Legend
+| Code | Icon | Badge | Element Title | Short description |
+|------|:---:|:-----:|---------------|-------------------|
+| **BUS** | 🛰️ | gray | Spacecraft Bus | Structure, thermal, harness, ADCS base |
+| **PAY** | 🔬 | violet | Payload Instruments | Optics, radar, science sensors |
+| **COMM**| 📡 | sky | Communications & TT&C | X‑/Ka‑band, optical, ranging |
+| **PROP**| 🚀 | yellow | Propulsion & ΔV | Chemical, electric, cold‑gas, quantum |
+| **GNC** | 🎯 | teal | Guidance & Control | ADCS, nav sensors, autonomy algos |
+| **POWER**| ⚡ | orange | Electrical Power Subsystem | Solar array, battery, PCDU |
+| **THERM**| 🌡️ | brown | Thermal Control | Radiators, MLI, heaters, cryo |
+| **STRUC**| 🏗️ | silver | Structures & Mechanisms | Panels, booms, deployables |
+| **GDS** | 🖥️ | green | Ground Data System | MOC, flight software tools |
+| **MISSION**| 📅 | lime | Mission Ops & Planning | ConOps, timelines, procedures |
+| **SEC** | 🔒 | red | Security & Reliability | Cyber, FDIR, radiation hardening |
+| **INFRA**| 🚚 | indigo | Launch & Ops Infrastructure | Integration, transport, launch pad |
+| **LOGI**| 📦 | amber | Logistics & MRO | Spares, return, refurbishment |
+
+### Sub‑Domain ➜ InfoCode Matrix (cheat‑sheet)
+| Code | IDX root | Arch / OV | Req / Policy | Interfaces / Data | Ops / Procedures |
+|------|----------|----------|--------------|-------------------|-----------------|
+| **BUS** | `BUS‑01‑000‑IDX` | OV, DD | SPEC | ICD, DWG | PROC, TEST |
+| **PAY** | `PAY‑02‑000‑IDX` | OV, SDD | SPEC, REQ | ICD, CAL | PROC, TEST |
+| **COMM**| `COMM‑03‑000‑IDX`| OV, SDD | SPEC | ICD, FIG | PROC, TEST |
+| **PROP**| `PROP‑04‑000‑IDX`| OV, SDD | SPEC | ICD, CAL | PROC, TEST |
+| **GNC** | `GNC‑05‑000‑IDX` | OV, SDD | SPEC, REQ | ICD, CAL | PROC, TEST |
+| **POWER**| `POWER‑06‑000‑IDX`| OV, SDD | SPEC | ICD, FIG | PROC |
+| **THERM**| `THERM‑07‑000‑IDX`| OV, SDD | SPEC | FIG | PROC |
+| **STRUC**| `STRUC‑08‑000‑IDX`| OV, DD | SPEC | DWG | PROC |
+| **GDS** | `GDS‑09‑000‑IDX` | OV, SDD | PLAN, REQ | JSON, ICD | PROC |
+| **MISSION**| `MISSION‑10‑000‑IDX`| OV, PLAN | REQ | REF | PROC |
+| **SEC** | `SEC‑11‑000‑IDX` | OV, SDD | PLAN, REQ | ICD, SPEC | PROC, TEST |
+| **INFRA**| `INFRA‑12‑000‑IDX`| OV | PLAN, SPEC | REF, FIG | PROC |
+| **LOGI**| `LOGI‑13‑000‑IDX` | OV | PLAN, LIST | REF | PROC |
+
+---
+
+## One‑Glance Chapter Index (SAPR)
+| SAPR Ch | Title | Canonical IDX file | Scope / Highlight |
+|:----:|--------------------------------|------------------------------------------|---------------------------------------------------------|
+| **00** | Intro & General | `GP‑SPACE‑SAPR‑*‑00‑000‑IDX‑A.md` | Vision, mission classes, standards map (ECSS ‑ NASA) |
+| **01** | Spacecraft Bus General | `GP‑SPACE‑SAPR‑*‑01‑000‑IDX‑A.md` | Mass, power, data budgets, configuration |
+| **02** | Mission Ops Information | `GP‑SPACE‑SAPR‑*‑02‑000‑IDX‑A.md` | Pre‑launch, in‑orbit, cruise, EOM procedures |
+| **03** | Mission Performance | `GP‑SPACE‑SAPR‑*‑03‑000‑IDX‑A.md` | ΔV budget, pointing accuracy, data rates |
+| **04** | Safety & Reliability | `GP‑SPACE‑SAPR‑*‑04‑000‑IDX‑A.md` | FMEA/FMECA, radiation, MMOD, AI‑FDIR |
+| **05** | Maintenance & Servicing | `GP‑SPACE‑SAPR‑*‑05‑000‑IDX‑A.md` | On‑orbit servicing, refuel, RPO concepts |
+| **06** | Dimensions & Coord Systems | `GP‑SPACE‑SAPR‑*‑06‑000‑IDX‑A.md` | Envelope, coordinate frames, deck numbering |
+| **07** | Handling & Transportation | `GP‑SPACE‑SAPR‑*‑07‑000‑IDX‑A.md` | Container, vibration limits, crane points |
+| **08** | Mass Properties & Balance | `GP‑SPACE‑SAPR‑*‑08‑000‑IDX‑A.md` | CoG evolution, inertia tensors, spin balance |
+| **09** | Payload Instruments | `GP‑SPACE‑SAPR‑*‑09‑000‑IDX‑A.md` | Cameras, spectrometers, SAR, deployables |
+| **10** | Storage & Preservation | `GP‑SPACE‑SAPR‑*‑10‑000‑IDX‑A.md` | Clean‑room, bake‑out, prop‑safe modes |
+| **11** | Markings & Identification | `GP‑SPACE‑SAPR‑*‑11‑000‑IDX‑A.md` | GN ID, laser retro‑reflector, QR plates |
+| **12** | Servicing – Routine | `GP‑SPACE‑SAPR‑*‑12‑000‑IDX‑A.md` | Ground recharge, SW patch, desaturation |
+| **13** | Propellant Systems | `GP‑SPACE‑SAPR‑*‑13‑000‑IDX‑A.md` | Tanks, lines, pressurization, PMDs |
+| **14** | Pressurized Gas Systems | `GP‑SPACE‑SAPR‑*‑14‑000‑IDX‑A.md` | Helium, xenon, purge & vent |
+| **18** | Vib & Acoustic Environment | `GP‑SPACE‑SAPR‑*‑18‑000‑IDX‑A.md` | Launch & on‑orbit environment spec |
+| **20** | Standard Practices – Structure | `GP‑SPACE‑SAPR‑*‑20‑000‑IDX‑A.md` | Fasteners, bonding, NDI, CFRP repair |
+| **21** | Thermal Control | `GP‑SPACE‑SAPR‑*‑21‑000‑IDX‑A.md` | Passive & active, cryo loops, heaters |
+| **22** | Guidance & Control | `GP‑SPACE‑SAPR‑*‑22‑000‑IDX‑A.md` | Star tracker, RWA, gyro, autonomy laws |
+| **23** | Comms & TT&C | `GP‑SPACE‑SAPR‑*‑23‑000‑IDX‑A.md` | X/Ka/Laser, ranging, cross‑link |
+| **24** | Electrical Power | `GP‑SPACE‑SAPR‑*‑24‑000‑IDX‑A.md` | Solar array, PCDU, battery EOL models |
+| **25** | Command & Data Handling | `GP‑SPACE‑SAPR‑*‑25‑000‑IDX‑A.md` | OBC, mass memory, FSW, packet TM/TC |
+| **26** | Hazard Detection & Safety | `GP‑SPACE‑SAPR‑*‑26‑000‑IDX‑A.md` | Radiation, debris, thermal runaway |
+| **27** | Autonomous Ops & AI | `GP‑SPACE‑SAPR‑*‑27‑000‑IDX‑A.md` | RL planners, XAI dashboards, DTO links |
+| **30** | Science Data Pipeline | `GP‑SPACE‑SAPR‑*‑30‑000‑IDX‑A.md` | Compression, calibration, L1→L4 chain |
+| **40** | Cyber‑security & QKD | `GP‑SPACE‑SAPR‑*‑40‑000‑IDX‑A.md` | Post‑quantum crypto, QKD space‑ground |
+| **50** | Ground Data System | `GP‑SPACE‑SAPR‑*‑50‑000‑IDX‑A.md` | MOC, DSN, scheduler, dashboards |
+| **60** | Standard Practices – Propulsion | `GP‑SPACE‑SAPR‑*‑60‑000‑IDX‑A.md` | Acceptance, hot‑fire, leak check |
+| **91** | Charts & Schematics | `GP‑SPACE‑SAPR‑*‑91‑000‑IDX‑A.md` | Harness, thermal maps, control‑law flow |
+| **99** | Special / Emerging Tech | `GP‑SPACE‑SAPR‑*‑99‑000‑IDX‑A.md` | ISRU, quantum sensors, swarm federation |
+
+> *Canon*: every “IDX” anchors its chapter; bullet examples (to add) will link to OV, SDD, SPEC, ICD, PROC, etc.
+
+---
+
+### Immediate gaps / to‑dos
+1. Generate **IDX** stubs (`00‑000`…`99‑000`) for first commits.
+2. Draft **LAUNCH ENVIRONMENT SPEC** (Ch 18) aligned with latest ESA ECSS‑Q‑ST‑20‑07C Rev.2.
+3. Outline **SCIENCE DATA CYCLE** diagram (Ch 30 ↔ Part III GP‑COM) mapping level products.
+4. Create **ON‑ORBIT SERVICING INTERFACE MAP** (Ch 05 ↔ Part VI GP‑RAME) for refuel & upgrade.
+
+---
+
+*End of Part IX draft v0.1 — ready for edits, expansions, or mission‑specific tailoring.*
+
+---
+
+# GP‑PMO · **Program Management & Operations** — Part X Master Table of Contents
+*(Draft generated 2025‑04‑21 — pending authority review & certification)*
+
+---
+
+## Filename convention
+`GP‑PMO-[SubDomainCode]-[SeqCode]-[PMOChapterCode]-[SubjectCode]-[InfoCode]-[Rev].[ext]`
+
+| Field | Meaning | Example |
+|-------|---------|---------|
+| **GP‑PMO** | Domain code (Program Mgmt & Ops) | GP‑PMO |
+| **[SubDomainCode]** | Functional area (e.g. *RISK*, *CERT*) | RISK |
+| **[SeqCode]** | Sequential identifier within sub‑domain | 007 |
+| **[PMOChapterCode]** | Two‑digit chapter (see index below) | 03 |
+| **[SubjectCode]** | Sub‑topic / component ID | 120 |
+| **[InfoCode]** | COAFI document type (PLAN, REQ, PROC …) | PLAN |
+| **[Rev]** | Revision (A, B, 01 …) | A |
+| **[ext]** | File extension (.md, .xlsx, .pdf …) | md |
+
+---
+
+## Sub‑Domain Legend
+| Code | Icon | Badge | Element Title | Short description |
+|------|:---:|:-----:|---------------|-------------------|
+| **GOV** | 🏛️ | blue | Governance & Strategy | Charters, org structures, policy sets |
+| **PLAN** | 🗓️ | teal | Planning & Scheduling | IMS, milestones, WBS integration |
+| **RISK** | ⚠️ | red | Risk Management | Hazard registers, mitigations, bow‑ties |
+| **QA** | 🔍 | green | Quality Assurance | Audits, process control, KPIs |
+| **CERT** | 📜 | purple | Certification & Compliance | Authorities, standards, air/space‑worthiness |
+| **CONFIG** | 🗂️ | gray | Configuration Management | Baselines, change boards, CI/CD |
+| **COST** | 💰 | amber | Cost & Resource Mgmt | Budgets, EVM, staffing forecasts |
+| **OPS** | 📋 | lime | Operations & SOPs | Day‑to‑day ops manuals, playbooks |
+| **COMM** | 🗣️ | sky | Reviews & Communication | Design reviews, gate boards, comms plan |
+| **DATA** | 🗄️ | indigo | Documentation & Records | DMS, traceability, archives |
+
+### Sub‑Domain ➜ InfoCode Matrix
+| Code | IDX root | Arch / OV | Req / Policy | Interfaces / Data | Ops / Procedures |
+|------|----------|----------|--------------|-------------------|-----------------|
+| **GOV** | `GOV‑01‑000‑IDX` | OV | PLAN | REF | PROC |
+| **PLAN** | `PLAN‑02‑000‑IDX` | OV | PLAN | LIST, WBS | PROC |
+| **RISK** | `RISK‑03‑000‑IDX` | OV | PLAN, REQ | JSON | PROC, CAL |
+| **QA** | `QA‑04‑000‑IDX` | OV | PLAN, SPEC | LIST | PROC, TEST |
+| **CERT** | `CERT‑05‑000‑IDX` | OV | PLAN, REQ | ICD, SPEC | PROC |
+| **CONFIG** | `CONFIG‑06‑000‑IDX` | OV | PLAN | ICD, LIST | PROC |
+| **COST** | `COST‑07‑000‑IDX` | OV | PLAN, REQ | FIG, RPT | PROC |
+| **OPS** | `OPS‑08‑000‑IDX` | OV | REQ | REF, LIST | PROC |
+| **COMM** | `COMM‑09‑000‑IDX` | OV | PLAN | REF | PROC |
+| **DATA** | `DATA‑10‑000‑IDX` | OV | PLAN | JSON | PROC |
+
+---
+
+## One‑Glance Chapter Index (PMO)
+| PMO Ch | Title | Canonical IDX file | Scope / Highlight |
+|:----:|--------------------------------|------------------------------------------|----------------------------------------------|
+| **00** | Intro & General | `GP‑PMO‑*‑00‑000‑IDX‑A.md` | Vision, governance framework, stakeholder map |
+| **01** | Governance & Organization | `GP‑PMO‑*‑01‑000‑IDX‑A.md` | Org chart, RACI, decision rights |
+| **02** | Planning & Scheduling | `GP‑PMO‑*‑02‑000‑IDX‑A.md` | IMS, WBS, baseline management |
+| **03** | Risk Management | `GP‑PMO‑*‑03‑000‑IDX‑A.md` | Hazard log, risk matrix, bow‑tie analysis |
+| **04** | Quality Assurance | `GP‑PMO‑*‑04‑000‑IDX‑A.md` | Process audits, KPIs, continuous improvement |
+| **05** | Certification & Compliance | `GP‑PMO‑*‑05‑000‑IDX‑A.md` | Regulatory basis, certification plans, evidence |
+| **06** | Configuration Management | `GP‑PMO‑*‑06‑000‑IDX‑A.md` | Baselines, change boards, digital thread |
+| **07** | Cost & Resource Mgmt | `GP‑PMO‑*‑07‑000‑IDX‑A.md` | Budgets, EVM, staffing forecasts, supply plan |
+| **08** | Operations & SOPs | `GP‑PMO‑*‑08‑000‑IDX‑A.md` | Daily ops manuals, playbooks, hand‑over plans |
+| **09** | Reviews & Gates | `GP‑PMO‑*‑09‑000‑IDX‑A.md` | SRR, PDR, CDR, ORR, FRR, post‑flight review |
+| **10** | Documentation & Records | `GP‑PMO‑*‑10‑000‑IDX‑A.md` | DMS structure, trace matrices, retention |
+| **11** | Safety & Environmental Mgmt | `GP‑PMO‑*‑11‑000‑IDX‑A.md` | SMS, ESG metrics, environmental permits |
+| **12** | Training & Competency | `GP‑PMO‑*‑12‑000‑IDX‑A.md` | Training matrices, cert records, LMS |
+| **90** | Metrics & Dashboards | `GP‑PMO‑*‑90‑000‑IDX‑A.md` | KPI dashboards, BI integration, AI insights |
+| **99** | Special / Emerging Ops Tech | `GP‑PMO‑*‑99‑000‑IDX‑A.md` | Digital twins for PM, quantum scheduling |
+
+---
+
+### Immediate gaps / to‑dos
+1. Stand‑up **GOV charter** (Ch 01) with RACI table.
+2. Draft **Integrated Master Schedule (IMS)** outline (Ch 02) linked to WBS IDs.
+3. Create **Enterprise Risk Register JSON schema** (Ch 03) for cross‑part ingestion.
+4. Outline **Certification Basis Matrix** (Ch 05) mapping regs to evidence docs.
+5. Define **Digital Thread CM process** (Ch 06) interfacing BITT ledger.
+6. Sketch **Program KPI dashboard wireframe** (Ch 90) referencing GP‑COM data services.
+
+---
+
+*End of Part X draft v0.1 — skeleton ready for expansion.*
+
+
+
+
+---
+
 
 ---
 
 **(Example Rendered Document - Illustrative Only)**
 
-```markdown
 # Vertical Stabilizer Structural Design Document
 
 **Document Code:** GP-AM-AMPEL-0100-55-005-DD-A  
